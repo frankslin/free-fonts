@@ -1,0 +1,6 @@
+This package combines MIT-licensed package metadata/scripts with font files
+derived from ButTaiwan/genyo-font, which is licensed under the SIL Open Font
+License 1.1.
+
+See the upstream repository for the full OFL text:
+https://github.com/ButTaiwan/genyo-font/blob/master/SIL_Open_Font_License_1.1.txt

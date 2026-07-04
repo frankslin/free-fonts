@@ -1,0 +1,27 @@
+{
+  "name": "@free-fonts/genyo-mincho",
+  "version": "1.0.0",
+  "description": "Chunked woff2 webfonts for GenYo Serif TC.",
+  "license": "MIT AND OFL-1.1",
+  "main": "genyo-mincho.css",
+  "style": "genyo-mincho.css",
+  "files": [
+    "genyo-mincho.css",
+    "fonts",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frankslin/free-fonts.git",
+    "directory": "genyo-mincho"
+  },
+  "keywords": [
+    "font",
+    "webfont",
+    "woff2",
+    "cjk",
+    "mincho",
+    "source-han-serif"
+  ]
+}
