@@ -1,0 +1,27 @@
+{
+  "name": "@free-fonts/genki-mincho",
+  "version": "1.0.0",
+  "description": "Chunked woff2 webfonts for Genki Serif TC.",
+  "license": "MIT AND OFL-1.1",
+  "main": "genki-mincho.css",
+  "style": "genki-mincho.css",
+  "files": [
+    "genki-mincho.css",
+    "fonts",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frankslin/free-fonts.git",
+    "directory": "genki-mincho"
+  },
+  "keywords": [
+    "font",
+    "webfont",
+    "woff2",
+    "cjk",
+    "mincho",
+    "source-han-serif"
+  ]
+}
