@@ -1,0 +1,971 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>中文自由字体 Webfonts 演示</title>
+
+  <link rel="stylesheet" href="./wenjin-mincho/wenjin-mincho.css">
+  <link rel="stylesheet" href="./genki-mincho/genki-mincho.css">
+  <link rel="stylesheet" href="./genyo-mincho/genyo-mincho.css">
+  <link rel="stylesheet" href="https://unpkg.com/@free-fonts/jigmo@1.0.0/jigmo.css">
+  <link rel="stylesheet" href="https://unpkg.com/@free-fonts/jigmo-sc@1.0.0/jigmo-sc.css">
+  <link rel="stylesheet" href="https://unpkg.com/@free-fonts/jigmo-tc@1.0.0/jigmo-tc.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&amp;family=Noto+Sans+TC:wght@400;700&amp;family=Noto+Serif+SC:wght@400;700&amp;family=Noto+Serif+TC:wght@400;700&amp;display=swap">
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101112;
+      --panel: #17191b;
+      --panel-2: #1f2225;
+      --line: #34383d;
+      --text: #f2f0eb;
+      --muted: #aaa39a;
+      --accent: #78b7a6;
+      --accent-2: #d9b36c;
+      --danger: #d97d74;
+      --field: #0d0e0f;
+      --card-head: #131517;
+      --row: #121416;
+      --button-active-text: #ffffff;
+      --primary-bg: #20362f;
+      --primary-border: #3f7566;
+    }
+
+    :root[data-theme="light"] {
+      color-scheme: light;
+      --bg: #f6f3ed;
+      --panel: #ffffff;
+      --panel-2: #ece7df;
+      --line: #cfc7bc;
+      --text: #1b1a18;
+      --muted: #6f6860;
+      --accent: #2f7d6d;
+      --accent-2: #9c671c;
+      --danger: #a8443d;
+      --field: #ffffff;
+      --card-head: #f0ebe4;
+      --row: #fbf8f3;
+      --button-active-text: #111111;
+      --primary-bg: #dcebe5;
+      --primary-border: #2f7d6d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 18px;
+      align-items: end;
+      padding: 10px 0 20px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 680;
+      letter-spacing: 0;
+    }
+
+    .sub {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .header-actions {
+      display: grid;
+      gap: 8px;
+      justify-items: end;
+    }
+
+    .header-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+
+    .segmented {
+      display: inline-flex;
+      gap: 4px;
+      padding: 4px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    .segmented button {
+      min-width: 46px;
+      padding: 5px 8px;
+      border-radius: 5px;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+    }
+
+    .segmented button[aria-pressed="true"] {
+      background: var(--panel-2);
+      color: var(--text);
+    }
+
+    .theme-toggle {
+      width: 42px;
+      height: 42px;
+      display: inline-grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      color: var(--text);
+      font-size: 20px;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .theme-toggle:hover {
+      border-color: var(--accent);
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 320px minmax(0, 1fr);
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .tools {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    section,
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    section {
+      padding: 14px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 13px;
+      font-weight: 680;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 180px;
+      resize: vertical;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 12px;
+      background: var(--field);
+      color: var(--text);
+      font: 20px/1.7 ui-serif, "Times New Roman", serif;
+    }
+
+    button,
+    select,
+    input[type="range"] {
+      font: inherit;
+    }
+
+    select {
+      min-height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 5px 28px 5px 8px;
+      background: var(--panel-2);
+      color: var(--text);
+    }
+
+    .button-row,
+    .preset-grid,
+    .font-toggles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 7px 10px;
+      background: var(--panel-2);
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    button:hover,
+    button[aria-pressed="true"] {
+      border-color: var(--accent);
+      color: var(--button-active-text);
+    }
+
+    .primary {
+      background: var(--primary-bg);
+      border-color: var(--primary-border);
+    }
+
+    label {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .control {
+      display: grid;
+      gap: 8px;
+    }
+
+    .switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 6px 8px;
+      background: var(--panel-2);
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    .switch input {
+      accent-color: var(--accent);
+    }
+
+    .font-toggles {
+      display: grid;
+    }
+
+    .font-control {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: center;
+      width: 100%;
+    }
+
+    .font-control .switch {
+      min-width: 0;
+    }
+
+    .font-control select {
+      max-width: 112px;
+    }
+
+    .compare {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      min-width: 0;
+      overflow: hidden;
+    }
+
+    .card-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      padding: 9px 11px;
+      background: var(--card-head);
+    }
+
+    .font-name {
+      font-weight: 680;
+      font-size: 14px;
+    }
+
+    .font-stack {
+      color: var(--muted);
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 11px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .sample {
+      min-height: 168px;
+      padding: 16px;
+      font-size: var(--sample-size, 32px);
+      line-height: 1.75;
+      overflow-wrap: anywhere;
+    }
+
+    .system-serif {
+      font-family: serif;
+    }
+
+    .system-sans {
+      font-family: sans-serif;
+    }
+
+    .glyph-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      align-items: stretch;
+    }
+
+    .glyph {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: 72px minmax(140px, 1fr);
+    }
+
+    .glyph-label {
+      padding: 6px 8px;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      line-height: 1.45;
+      min-width: 0;
+    }
+
+    .glyph-char {
+      min-height: 140px;
+      display: grid;
+      place-items: center;
+      font-size: var(--glyph-size, 58px);
+      line-height: 1;
+    }
+
+    .codepoints {
+      display: grid;
+      gap: 6px;
+      max-height: 280px;
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .cp-row {
+      display: grid;
+      grid-template-columns: 42px minmax(0, 1fr) auto;
+      gap: 9px;
+      align-items: center;
+      padding: 6px 8px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--row);
+    }
+
+    .cp-char {
+      font-size: 28px;
+      line-height: 1;
+      text-align: center;
+    }
+
+    .cp-meta {
+      min-width: 0;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      color: var(--muted);
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+
+    .cp-note {
+      color: var(--accent-2);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .hint {
+      margin: 9px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .warn {
+      color: var(--danger);
+    }
+
+    @media (max-width: 900px) {
+      main {
+        padding: 18px;
+      }
+
+      header,
+      .layout,
+      .compare {
+        grid-template-columns: 1fr;
+      }
+
+      .header-actions {
+        justify-items: start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1 data-i18n="title">中文自由字体 Webfonts 演示</h1>
+        <p class="sub" data-i18n="subtitle">用同一段文字比较文津宋体、源起明体、源样明体、Jigmo、Noto 与系统 fallback。</p>
+      </div>
+      <div class="header-actions">
+        <div class="header-controls">
+          <button type="button" id="themeToggle" class="theme-toggle" aria-label="Switch to light mode">☀</button>
+          <div class="segmented" aria-label="Language">
+            <button type="button" data-lang="zh-Hant" aria-pressed="false">繁中</button>
+            <button type="button" data-lang="zh-Hans" aria-pressed="true">简中</button>
+            <button type="button" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="tools">
+        <section>
+          <h2 data-i18n="input">Input</h2>
+          <textarea id="textInput" spellcheck="false">趙士𦑌 齊𤇸 張𦒎 趙時𤎖 石𡼖 呂𡌳
+吕 呂 台 臺 后 後 发 發 髮 龟 龜 𰻞𰻞麵 ABC abc 123</textarea>
+          <div class="button-row" style="margin-top: 10px;">
+            <button class="primary" id="applyInput" data-i18n="apply">Apply</button>
+            <button id="clearInput" data-i18n="clear">Clear</button>
+          </div>
+        </section>
+
+        <section>
+          <h2 data-i18n="presets">Presets</h2>
+          <div class="preset-grid">
+            <button data-preset="rare" data-i18n="presetRare">Rare names</button>
+            <button data-preset="pairs" data-i18n="presetPairs">Codepoint pairs</button>
+            <button data-preset="latin" data-i18n="presetLatin">Latin + CJK</button>
+            <button data-preset="ivs" data-i18n="presetCompat">Compatibility</button>
+          </div>
+        </section>
+
+        <section>
+          <h2>OpenCC</h2>
+          <div class="button-row">
+            <button data-convert="s2t">S → T</button>
+            <button data-convert="t2s">T → S</button>
+          </div>
+          <p class="hint" data-i18n="openccHint">Conversion changes characters such as 吕/呂; font comparison changes glyph shape for the same codepoint.</p>
+        </section>
+
+        <section>
+          <h2 data-i18n="display">Display</h2>
+          <div class="control">
+            <label for="sampleSize" data-i18n="textSize">Text size</label>
+            <input id="sampleSize" type="range" min="20" max="52" value="32">
+          </div>
+          <div class="control" style="margin-top: 12px;">
+            <label for="glyphSize" data-i18n="glyphSize">Glyph size</label>
+            <input id="glyphSize" type="range" min="42" max="96" value="58">
+          </div>
+        </section>
+
+        <section>
+          <h2 data-i18n="fonts">Fonts</h2>
+          <div class="font-toggles" id="fontToggles"></div>
+        </section>
+
+        <section>
+          <h2 data-i18n="codepoints">Codepoints</h2>
+          <div id="codepoints" class="codepoints"></div>
+          <p class="hint" data-i18n="codepointHint">Distinct Unicode codepoints can intentionally render with different regional or historical forms.</p>
+        </section>
+      </aside>
+
+      <div>
+        <div class="compare" id="compare"></div>
+
+        <section style="margin-top: 14px;">
+          <h2 data-i18n="singleGlyph">Single Glyph Comparison</h2>
+          <div id="glyphGrid" class="glyph-grid"></div>
+          <p class="hint" data-i18n="singleGlyphHint">The first non-space character in the input is magnified here. Put 吕 or 呂 first to inspect that exact codepoint.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/opencc-js@1.4.0/dist/umd/full.js"></script>
+  <script>
+    const fontGroups = [
+      {
+        id: "wenjin",
+        label: "WenJin Mincho",
+        variants: {
+          default: {
+            label: "Default",
+            family: "\"WenJin Mincho Plane 0\", \"WenJin Mincho Plane 2\", \"WenJin Mincho Plane 3\", serif",
+            stack: "WenJin Mincho Plane 0, 2, 3"
+          }
+        }
+      },
+      {
+        id: "genki",
+        label: "Genki Mincho",
+        variants: {
+          default: {
+            label: "Default",
+            family: "\"GenKiMin2TC\", serif",
+            stack: "GenKiMin2TC"
+          }
+        }
+      },
+      {
+        id: "genyo",
+        label: "GenYo Mincho",
+        variants: {
+          default: {
+            label: "Default",
+            family: "\"GenYoMin2TC\", serif",
+            stack: "GenYoMin2TC"
+          }
+        }
+      },
+      {
+        id: "jigmo",
+        label: "Jigmo",
+        autoByLang: {
+          "zh-Hans": "sc",
+          "zh-Hant": "tc",
+          en: "base"
+        },
+        variants: {
+          auto: { label: "Auto" },
+          tc: {
+            label: "TC",
+            family: "\"Jigmo TC\", serif",
+            stack: "Jigmo TC"
+          },
+          sc: {
+            label: "SC",
+            family: "\"Jigmo SC\", serif",
+            stack: "Jigmo SC"
+          },
+          base: {
+            label: "Original",
+            family: "\"Jigmo\", serif",
+            stack: "Jigmo"
+          }
+        }
+      },
+      {
+        id: "noto-serif",
+        label: "Noto Serif",
+        autoByLang: {
+          "zh-Hans": "sc",
+          "zh-Hant": "tc",
+          en: "sc"
+        },
+        variants: {
+          auto: { label: "Auto" },
+          sc: {
+            label: "SC",
+            family: "\"Noto Serif SC\", serif",
+            stack: "Noto Serif SC"
+          },
+          tc: {
+            label: "TC",
+            family: "\"Noto Serif TC\", serif",
+            stack: "Noto Serif TC"
+          }
+        }
+      },
+      {
+        id: "noto-sans",
+        label: "Noto Sans",
+        autoByLang: {
+          "zh-Hans": "sc",
+          "zh-Hant": "tc",
+          en: "sc"
+        },
+        variants: {
+          auto: { label: "Auto" },
+          sc: {
+            label: "SC",
+            family: "\"Noto Sans SC\", sans-serif",
+            stack: "Noto Sans SC"
+          },
+          tc: {
+            label: "TC",
+            family: "\"Noto Sans TC\", sans-serif",
+            stack: "Noto Sans TC"
+          }
+        }
+      },
+      {
+        id: "system-serif",
+        label: "System serif",
+        variants: {
+          default: {
+            label: "Default",
+            family: "serif",
+            stack: "serif"
+          }
+        }
+      },
+      {
+        id: "system-sans",
+        label: "System sans",
+        variants: {
+          default: {
+            label: "Default",
+            family: "sans-serif",
+            stack: "sans-serif"
+          }
+        }
+      }
+    ];
+
+    const presets = {
+      rare: "憂鬱的臺灣烏龜\n趙士𦑌 齊𤇸 張𦒎 趙時𤎖 石𡼖 呂𡌳\n王𡨅 李𪘏 𠀋 𠮷 𫝀",
+      pairs: "吕 呂\n台 臺 颱 檯\n后 後\n发 發 髮\n里 裏 裡\n龟 龜",
+      latin: "ABC abc 123\nHamburgefonts\n翩翩起舞 春江花月夜\nOpenType punctuation: 「」『』，。、！？",
+      ivs: "﨑 崎\n神 神\n福 福\n吕 呂\n一 𠀋 𠀀 𪚥"
+    };
+
+    const labels = {
+      "zh-Hant": {
+        title: "中文自由字型 Webfonts 演示",
+        subtitle: "用同一段文字比較文津宋體、源起明體、源樣明體、Jigmo、Noto 與系統 fallback。",
+        input: "輸入",
+        apply: "套用",
+        clear: "清除",
+        presets: "範例",
+        presetRare: "罕見人名",
+        presetPairs: "碼位對照",
+        presetLatin: "拉丁 + CJK",
+        presetCompat: "相容字",
+        openccHint: "OpenCC 會轉換字元，例如吕/呂；字型比較則是比較同一碼位的字形差異。",
+        display: "顯示",
+        textSize: "文字大小",
+        glyphSize: "單字大小",
+        fonts: "字型",
+        codepoints: "碼位",
+        codepointHint: "不同 Unicode 碼位可以刻意呈現不同地區或歷史字形。",
+        singleGlyph: "單字放大比較",
+        singleGlyphHint: "輸入中的第一個非空白字元會在這裡放大。把吕或呂放在開頭即可檢查該碼位。"
+      },
+      "zh-Hans": {
+        title: "中文自由字体 Webfonts 演示",
+        subtitle: "用同一段文字比较文津宋体、源起明体、源样明体、Jigmo、Noto 与系统 fallback。",
+        input: "输入",
+        apply: "套用",
+        clear: "清除",
+        presets: "范例",
+        presetRare: "罕见人名",
+        presetPairs: "码位对照",
+        presetLatin: "拉丁 + CJK",
+        presetCompat: "兼容字",
+        openccHint: "OpenCC 会转换字符，例如吕/呂；字体比较则是比较同一码位的字形差异。",
+        display: "显示",
+        textSize: "文字大小",
+        glyphSize: "单字大小",
+        fonts: "字体",
+        codepoints: "码位",
+        codepointHint: "不同 Unicode 码位可以刻意呈现不同地区或历史字形。",
+        singleGlyph: "单字放大比较",
+        singleGlyphHint: "输入中的第一个非空白字符会在这里放大。把吕或呂放在开头即可检查该码位。"
+      },
+      en: {
+        title: "Chinese Free Font Webfonts Demo",
+        subtitle: "Compare WenJin Mincho, Genki Mincho, GenYo Mincho, Jigmo, Noto, and system fallback with the same text.",
+        input: "Input",
+        apply: "Apply",
+        clear: "Clear",
+        presets: "Presets",
+        presetRare: "Rare names",
+        presetPairs: "Codepoint pairs",
+        presetLatin: "Latin + CJK",
+        presetCompat: "Compatibility",
+        openccHint: "OpenCC changes characters such as 吕/呂; font comparison changes glyph shape for the same codepoint.",
+        display: "Display",
+        textSize: "Text size",
+        glyphSize: "Glyph size",
+        fonts: "Fonts",
+        codepoints: "Codepoints",
+        codepointHint: "Distinct Unicode codepoints can intentionally render with different regional or historical forms.",
+        singleGlyph: "Single Glyph Comparison",
+        singleGlyphHint: "The first non-space character in the input is magnified here. Put 吕 or 呂 first to inspect that exact codepoint."
+      }
+    };
+
+    const state = {
+      text: document.getElementById("textInput").value,
+      visible: new Set(fontGroups.map((group) => group.id)),
+      variants: Object.fromEntries(fontGroups.map((group) => [
+        group.id,
+        group.variants.auto ? "auto" : "default"
+      ])),
+      converters: {},
+      lang: "zh-Hans",
+      theme: "dark"
+    };
+
+    const input = document.getElementById("textInput");
+    const compare = document.getElementById("compare");
+    const glyphGrid = document.getElementById("glyphGrid");
+    const codepoints = document.getElementById("codepoints");
+
+    function escapeHtml(value) {
+      return value.replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        "\"": "&quot;",
+        "'": "&#39;"
+      }[char]));
+    }
+
+    function escapeAttr(value) {
+      return escapeHtml(value).replace(/`/g, "&#96;");
+    }
+
+    function chars(value) {
+      return Array.from(value);
+    }
+
+    function codepoint(char) {
+      return "U+" + char.codePointAt(0).toString(16).toUpperCase().padStart(4, "0");
+    }
+
+    function firstVisibleChar(value) {
+      return chars(value).find((char) => !/\s/.test(char)) || "吕";
+    }
+
+    function effectiveVariantId(group) {
+      const selected = state.variants[group.id] || (group.variants.auto ? "auto" : "default");
+      if (selected !== "auto") return selected;
+      return group.autoByLang?.[state.lang] || group.autoByLang?.en || Object.keys(group.variants)[0];
+    }
+
+    function activeFonts() {
+      return fontGroups
+        .filter((group) => state.visible.has(group.id))
+        .map((group) => {
+          const selected = state.variants[group.id] || (group.variants.auto ? "auto" : "default");
+          const effective = effectiveVariantId(group);
+          const variant = group.variants[effective];
+          const suffix = selected === "auto" && group.variants.auto
+            ? ` (${group.variants.auto.label}: ${variant.label})`
+            : group.variants.default
+              ? ""
+              : ` ${variant.label}`;
+          return {
+            id: group.id,
+            label: `${group.label}${suffix}`,
+            groupLabel: group.label,
+            family: variant.family,
+            stack: variant.stack
+          };
+        });
+    }
+
+    function renderCompare() {
+      compare.innerHTML = activeFonts()
+        .map((font) => `
+          <article class="card">
+            <div class="card-head">
+              <div class="font-name">${font.label}</div>
+              <div class="font-stack">${font.stack}</div>
+            </div>
+            <div class="sample" style="font-family: ${escapeAttr(font.family)};">${escapeHtml(state.text).replace(/\n/g, "<br>")}</div>
+          </article>
+        `)
+        .join("");
+    }
+
+    function renderGlyphGrid() {
+      const char = firstVisibleChar(state.text);
+      glyphGrid.innerHTML = activeFonts()
+        .map((font) => `
+          <div class="glyph">
+            <div class="glyph-label">${font.label} · ${codepoint(char)}</div>
+            <div class="glyph-char" style="font-family: ${escapeAttr(font.family)};">${escapeHtml(char)}</div>
+          </div>
+        `)
+        .join("");
+    }
+
+    function renderCodepoints() {
+      const seen = new Set();
+      const rows = chars(state.text)
+        .filter((char) => !/\s/.test(char))
+        .filter((char) => {
+          const cp = codepoint(char);
+          if (seen.has(cp)) return false;
+          seen.add(cp);
+          return true;
+        })
+        .slice(0, 80)
+        .map((char) => {
+          const cp = codepoint(char);
+          const note = cp === "U+5415" ? "吕" : cp === "U+5442" ? "呂" : "";
+          return `
+            <div class="cp-row">
+              <div class="cp-char system-serif">${escapeHtml(char)}</div>
+              <div class="cp-meta">${cp}<br>${escapeHtml(char.normalize("NFKC")) === char ? "NFKC same" : "NFKC -> " + escapeHtml(char.normalize("NFKC"))}</div>
+              <div class="cp-note">${note}</div>
+            </div>
+          `;
+        });
+      codepoints.innerHTML = rows.join("") || "<div class=\"hint\">No characters.</div>";
+    }
+
+    function renderToggles() {
+      document.getElementById("fontToggles").innerHTML = fontGroups.map((group) => {
+        const variantKeys = Object.keys(group.variants);
+        const select = variantKeys.length > 1
+          ? `<select data-variant="${group.id}" aria-label="${group.label} variant">
+              ${variantKeys.map((key) => `<option value="${key}" ${state.variants[group.id] === key ? "selected" : ""}>${group.variants[key].label}</option>`).join("")}
+            </select>`
+          : "";
+        return `
+          <div class="font-control">
+            <label class="switch">
+              <input type="checkbox" data-font="${group.id}" ${state.visible.has(group.id) ? "checked" : ""}>
+              ${group.label}
+            </label>
+            ${select}
+          </div>
+        `;
+      }).join("");
+    }
+
+    function setLanguage(lang) {
+      state.lang = lang;
+      document.documentElement.lang = lang;
+      document.querySelectorAll("[data-i18n]").forEach((node) => {
+        node.textContent = labels[lang][node.dataset.i18n];
+      });
+      document.querySelectorAll("[data-lang]").forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.lang === lang));
+      });
+      renderCompare();
+      renderGlyphGrid();
+      renderToggles();
+    }
+
+    function setTheme(theme) {
+      state.theme = theme;
+      document.documentElement.dataset.theme = theme;
+      const button = document.getElementById("themeToggle");
+      const next = theme === "dark" ? "light" : "dark";
+      button.textContent = theme === "dark" ? "☀" : "☾";
+      button.setAttribute("aria-label", `Switch to ${next} mode`);
+    }
+
+    function renderAll() {
+      document.documentElement.style.setProperty("--sample-size", document.getElementById("sampleSize").value + "px");
+      document.documentElement.style.setProperty("--glyph-size", document.getElementById("glyphSize").value + "px");
+      renderCompare();
+      renderGlyphGrid();
+      renderCodepoints();
+      renderToggles();
+    }
+
+    function setText(value) {
+      state.text = value;
+      input.value = value;
+      renderAll();
+    }
+
+    function getConverter(name) {
+      if (!window.OpenCC || !window.OpenCC.Converter) return null;
+      if (!state.converters[name]) {
+        const [from, to] = name === "s2t" ? ["cn", "t"] : ["t", "cn"];
+        state.converters[name] = window.OpenCC.Converter({ from, to });
+      }
+      return state.converters[name];
+    }
+
+    document.getElementById("applyInput").addEventListener("click", () => setText(input.value));
+    document.getElementById("clearInput").addEventListener("click", () => setText(""));
+    input.addEventListener("input", () => {
+      state.text = input.value;
+      renderAll();
+    });
+
+    document.querySelectorAll("[data-preset]").forEach((button) => {
+      button.addEventListener("click", () => setText(presets[button.dataset.preset]));
+    });
+
+    document.querySelectorAll("[data-convert]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const converter = getConverter(button.dataset.convert);
+        if (!converter) {
+          return;
+        }
+        setText(converter(state.text));
+      });
+    });
+
+    document.querySelectorAll("[data-lang]").forEach((button) => {
+      button.addEventListener("click", () => setLanguage(button.dataset.lang));
+    });
+
+    document.getElementById("themeToggle").addEventListener("click", () => {
+      setTheme(state.theme === "dark" ? "light" : "dark");
+    });
+
+    document.getElementById("fontToggles").addEventListener("change", (event) => {
+      const id = event.target.dataset.font;
+      const variantGroup = event.target.dataset.variant;
+      if (id) {
+        if (event.target.checked) {
+          state.visible.add(id);
+        } else {
+          state.visible.delete(id);
+        }
+      }
+      if (variantGroup) {
+        state.variants[variantGroup] = event.target.value;
+      }
+      renderCompare();
+      renderGlyphGrid();
+      renderToggles();
+    });
+
+    document.getElementById("sampleSize").addEventListener("input", renderAll);
+    document.getElementById("glyphSize").addEventListener("input", renderAll);
+
+    renderAll();
+    setLanguage(state.lang);
+    setTheme(state.theme);
+  </script>
+</body>
+</html>
