@@ -1,0 +1,27 @@
+{
+  "name": "@free-fonts/wenjin-mincho",
+  "version": "1.0.0",
+  "description": "Chunked woff2 webfonts for WenJin Mincho.",
+  "license": "MIT AND OFL-1.1",
+  "main": "wenjin-mincho.css",
+  "style": "wenjin-mincho.css",
+  "files": [
+    "wenjin-mincho.css",
+    "fonts",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frankslin/free-fonts.git",
+    "directory": "wenjin-mincho"
+  },
+  "keywords": [
+    "font",
+    "webfont",
+    "woff2",
+    "cjk",
+    "mincho",
+    "songti"
+  ]
+}
