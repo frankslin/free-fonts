@@ -1,0 +1,27 @@
+{
+  "name": "@free-fonts/lxgw-wenkai",
+  "version": "1.0.0",
+  "description": "Chunked woff2 webfonts for LXGW WenKai.",
+  "license": "MIT AND OFL-1.1",
+  "main": "lxgw-wenkai.css",
+  "style": "lxgw-wenkai.css",
+  "files": [
+    "lxgw-wenkai.css",
+    "fonts",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frankslin/free-fonts.git",
+    "directory": "lxgw-wenkai"
+  },
+  "keywords": [
+    "font",
+    "webfont",
+    "woff2",
+    "cjk",
+    "kaiti",
+    "handwriting"
+  ]
+}
