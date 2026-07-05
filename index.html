@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="./wenjin-mincho/wenjin-mincho.css">
   <link rel="stylesheet" href="./genki-mincho/genki-mincho.css">
   <link rel="stylesheet" href="./genyo-mincho/genyo-mincho.css">
+  <link rel="stylesheet" href="./black-sugar-plum-candy/black-sugar-plum-candy.css">
+  <link rel="stylesheet" href="./lxgw-wenkai/lxgw-wenkai.css">
+  <link rel="stylesheet" href="./lxgw-wenkai-gb/lxgw-wenkai-gb.css">
+  <link rel="stylesheet" href="./lxgw-wenkai-tc/lxgw-wenkai-tc.css">
   <link rel="stylesheet" href="https://unpkg.com/@free-fonts/jigmo@1.0.0/jigmo.css">
   <link rel="stylesheet" href="https://unpkg.com/@free-fonts/jigmo-sc@1.0.0/jigmo-sc.css">
   <link rel="stylesheet" href="https://unpkg.com/@free-fonts/jigmo-tc@1.0.0/jigmo-tc.css">
@@ -802,7 +806,7 @@
           <span class="title-kicker" data-i18n="titleKicker">中文网页内嵌字体</span>
           <span class="title-main" data-i18n="titleMain">大比拼</span>
         </h1>
-        <p class="sub" data-i18n="subtitle">用同一段文字比较文津宋体、源起明体、源样明体、Jigmo、Noto 与系统 fallback。</p>
+        <p class="sub" data-i18n="subtitle">用同一段文字比较文津宋体、源起明体、源样明体、霞鹜文楷、Jigmo、Noto 与系统 fallback。</p>
         <div class="hero-actions">
           <button type="button" data-preset="normalText" data-i18n="presetNormalText">阅读段落</button>
           <button type="button" data-preset="cjkCore" data-i18n="presetCjkCore">罕见异体字</button>
@@ -816,7 +820,7 @@
       <aside class="tools">
         <section>
           <h2 data-i18n="input">输入</h2>
-          <textarea id="textInput" spellcheck="false">春江花月夜，江流宛轉繞芳甸，月照花林皆似霰。
+          <textarea id="textInput" spellcheck="false">春江花月夜，江流宛轉遶芳甸，月照花林皆似霰。
 
 The quick brown fox jumps over the lazy dog.
 
@@ -943,6 +947,86 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
         }
       },
       {
+        id: "black-sugar-plum-candy",
+        labelEn: "Black Sugar Plum Candy",
+        labelZhHant: "黑糖话梅",
+        variants: {
+          default: {
+            label: "Default",
+            family: "\"Black Sugar Plum Candy\", sans-serif",
+            stack: "Black Sugar Plum Candy",
+            weight: 700
+          }
+        }
+      },
+      {
+        id: "lxgw-wenkai",
+        labelEn: "LXGW WenKai",
+        labelZhHant: "霞鶩文楷",
+        autoByLang: {
+          "zh-Hans": "gb-regular",
+          "zh-Hant": "tc-regular",
+          en: "original-regular"
+        },
+        variants: {
+          auto: { label: "Auto" },
+          "gb-light": {
+            label: "GB Light",
+            family: "\"LXGW WenKai GB\", cursive, sans-serif",
+            stack: "LXGW WenKai GB 300",
+            weight: 300
+          },
+          "gb-regular": {
+            label: "GB Regular",
+            family: "\"LXGW WenKai GB\", cursive, sans-serif",
+            stack: "LXGW WenKai GB 400",
+            weight: 400
+          },
+          "gb-medium": {
+            label: "GB Medium",
+            family: "\"LXGW WenKai GB\", cursive, sans-serif",
+            stack: "LXGW WenKai GB 500",
+            weight: 500
+          },
+          "original-light": {
+            label: "Original Light",
+            family: "\"LXGW WenKai\", cursive, sans-serif",
+            stack: "LXGW WenKai 300",
+            weight: 300
+          },
+          "original-regular": {
+            label: "Original Regular",
+            family: "\"LXGW WenKai\", cursive, sans-serif",
+            stack: "LXGW WenKai 400",
+            weight: 400
+          },
+          "original-medium": {
+            label: "Original Medium",
+            family: "\"LXGW WenKai\", cursive, sans-serif",
+            stack: "LXGW WenKai 500",
+            weight: 500
+          },
+          "tc-light": {
+            label: "TC Light",
+            family: "\"LXGW WenKai TC\", cursive, sans-serif",
+            stack: "LXGW WenKai TC 300",
+            weight: 300
+          },
+          "tc-regular": {
+            label: "TC Regular",
+            family: "\"LXGW WenKai TC\", cursive, sans-serif",
+            stack: "LXGW WenKai TC 400",
+            weight: 400
+          },
+          "tc-medium": {
+            label: "TC Medium",
+            family: "\"LXGW WenKai TC\", cursive, sans-serif",
+            stack: "LXGW WenKai TC 500",
+            weight: 500
+          }
+        }
+      },
+      {
         id: "jigmo",
         labelEn: "Jigmo",
         labelZhHant: "字雲",
@@ -1042,7 +1126,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
 
     const presets = {
       cjkCore: "𰻞 𠀀 𠀋 𪚥\n𫝀 𫞂 𫠝\n𬺰 𭀧 𰻞𰻞麵\n里 裏 裡 发 發 髮 后 後 台 臺 檯 面 麵\n群 羣 青 靑 雪 雪 丑 醜",
-      normalText: "春江花月夜，江流宛轉繞芳甸，月照花林皆似霰。\n\nThe quick brown fox jumps over the lazy dog.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      normalText: "春江花月夜，江流宛轉遶芳甸，月照花林皆似霰。\n\nThe quick brown fox jumps over the lazy dog.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit.",
       punctuation: "「」『』（）【】《》〈〉\n，。、！？；：\n· … — –\n“中文, English, 123。”",
       unicodeEdge: "ＡＢＣ ａｂｃ １２３\n① ② ③ ㈠㈡㈢\n㎞ ㎡ ㏒\nﬁ ﬂ\n零宽空格​U+200B\n零宽连接符‍U+200D\n左至右标记‎U+200E\n右至左标记‏U+200F",
       mixScript: "中文 English 日本語 한글 𠀋\nOpenType, Unicode, 12345\n上海 Tokyo 서울 New York"
@@ -1052,7 +1136,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
       "zh-Hant": {
         titleKicker: "中文網頁內嵌字型",
         titleMain: "大比拼",
-        subtitle: "用同一段文字比較文津宋體、源起明體、源樣明體、Jigmo、Noto 與系統 fallback。",
+        subtitle: "用同一段文字比較文津宋體、源起明體、源樣明體、霞鶩文楷、Jigmo、思源/Noto 與系統的 fallback 字型。",
         input: "輸入",
         apply: "套用",
         clear: "清除",
@@ -1062,8 +1146,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
         presetPunctuation: "標點寬度",
         presetUnicodeEdge: "相容與控制",
         presetMixScript: "多語混排",
-        openccS2T: "簡 -> 繁",
-        openccT2S: "繁 -> 簡",
+        openccS2T: "簡轉繁",
+        openccT2S: "繁轉簡",
         openccHint: "OpenCC 會轉換字元，例如吕/呂；字型比較則是比較同一碼位的字形差異。",
         display: "顯示",
         textSize: "文字大小",
@@ -1078,9 +1162,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
       "zh-Hans": {
         titleKicker: "中文网页内嵌字体",
         titleMain: "大比拼",
-        subtitle: "用同一段文字比较文津宋体、源起明体、源样明体、Jigmo、Noto 与系统 fallback。",
+        subtitle: "用同一段文字比较文津宋体、源起明体、源样明体、霞鹜文楷、Jigmo、Noto 与系统 fallback。",
         input: "输入",
-        apply: "套用",
+        apply: "应用",
         clear: "清除",
         presets: "范例",
         presetCjkCore: "罕见异体字",
@@ -1088,8 +1172,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
         presetPunctuation: "标点宽度",
         presetUnicodeEdge: "兼容与控制",
         presetMixScript: "多语混排",
-        openccS2T: "简 -> 繁",
-        openccT2S: "繁 -> 简",
+        openccS2T: "简转繁",
+        openccT2S: "繁转简",
         openccHint: "OpenCC 会转换字符，例如吕/呂；字体比较则是比较同一码位的字形差异。",
         display: "显示",
         textSize: "文字大小",
@@ -1102,9 +1186,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
         shareBtn: "复制链接"
       },
       en: {
-        titleKicker: "Webfont",
+        titleKicker: "CJK Webfont",
         titleMain: "Showdown",
-        subtitle: "Compare WenJin Mincho, Genki Mincho, GenYo Mincho, Jigmo, Noto, and system fallback with the same text.",
+        subtitle: "Compare WenJin Mincho, Genki Mincho, GenYo Mincho, Black Sugar Plum Candy, LXGW WenKai, Jigmo, Noto, and system fallback with the same text.",
         input: "Input",
         apply: "Apply",
         clear: "Clear",
@@ -1239,7 +1323,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
             label: `${localizedFontName(group)}${suffix}`,
             groupLabel: localizedFontName(group),
             family: variant.family,
-            stack: variant.stack
+            stack: variant.stack,
+            weight: variant.weight || 400
           };
         });
     }
@@ -1252,7 +1337,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
               <div class="font-name">${font.label}</div>
               <div class="font-stack">${font.stack}</div>
             </div>
-            <div class="sample" style="font-family: ${escapeAttr(font.family)};">${escapeHtml(state.text).replace(/\n/g, "<br>")}</div>
+            <div class="sample" style="font-family: ${escapeAttr(font.family)}; font-weight: ${font.weight};">${escapeHtml(state.text).replace(/\n/g, "<br>")}</div>
           </article>
         `)
         .join("");
@@ -1265,7 +1350,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
         .map((font) => `
           <div class="glyph">
             <div class="glyph-label">${font.label}</div>
-            <div class="glyph-char" style="font-family: ${escapeAttr(font.family)};">${escapeHtml(char)}</div>
+            <div class="glyph-char" style="font-family: ${escapeAttr(font.family)}; font-weight: ${font.weight};">${escapeHtml(char)}</div>
           </div>
         `)
         .join("");
@@ -1319,6 +1404,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
       inspectorQuery.value = formatCodepoint(selected);
       inspectorStatus.textContent = `${formatCodepoint(selected)} · ${layout.cols}×${layout.rows}`;
       inspectorGrid.style.fontFamily = font.family;
+      inspectorGrid.style.fontWeight = font.weight;
       inspectorGrid.style.setProperty("--inspector-cols", layout.cols);
       inspectorGrid.style.setProperty("--inspector-rows", layout.rows);
       inspectorGrid.style.setProperty("--inspector-glyph-size", `${layout.glyphSize}px`);
@@ -1660,7 +1746,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
         if (th && ["light", "dark"].includes(th)) result.theme = th;
         if (params.has("f")) {
           const validIds = new Set(fontGroups.map((g) => g.id));
-          result.visible = new Set(params.get("f").split(",").filter((id) => validIds.has(id)));
+          const ids = params.get("f").split(",");
+          if (ids.includes("lxgw-wenkai-tc") && !ids.includes("lxgw-wenkai")) ids.push("lxgw-wenkai");
+          result.visible = new Set(ids.filter((id) => validIds.has(id)));
         }
         if (params.has("v")) {
           result.variants = {};
@@ -1668,6 +1756,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
             const [id, v] = entry.split(":");
             const group = fontGroups.find((g) => g.id === id);
             if (group && group.variants[v]) result.variants[id] = v;
+            if (id === "lxgw-wenkai") {
+              const migrated = {
+                light: "original-light",
+                default: "original-regular",
+                medium: "original-medium",
+                "sc-light": "gb-light",
+                "sc-regular": "gb-regular",
+                "sc-medium": "gb-medium"
+              }[v];
+              if (migrated) result.variants["lxgw-wenkai"] = migrated;
+            }
+            if (id === "lxgw-wenkai-tc") {
+              result.variants["lxgw-wenkai"] = { light: "tc-light", default: "tc-regular", medium: "tc-medium" }[v] || "tc-regular";
+            }
           });
         }
         return result;
