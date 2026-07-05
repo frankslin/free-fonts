@@ -1,0 +1,27 @@
+{
+  "name": "@free-fonts/black-sugar-plum-candy",
+  "version": "1.0.0",
+  "description": "Chunked woff2 webfonts for Black Sugar Plum Candy.",
+  "license": "MIT AND OFL-1.1",
+  "main": "black-sugar-plum-candy.css",
+  "style": "black-sugar-plum-candy.css",
+  "files": [
+    "black-sugar-plum-candy.css",
+    "fonts",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frankslin/free-fonts.git",
+    "directory": "black-sugar-plum-candy"
+  },
+  "keywords": [
+    "font",
+    "webfont",
+    "woff2",
+    "cjk",
+    "sans-serif",
+    "rounded"
+  ]
+}
