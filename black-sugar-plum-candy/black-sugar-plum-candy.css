@@ -8,8 +8,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-000000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-000000.woff2') format('woff2');
   unicode-range: U+0000-00FF;
 }
 
@@ -17,8 +17,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-000100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-000100.woff2') format('woff2');
   unicode-range: U+0100-01FF;
 }
 
@@ -26,8 +26,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-000200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-000200.woff2') format('woff2');
   unicode-range: U+0200-02FF;
 }
 
@@ -35,8 +35,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-000300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-000300.woff2') format('woff2');
   unicode-range: U+0300-03FF;
 }
 
@@ -44,8 +44,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-000400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-000400.woff2') format('woff2');
   unicode-range: U+0400-04FF;
 }
 
@@ -53,8 +53,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-000500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-000500.woff2') format('woff2');
   unicode-range: U+0500-05FF;
 }
 
@@ -62,8 +62,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-000e00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-000e00.woff2') format('woff2');
   unicode-range: U+0E00-0EFF;
 }
 
@@ -71,8 +71,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-001100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-001100.woff2') format('woff2');
   unicode-range: U+1100-11FF;
 }
 
@@ -80,8 +80,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-001d00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-001d00.woff2') format('woff2');
   unicode-range: U+1D00-1DFF;
 }
 
@@ -89,8 +89,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-001e00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-001e00.woff2') format('woff2');
   unicode-range: U+1E00-1EFF;
 }
 
@@ -98,8 +98,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-001f00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-001f00.woff2') format('woff2');
   unicode-range: U+1F00-1FFF;
 }
 
@@ -107,8 +107,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-002000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-002000.woff2') format('woff2');
   unicode-range: U+2000-20FF;
 }
 
@@ -116,8 +116,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-002100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-002100.woff2') format('woff2');
   unicode-range: U+2100-21FF;
 }
 
@@ -125,8 +125,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-002200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-002200.woff2') format('woff2');
   unicode-range: U+2200-22FF;
 }
 
@@ -134,8 +134,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-002300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-002300.woff2') format('woff2');
   unicode-range: U+2300-23FF;
 }
 
@@ -143,8 +143,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-002400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-002400.woff2') format('woff2');
   unicode-range: U+2400-24FF;
 }
 
@@ -152,8 +152,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-002500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-002500.woff2') format('woff2');
   unicode-range: U+2500-25FF;
 }
 
@@ -161,8 +161,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-002600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-002600.woff2') format('woff2');
   unicode-range: U+2600-26FF;
 }
 
@@ -170,8 +170,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-002700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-002700.woff2') format('woff2');
   unicode-range: U+2700-27FF;
 }
 
@@ -179,8 +179,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-002900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-002900.woff2') format('woff2');
   unicode-range: U+2900-29FF;
 }
 
@@ -188,8 +188,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-002a00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-002a00.woff2') format('woff2');
   unicode-range: U+2A00-2AFF;
 }
 
@@ -197,8 +197,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-002b00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-002b00.woff2') format('woff2');
   unicode-range: U+2B00-2BFF;
 }
 
@@ -206,8 +206,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-002c00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-002c00.woff2') format('woff2');
   unicode-range: U+2C00-2CFF;
 }
 
@@ -215,8 +215,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-002e00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-002e00.woff2') format('woff2');
   unicode-range: U+2E00-2EFF;
 }
 
@@ -224,8 +224,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-002f00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-002f00.woff2') format('woff2');
   unicode-range: U+2F00-2FFF;
 }
 
@@ -233,8 +233,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-003000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-003000.woff2') format('woff2');
   unicode-range: U+3000-30FF;
 }
 
@@ -242,8 +242,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-003100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-003100.woff2') format('woff2');
   unicode-range: U+3100-31FF;
 }
 
@@ -251,8 +251,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-003200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-003200.woff2') format('woff2');
   unicode-range: U+3200-32FF;
 }
 
@@ -260,8 +260,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-003300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-003300.woff2') format('woff2');
   unicode-range: U+3300-33FF;
 }
 
@@ -269,8 +269,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-003400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-003400.woff2') format('woff2');
   unicode-range: U+3400-34FF;
 }
 
@@ -278,8 +278,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-003500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-003500.woff2') format('woff2');
   unicode-range: U+3500-35FF;
 }
 
@@ -287,8 +287,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-003600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-003600.woff2') format('woff2');
   unicode-range: U+3600-36FF;
 }
 
@@ -296,8 +296,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-003700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-003700.woff2') format('woff2');
   unicode-range: U+3700-37FF;
 }
 
@@ -305,8 +305,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-003800.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-003800.woff2') format('woff2');
   unicode-range: U+3800-38FF;
 }
 
@@ -314,8 +314,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-003900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-003900.woff2') format('woff2');
   unicode-range: U+3900-39FF;
 }
 
@@ -323,8 +323,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-003a00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-003a00.woff2') format('woff2');
   unicode-range: U+3A00-3AFF;
 }
 
@@ -332,8 +332,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-003b00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-003b00.woff2') format('woff2');
   unicode-range: U+3B00-3BFF;
 }
 
@@ -341,8 +341,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-003c00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-003c00.woff2') format('woff2');
   unicode-range: U+3C00-3CFF;
 }
 
@@ -350,8 +350,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-003d00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-003d00.woff2') format('woff2');
   unicode-range: U+3D00-3DFF;
 }
 
@@ -359,8 +359,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-003e00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-003e00.woff2') format('woff2');
   unicode-range: U+3E00-3EFF;
 }
 
@@ -368,8 +368,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-003f00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-003f00.woff2') format('woff2');
   unicode-range: U+3F00-3FFF;
 }
 
@@ -377,8 +377,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-004000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-004000.woff2') format('woff2');
   unicode-range: U+4000-40FF;
 }
 
@@ -386,8 +386,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-004100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-004100.woff2') format('woff2');
   unicode-range: U+4100-41FF;
 }
 
@@ -395,8 +395,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-004200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-004200.woff2') format('woff2');
   unicode-range: U+4200-42FF;
 }
 
@@ -404,8 +404,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-004300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-004300.woff2') format('woff2');
   unicode-range: U+4300-43FF;
 }
 
@@ -413,8 +413,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-004400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-004400.woff2') format('woff2');
   unicode-range: U+4400-44FF;
 }
 
@@ -422,8 +422,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-004500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-004500.woff2') format('woff2');
   unicode-range: U+4500-45FF;
 }
 
@@ -431,8 +431,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-004600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-004600.woff2') format('woff2');
   unicode-range: U+4600-46FF;
 }
 
@@ -440,8 +440,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-004700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-004700.woff2') format('woff2');
   unicode-range: U+4700-47FF;
 }
 
@@ -449,8 +449,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-004800.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-004800.woff2') format('woff2');
   unicode-range: U+4800-48FF;
 }
 
@@ -458,8 +458,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-004900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-004900.woff2') format('woff2');
   unicode-range: U+4900-49FF;
 }
 
@@ -467,8 +467,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-004a00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-004a00.woff2') format('woff2');
   unicode-range: U+4A00-4AFF;
 }
 
@@ -476,8 +476,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-004b00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-004b00.woff2') format('woff2');
   unicode-range: U+4B00-4BFF;
 }
 
@@ -485,8 +485,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-004c00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-004c00.woff2') format('woff2');
   unicode-range: U+4C00-4CFF;
 }
 
@@ -494,8 +494,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-004d00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-004d00.woff2') format('woff2');
   unicode-range: U+4D00-4DFF;
 }
 
@@ -503,8 +503,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-004e00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-004e00.woff2') format('woff2');
   unicode-range: U+4E00-4EFF;
 }
 
@@ -512,8 +512,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-004f00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-004f00.woff2') format('woff2');
   unicode-range: U+4F00-4FFF;
 }
 
@@ -521,8 +521,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-005000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-005000.woff2') format('woff2');
   unicode-range: U+5000-50FF;
 }
 
@@ -530,8 +530,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-005100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-005100.woff2') format('woff2');
   unicode-range: U+5100-51FF;
 }
 
@@ -539,8 +539,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-005200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-005200.woff2') format('woff2');
   unicode-range: U+5200-52FF;
 }
 
@@ -548,8 +548,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-005300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-005300.woff2') format('woff2');
   unicode-range: U+5300-53FF;
 }
 
@@ -557,8 +557,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-005400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-005400.woff2') format('woff2');
   unicode-range: U+5400-54FF;
 }
 
@@ -566,8 +566,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-005500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-005500.woff2') format('woff2');
   unicode-range: U+5500-55FF;
 }
 
@@ -575,8 +575,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-005600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-005600.woff2') format('woff2');
   unicode-range: U+5600-56FF;
 }
 
@@ -584,8 +584,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-005700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-005700.woff2') format('woff2');
   unicode-range: U+5700-57FF;
 }
 
@@ -593,8 +593,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-005800.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-005800.woff2') format('woff2');
   unicode-range: U+5800-58FF;
 }
 
@@ -602,8 +602,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-005900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-005900.woff2') format('woff2');
   unicode-range: U+5900-59FF;
 }
 
@@ -611,8 +611,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-005a00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-005a00.woff2') format('woff2');
   unicode-range: U+5A00-5AFF;
 }
 
@@ -620,8 +620,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-005b00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-005b00.woff2') format('woff2');
   unicode-range: U+5B00-5BFF;
 }
 
@@ -629,8 +629,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-005c00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-005c00.woff2') format('woff2');
   unicode-range: U+5C00-5CFF;
 }
 
@@ -638,8 +638,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-005d00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-005d00.woff2') format('woff2');
   unicode-range: U+5D00-5DFF;
 }
 
@@ -647,8 +647,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-005e00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-005e00.woff2') format('woff2');
   unicode-range: U+5E00-5EFF;
 }
 
@@ -656,8 +656,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-005f00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-005f00.woff2') format('woff2');
   unicode-range: U+5F00-5FFF;
 }
 
@@ -665,8 +665,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-006000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-006000.woff2') format('woff2');
   unicode-range: U+6000-60FF;
 }
 
@@ -674,8 +674,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-006100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-006100.woff2') format('woff2');
   unicode-range: U+6100-61FF;
 }
 
@@ -683,8 +683,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-006200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-006200.woff2') format('woff2');
   unicode-range: U+6200-62FF;
 }
 
@@ -692,8 +692,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-006300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-006300.woff2') format('woff2');
   unicode-range: U+6300-63FF;
 }
 
@@ -701,8 +701,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-006400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-006400.woff2') format('woff2');
   unicode-range: U+6400-64FF;
 }
 
@@ -710,8 +710,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-006500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-006500.woff2') format('woff2');
   unicode-range: U+6500-65FF;
 }
 
@@ -719,8 +719,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-006600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-006600.woff2') format('woff2');
   unicode-range: U+6600-66FF;
 }
 
@@ -728,8 +728,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-006700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-006700.woff2') format('woff2');
   unicode-range: U+6700-67FF;
 }
 
@@ -737,8 +737,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-006800.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-006800.woff2') format('woff2');
   unicode-range: U+6800-68FF;
 }
 
@@ -746,8 +746,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-006900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-006900.woff2') format('woff2');
   unicode-range: U+6900-69FF;
 }
 
@@ -755,8 +755,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-006a00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-006a00.woff2') format('woff2');
   unicode-range: U+6A00-6AFF;
 }
 
@@ -764,8 +764,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-006b00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-006b00.woff2') format('woff2');
   unicode-range: U+6B00-6BFF;
 }
 
@@ -773,8 +773,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-006c00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-006c00.woff2') format('woff2');
   unicode-range: U+6C00-6CFF;
 }
 
@@ -782,8 +782,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-006d00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-006d00.woff2') format('woff2');
   unicode-range: U+6D00-6DFF;
 }
 
@@ -791,8 +791,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-006e00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-006e00.woff2') format('woff2');
   unicode-range: U+6E00-6EFF;
 }
 
@@ -800,8 +800,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-006f00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-006f00.woff2') format('woff2');
   unicode-range: U+6F00-6FFF;
 }
 
@@ -809,8 +809,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-007000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-007000.woff2') format('woff2');
   unicode-range: U+7000-70FF;
 }
 
@@ -818,8 +818,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-007100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-007100.woff2') format('woff2');
   unicode-range: U+7100-71FF;
 }
 
@@ -827,8 +827,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-007200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-007200.woff2') format('woff2');
   unicode-range: U+7200-72FF;
 }
 
@@ -836,8 +836,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-007300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-007300.woff2') format('woff2');
   unicode-range: U+7300-73FF;
 }
 
@@ -845,8 +845,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-007400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-007400.woff2') format('woff2');
   unicode-range: U+7400-74FF;
 }
 
@@ -854,8 +854,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-007500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-007500.woff2') format('woff2');
   unicode-range: U+7500-75FF;
 }
 
@@ -863,8 +863,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-007600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-007600.woff2') format('woff2');
   unicode-range: U+7600-76FF;
 }
 
@@ -872,8 +872,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-007700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-007700.woff2') format('woff2');
   unicode-range: U+7700-77FF;
 }
 
@@ -881,8 +881,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-007800.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-007800.woff2') format('woff2');
   unicode-range: U+7800-78FF;
 }
 
@@ -890,8 +890,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-007900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-007900.woff2') format('woff2');
   unicode-range: U+7900-79FF;
 }
 
@@ -899,8 +899,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-007a00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-007a00.woff2') format('woff2');
   unicode-range: U+7A00-7AFF;
 }
 
@@ -908,8 +908,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-007b00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-007b00.woff2') format('woff2');
   unicode-range: U+7B00-7BFF;
 }
 
@@ -917,8 +917,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-007c00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-007c00.woff2') format('woff2');
   unicode-range: U+7C00-7CFF;
 }
 
@@ -926,8 +926,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-007d00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-007d00.woff2') format('woff2');
   unicode-range: U+7D00-7DFF;
 }
 
@@ -935,8 +935,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-007e00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-007e00.woff2') format('woff2');
   unicode-range: U+7E00-7EFF;
 }
 
@@ -944,8 +944,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-007f00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-007f00.woff2') format('woff2');
   unicode-range: U+7F00-7FFF;
 }
 
@@ -953,8 +953,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-008000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-008000.woff2') format('woff2');
   unicode-range: U+8000-80FF;
 }
 
@@ -962,8 +962,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-008100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-008100.woff2') format('woff2');
   unicode-range: U+8100-81FF;
 }
 
@@ -971,8 +971,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-008200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-008200.woff2') format('woff2');
   unicode-range: U+8200-82FF;
 }
 
@@ -980,8 +980,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-008300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-008300.woff2') format('woff2');
   unicode-range: U+8300-83FF;
 }
 
@@ -989,8 +989,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-008400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-008400.woff2') format('woff2');
   unicode-range: U+8400-84FF;
 }
 
@@ -998,8 +998,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-008500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-008500.woff2') format('woff2');
   unicode-range: U+8500-85FF;
 }
 
@@ -1007,8 +1007,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-008600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-008600.woff2') format('woff2');
   unicode-range: U+8600-86FF;
 }
 
@@ -1016,8 +1016,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-008700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-008700.woff2') format('woff2');
   unicode-range: U+8700-87FF;
 }
 
@@ -1025,8 +1025,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-008800.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-008800.woff2') format('woff2');
   unicode-range: U+8800-88FF;
 }
 
@@ -1034,8 +1034,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-008900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-008900.woff2') format('woff2');
   unicode-range: U+8900-89FF;
 }
 
@@ -1043,8 +1043,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-008a00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-008a00.woff2') format('woff2');
   unicode-range: U+8A00-8AFF;
 }
 
@@ -1052,8 +1052,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-008b00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-008b00.woff2') format('woff2');
   unicode-range: U+8B00-8BFF;
 }
 
@@ -1061,8 +1061,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-008c00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-008c00.woff2') format('woff2');
   unicode-range: U+8C00-8CFF;
 }
 
@@ -1070,8 +1070,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-008d00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-008d00.woff2') format('woff2');
   unicode-range: U+8D00-8DFF;
 }
 
@@ -1079,8 +1079,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-008e00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-008e00.woff2') format('woff2');
   unicode-range: U+8E00-8EFF;
 }
 
@@ -1088,8 +1088,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-008f00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-008f00.woff2') format('woff2');
   unicode-range: U+8F00-8FFF;
 }
 
@@ -1097,8 +1097,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-009000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-009000.woff2') format('woff2');
   unicode-range: U+9000-90FF;
 }
 
@@ -1106,8 +1106,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-009100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-009100.woff2') format('woff2');
   unicode-range: U+9100-91FF;
 }
 
@@ -1115,8 +1115,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-009200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-009200.woff2') format('woff2');
   unicode-range: U+9200-92FF;
 }
 
@@ -1124,8 +1124,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-009300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-009300.woff2') format('woff2');
   unicode-range: U+9300-93FF;
 }
 
@@ -1133,8 +1133,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-009400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-009400.woff2') format('woff2');
   unicode-range: U+9400-94FF;
 }
 
@@ -1142,8 +1142,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-009500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-009500.woff2') format('woff2');
   unicode-range: U+9500-95FF;
 }
 
@@ -1151,8 +1151,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-009600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-009600.woff2') format('woff2');
   unicode-range: U+9600-96FF;
 }
 
@@ -1160,8 +1160,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-009700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-009700.woff2') format('woff2');
   unicode-range: U+9700-97FF;
 }
 
@@ -1169,8 +1169,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-009800.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-009800.woff2') format('woff2');
   unicode-range: U+9800-98FF;
 }
 
@@ -1178,8 +1178,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-009900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-009900.woff2') format('woff2');
   unicode-range: U+9900-99FF;
 }
 
@@ -1187,8 +1187,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-009a00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-009a00.woff2') format('woff2');
   unicode-range: U+9A00-9AFF;
 }
 
@@ -1196,8 +1196,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-009b00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-009b00.woff2') format('woff2');
   unicode-range: U+9B00-9BFF;
 }
 
@@ -1205,8 +1205,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-009c00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-009c00.woff2') format('woff2');
   unicode-range: U+9C00-9CFF;
 }
 
@@ -1214,8 +1214,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-009d00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-009d00.woff2') format('woff2');
   unicode-range: U+9D00-9DFF;
 }
 
@@ -1223,8 +1223,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-009e00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-009e00.woff2') format('woff2');
   unicode-range: U+9E00-9EFF;
 }
 
@@ -1232,8 +1232,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-009f00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-009f00.woff2') format('woff2');
   unicode-range: U+9F00-9FFF;
 }
 
@@ -1241,8 +1241,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00a700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00a700.woff2') format('woff2');
   unicode-range: U+A700-A7FF;
 }
 
@@ -1250,8 +1250,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00a900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00a900.woff2') format('woff2');
   unicode-range: U+A900-A9FF;
 }
 
@@ -1259,8 +1259,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00ac00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00ac00.woff2') format('woff2');
   unicode-range: U+AC00-ACFF;
 }
 
@@ -1268,8 +1268,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00ad00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00ad00.woff2') format('woff2');
   unicode-range: U+AD00-ADFF;
 }
 
@@ -1277,8 +1277,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00ae00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00ae00.woff2') format('woff2');
   unicode-range: U+AE00-AEFF;
 }
 
@@ -1286,8 +1286,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00af00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00af00.woff2') format('woff2');
   unicode-range: U+AF00-AFFF;
 }
 
@@ -1295,8 +1295,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00b000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00b000.woff2') format('woff2');
   unicode-range: U+B000-B0FF;
 }
 
@@ -1304,8 +1304,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00b100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00b100.woff2') format('woff2');
   unicode-range: U+B100-B1FF;
 }
 
@@ -1313,8 +1313,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00b200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00b200.woff2') format('woff2');
   unicode-range: U+B200-B2FF;
 }
 
@@ -1322,8 +1322,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00b300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00b300.woff2') format('woff2');
   unicode-range: U+B300-B3FF;
 }
 
@@ -1331,8 +1331,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00b400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00b400.woff2') format('woff2');
   unicode-range: U+B400-B4FF;
 }
 
@@ -1340,8 +1340,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00b500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00b500.woff2') format('woff2');
   unicode-range: U+B500-B5FF;
 }
 
@@ -1349,8 +1349,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00b600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00b600.woff2') format('woff2');
   unicode-range: U+B600-B6FF;
 }
 
@@ -1358,8 +1358,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00b700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00b700.woff2') format('woff2');
   unicode-range: U+B700-B7FF;
 }
 
@@ -1367,8 +1367,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00b800.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00b800.woff2') format('woff2');
   unicode-range: U+B800-B8FF;
 }
 
@@ -1376,8 +1376,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00b900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00b900.woff2') format('woff2');
   unicode-range: U+B900-B9FF;
 }
 
@@ -1385,8 +1385,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00ba00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00ba00.woff2') format('woff2');
   unicode-range: U+BA00-BAFF;
 }
 
@@ -1394,8 +1394,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00bb00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00bb00.woff2') format('woff2');
   unicode-range: U+BB00-BBFF;
 }
 
@@ -1403,8 +1403,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00bc00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00bc00.woff2') format('woff2');
   unicode-range: U+BC00-BCFF;
 }
 
@@ -1412,8 +1412,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00bd00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00bd00.woff2') format('woff2');
   unicode-range: U+BD00-BDFF;
 }
 
@@ -1421,8 +1421,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00be00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00be00.woff2') format('woff2');
   unicode-range: U+BE00-BEFF;
 }
 
@@ -1430,8 +1430,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00bf00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00bf00.woff2') format('woff2');
   unicode-range: U+BF00-BFFF;
 }
 
@@ -1439,8 +1439,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00c000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00c000.woff2') format('woff2');
   unicode-range: U+C000-C0FF;
 }
 
@@ -1448,8 +1448,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00c100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00c100.woff2') format('woff2');
   unicode-range: U+C100-C1FF;
 }
 
@@ -1457,8 +1457,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00c200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00c200.woff2') format('woff2');
   unicode-range: U+C200-C2FF;
 }
 
@@ -1466,8 +1466,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00c300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00c300.woff2') format('woff2');
   unicode-range: U+C300-C3FF;
 }
 
@@ -1475,8 +1475,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00c400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00c400.woff2') format('woff2');
   unicode-range: U+C400-C4FF;
 }
 
@@ -1484,8 +1484,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00c500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00c500.woff2') format('woff2');
   unicode-range: U+C500-C5FF;
 }
 
@@ -1493,8 +1493,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00c600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00c600.woff2') format('woff2');
   unicode-range: U+C600-C6FF;
 }
 
@@ -1502,8 +1502,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00c700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00c700.woff2') format('woff2');
   unicode-range: U+C700-C7FF;
 }
 
@@ -1511,8 +1511,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00c800.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00c800.woff2') format('woff2');
   unicode-range: U+C800-C8FF;
 }
 
@@ -1520,8 +1520,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00c900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00c900.woff2') format('woff2');
   unicode-range: U+C900-C9FF;
 }
 
@@ -1529,8 +1529,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00ca00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00ca00.woff2') format('woff2');
   unicode-range: U+CA00-CAFF;
 }
 
@@ -1538,8 +1538,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00cb00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00cb00.woff2') format('woff2');
   unicode-range: U+CB00-CBFF;
 }
 
@@ -1547,8 +1547,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00cc00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00cc00.woff2') format('woff2');
   unicode-range: U+CC00-CCFF;
 }
 
@@ -1556,8 +1556,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00cd00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00cd00.woff2') format('woff2');
   unicode-range: U+CD00-CDFF;
 }
 
@@ -1565,8 +1565,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00ce00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00ce00.woff2') format('woff2');
   unicode-range: U+CE00-CEFF;
 }
 
@@ -1574,8 +1574,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00cf00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00cf00.woff2') format('woff2');
   unicode-range: U+CF00-CFFF;
 }
 
@@ -1583,8 +1583,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00d000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00d000.woff2') format('woff2');
   unicode-range: U+D000-D0FF;
 }
 
@@ -1592,8 +1592,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00d100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00d100.woff2') format('woff2');
   unicode-range: U+D100-D1FF;
 }
 
@@ -1601,8 +1601,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00d200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00d200.woff2') format('woff2');
   unicode-range: U+D200-D2FF;
 }
 
@@ -1610,8 +1610,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00d300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00d300.woff2') format('woff2');
   unicode-range: U+D300-D3FF;
 }
 
@@ -1619,8 +1619,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00d400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00d400.woff2') format('woff2');
   unicode-range: U+D400-D4FF;
 }
 
@@ -1628,8 +1628,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00d500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00d500.woff2') format('woff2');
   unicode-range: U+D500-D5FF;
 }
 
@@ -1637,8 +1637,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00d600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00d600.woff2') format('woff2');
   unicode-range: U+D600-D6FF;
 }
 
@@ -1646,8 +1646,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00d700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00d700.woff2') format('woff2');
   unicode-range: U+D700-D7FF;
 }
 
@@ -1655,8 +1655,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00f900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00f900.woff2') format('woff2');
   unicode-range: U+F900-F9FF;
 }
 
@@ -1664,8 +1664,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00fa00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00fa00.woff2') format('woff2');
   unicode-range: U+FA00-FAFF;
 }
 
@@ -1673,8 +1673,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00fb00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00fb00.woff2') format('woff2');
   unicode-range: U+FB00-FBFF;
 }
 
@@ -1682,8 +1682,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00fe00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00fe00.woff2') format('woff2');
   unicode-range: U+FE00-FEFF;
 }
 
@@ -1691,8 +1691,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-00ff00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-00ff00.woff2') format('woff2');
   unicode-range: U+FF00-FFFF;
 }
 
@@ -1700,8 +1700,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-01b000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-01b000.woff2') format('woff2');
   unicode-range: U+1B000-1B0FF;
 }
 
@@ -1709,8 +1709,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-01d500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-01d500.woff2') format('woff2');
   unicode-range: U+1D500-1D5FF;
 }
 
@@ -1718,8 +1718,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-01d700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-01d700.woff2') format('woff2');
   unicode-range: U+1D700-1D7FF;
 }
 
@@ -1727,8 +1727,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-01f100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-01f100.woff2') format('woff2');
   unicode-range: U+1F100-1F1FF;
 }
 
@@ -1736,8 +1736,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-01f200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-01f200.woff2') format('woff2');
   unicode-range: U+1F200-1F2FF;
 }
 
@@ -1745,8 +1745,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-020000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-020000.woff2') format('woff2');
   unicode-range: U+20000-200FF;
 }
 
@@ -1754,8 +1754,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-020100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-020100.woff2') format('woff2');
   unicode-range: U+20100-201FF;
 }
 
@@ -1763,8 +1763,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-020200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-020200.woff2') format('woff2');
   unicode-range: U+20200-202FF;
 }
 
@@ -1772,8 +1772,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-020300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-020300.woff2') format('woff2');
   unicode-range: U+20300-203FF;
 }
 
@@ -1781,8 +1781,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-020400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-020400.woff2') format('woff2');
   unicode-range: U+20400-204FF;
 }
 
@@ -1790,8 +1790,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-020500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-020500.woff2') format('woff2');
   unicode-range: U+20500-205FF;
 }
 
@@ -1799,8 +1799,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-020600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-020600.woff2') format('woff2');
   unicode-range: U+20600-206FF;
 }
 
@@ -1808,8 +1808,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-020700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-020700.woff2') format('woff2');
   unicode-range: U+20700-207FF;
 }
 
@@ -1817,8 +1817,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-020800.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-020800.woff2') format('woff2');
   unicode-range: U+20800-208FF;
 }
 
@@ -1826,8 +1826,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-020900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-020900.woff2') format('woff2');
   unicode-range: U+20900-209FF;
 }
 
@@ -1835,8 +1835,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-020a00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-020a00.woff2') format('woff2');
   unicode-range: U+20A00-20AFF;
 }
 
@@ -1844,8 +1844,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-020b00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-020b00.woff2') format('woff2');
   unicode-range: U+20B00-20BFF;
 }
 
@@ -1853,8 +1853,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-020c00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-020c00.woff2') format('woff2');
   unicode-range: U+20C00-20CFF;
 }
 
@@ -1862,8 +1862,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-020d00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-020d00.woff2') format('woff2');
   unicode-range: U+20D00-20DFF;
 }
 
@@ -1871,8 +1871,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-020e00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-020e00.woff2') format('woff2');
   unicode-range: U+20E00-20EFF;
 }
 
@@ -1880,8 +1880,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-020f00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-020f00.woff2') format('woff2');
   unicode-range: U+20F00-20FFF;
 }
 
@@ -1889,8 +1889,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-021000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-021000.woff2') format('woff2');
   unicode-range: U+21000-210FF;
 }
 
@@ -1898,8 +1898,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-021100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-021100.woff2') format('woff2');
   unicode-range: U+21100-211FF;
 }
 
@@ -1907,8 +1907,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-021200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-021200.woff2') format('woff2');
   unicode-range: U+21200-212FF;
 }
 
@@ -1916,8 +1916,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-021300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-021300.woff2') format('woff2');
   unicode-range: U+21300-213FF;
 }
 
@@ -1925,8 +1925,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-021400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-021400.woff2') format('woff2');
   unicode-range: U+21400-214FF;
 }
 
@@ -1934,8 +1934,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-021500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-021500.woff2') format('woff2');
   unicode-range: U+21500-215FF;
 }
 
@@ -1943,8 +1943,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-021600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-021600.woff2') format('woff2');
   unicode-range: U+21600-216FF;
 }
 
@@ -1952,8 +1952,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-021700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-021700.woff2') format('woff2');
   unicode-range: U+21700-217FF;
 }
 
@@ -1961,8 +1961,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-021800.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-021800.woff2') format('woff2');
   unicode-range: U+21800-218FF;
 }
 
@@ -1970,8 +1970,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-021900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-021900.woff2') format('woff2');
   unicode-range: U+21900-219FF;
 }
 
@@ -1979,8 +1979,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-021a00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-021a00.woff2') format('woff2');
   unicode-range: U+21A00-21AFF;
 }
 
@@ -1988,8 +1988,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-021b00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-021b00.woff2') format('woff2');
   unicode-range: U+21B00-21BFF;
 }
 
@@ -1997,8 +1997,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-021c00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-021c00.woff2') format('woff2');
   unicode-range: U+21C00-21CFF;
 }
 
@@ -2006,8 +2006,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-021d00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-021d00.woff2') format('woff2');
   unicode-range: U+21D00-21DFF;
 }
 
@@ -2015,8 +2015,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-021e00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-021e00.woff2') format('woff2');
   unicode-range: U+21E00-21EFF;
 }
 
@@ -2024,8 +2024,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-021f00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-021f00.woff2') format('woff2');
   unicode-range: U+21F00-21FFF;
 }
 
@@ -2033,8 +2033,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-022000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-022000.woff2') format('woff2');
   unicode-range: U+22000-220FF;
 }
 
@@ -2042,8 +2042,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-022100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-022100.woff2') format('woff2');
   unicode-range: U+22100-221FF;
 }
 
@@ -2051,8 +2051,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-022200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-022200.woff2') format('woff2');
   unicode-range: U+22200-222FF;
 }
 
@@ -2060,8 +2060,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-022300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-022300.woff2') format('woff2');
   unicode-range: U+22300-223FF;
 }
 
@@ -2069,8 +2069,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-022400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-022400.woff2') format('woff2');
   unicode-range: U+22400-224FF;
 }
 
@@ -2078,8 +2078,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-022500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-022500.woff2') format('woff2');
   unicode-range: U+22500-225FF;
 }
 
@@ -2087,8 +2087,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-022600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-022600.woff2') format('woff2');
   unicode-range: U+22600-226FF;
 }
 
@@ -2096,8 +2096,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-022700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-022700.woff2') format('woff2');
   unicode-range: U+22700-227FF;
 }
 
@@ -2105,8 +2105,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-022800.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-022800.woff2') format('woff2');
   unicode-range: U+22800-228FF;
 }
 
@@ -2114,8 +2114,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-022900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-022900.woff2') format('woff2');
   unicode-range: U+22900-229FF;
 }
 
@@ -2123,8 +2123,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-022a00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-022a00.woff2') format('woff2');
   unicode-range: U+22A00-22AFF;
 }
 
@@ -2132,8 +2132,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-022b00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-022b00.woff2') format('woff2');
   unicode-range: U+22B00-22BFF;
 }
 
@@ -2141,8 +2141,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-022c00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-022c00.woff2') format('woff2');
   unicode-range: U+22C00-22CFF;
 }
 
@@ -2150,8 +2150,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-022d00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-022d00.woff2') format('woff2');
   unicode-range: U+22D00-22DFF;
 }
 
@@ -2159,8 +2159,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-022e00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-022e00.woff2') format('woff2');
   unicode-range: U+22E00-22EFF;
 }
 
@@ -2168,8 +2168,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-022f00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-022f00.woff2') format('woff2');
   unicode-range: U+22F00-22FFF;
 }
 
@@ -2177,8 +2177,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-023000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-023000.woff2') format('woff2');
   unicode-range: U+23000-230FF;
 }
 
@@ -2186,8 +2186,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-023100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-023100.woff2') format('woff2');
   unicode-range: U+23100-231FF;
 }
 
@@ -2195,8 +2195,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-023200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-023200.woff2') format('woff2');
   unicode-range: U+23200-232FF;
 }
 
@@ -2204,8 +2204,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-023300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-023300.woff2') format('woff2');
   unicode-range: U+23300-233FF;
 }
 
@@ -2213,8 +2213,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-023400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-023400.woff2') format('woff2');
   unicode-range: U+23400-234FF;
 }
 
@@ -2222,8 +2222,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-023500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-023500.woff2') format('woff2');
   unicode-range: U+23500-235FF;
 }
 
@@ -2231,8 +2231,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-023600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-023600.woff2') format('woff2');
   unicode-range: U+23600-236FF;
 }
 
@@ -2240,8 +2240,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-023700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-023700.woff2') format('woff2');
   unicode-range: U+23700-237FF;
 }
 
@@ -2249,8 +2249,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-023800.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-023800.woff2') format('woff2');
   unicode-range: U+23800-238FF;
 }
 
@@ -2258,8 +2258,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-023900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-023900.woff2') format('woff2');
   unicode-range: U+23900-239FF;
 }
 
@@ -2267,8 +2267,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-023a00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-023a00.woff2') format('woff2');
   unicode-range: U+23A00-23AFF;
 }
 
@@ -2276,8 +2276,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-023b00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-023b00.woff2') format('woff2');
   unicode-range: U+23B00-23BFF;
 }
 
@@ -2285,8 +2285,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-023c00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-023c00.woff2') format('woff2');
   unicode-range: U+23C00-23CFF;
 }
 
@@ -2294,8 +2294,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-023d00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-023d00.woff2') format('woff2');
   unicode-range: U+23D00-23DFF;
 }
 
@@ -2303,8 +2303,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-023e00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-023e00.woff2') format('woff2');
   unicode-range: U+23E00-23EFF;
 }
 
@@ -2312,8 +2312,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-023f00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-023f00.woff2') format('woff2');
   unicode-range: U+23F00-23FFF;
 }
 
@@ -2321,8 +2321,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-024000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-024000.woff2') format('woff2');
   unicode-range: U+24000-240FF;
 }
 
@@ -2330,8 +2330,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-024100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-024100.woff2') format('woff2');
   unicode-range: U+24100-241FF;
 }
 
@@ -2339,8 +2339,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-024200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-024200.woff2') format('woff2');
   unicode-range: U+24200-242FF;
 }
 
@@ -2348,8 +2348,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-024300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-024300.woff2') format('woff2');
   unicode-range: U+24300-243FF;
 }
 
@@ -2357,8 +2357,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-024400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-024400.woff2') format('woff2');
   unicode-range: U+24400-244FF;
 }
 
@@ -2366,8 +2366,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-024500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-024500.woff2') format('woff2');
   unicode-range: U+24500-245FF;
 }
 
@@ -2375,8 +2375,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-024600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-024600.woff2') format('woff2');
   unicode-range: U+24600-246FF;
 }
 
@@ -2384,8 +2384,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-024700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-024700.woff2') format('woff2');
   unicode-range: U+24700-247FF;
 }
 
@@ -2393,8 +2393,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-024800.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-024800.woff2') format('woff2');
   unicode-range: U+24800-248FF;
 }
 
@@ -2402,8 +2402,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-024900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-024900.woff2') format('woff2');
   unicode-range: U+24900-249FF;
 }
 
@@ -2411,8 +2411,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-024a00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-024a00.woff2') format('woff2');
   unicode-range: U+24A00-24AFF;
 }
 
@@ -2420,8 +2420,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-024b00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-024b00.woff2') format('woff2');
   unicode-range: U+24B00-24BFF;
 }
 
@@ -2429,8 +2429,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-024c00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-024c00.woff2') format('woff2');
   unicode-range: U+24C00-24CFF;
 }
 
@@ -2438,8 +2438,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-024d00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-024d00.woff2') format('woff2');
   unicode-range: U+24D00-24DFF;
 }
 
@@ -2447,8 +2447,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-024e00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-024e00.woff2') format('woff2');
   unicode-range: U+24E00-24EFF;
 }
 
@@ -2456,8 +2456,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-024f00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-024f00.woff2') format('woff2');
   unicode-range: U+24F00-24FFF;
 }
 
@@ -2465,8 +2465,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-025000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-025000.woff2') format('woff2');
   unicode-range: U+25000-250FF;
 }
 
@@ -2474,8 +2474,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-025100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-025100.woff2') format('woff2');
   unicode-range: U+25100-251FF;
 }
 
@@ -2483,8 +2483,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-025200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-025200.woff2') format('woff2');
   unicode-range: U+25200-252FF;
 }
 
@@ -2492,8 +2492,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-025300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-025300.woff2') format('woff2');
   unicode-range: U+25300-253FF;
 }
 
@@ -2501,8 +2501,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-025400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-025400.woff2') format('woff2');
   unicode-range: U+25400-254FF;
 }
 
@@ -2510,8 +2510,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-025500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-025500.woff2') format('woff2');
   unicode-range: U+25500-255FF;
 }
 
@@ -2519,8 +2519,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-025600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-025600.woff2') format('woff2');
   unicode-range: U+25600-256FF;
 }
 
@@ -2528,8 +2528,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-025700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-025700.woff2') format('woff2');
   unicode-range: U+25700-257FF;
 }
 
@@ -2537,8 +2537,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-025800.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-025800.woff2') format('woff2');
   unicode-range: U+25800-258FF;
 }
 
@@ -2546,8 +2546,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-025900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-025900.woff2') format('woff2');
   unicode-range: U+25900-259FF;
 }
 
@@ -2555,8 +2555,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-025a00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-025a00.woff2') format('woff2');
   unicode-range: U+25A00-25AFF;
 }
 
@@ -2564,8 +2564,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-025b00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-025b00.woff2') format('woff2');
   unicode-range: U+25B00-25BFF;
 }
 
@@ -2573,8 +2573,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-025c00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-025c00.woff2') format('woff2');
   unicode-range: U+25C00-25CFF;
 }
 
@@ -2582,8 +2582,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-025d00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-025d00.woff2') format('woff2');
   unicode-range: U+25D00-25DFF;
 }
 
@@ -2591,8 +2591,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-025e00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-025e00.woff2') format('woff2');
   unicode-range: U+25E00-25EFF;
 }
 
@@ -2600,8 +2600,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-025f00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-025f00.woff2') format('woff2');
   unicode-range: U+25F00-25FFF;
 }
 
@@ -2609,8 +2609,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-026000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-026000.woff2') format('woff2');
   unicode-range: U+26000-260FF;
 }
 
@@ -2618,8 +2618,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-026100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-026100.woff2') format('woff2');
   unicode-range: U+26100-261FF;
 }
 
@@ -2627,8 +2627,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-026200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-026200.woff2') format('woff2');
   unicode-range: U+26200-262FF;
 }
 
@@ -2636,8 +2636,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-026300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-026300.woff2') format('woff2');
   unicode-range: U+26300-263FF;
 }
 
@@ -2645,8 +2645,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-026400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-026400.woff2') format('woff2');
   unicode-range: U+26400-264FF;
 }
 
@@ -2654,8 +2654,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-026500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-026500.woff2') format('woff2');
   unicode-range: U+26500-265FF;
 }
 
@@ -2663,8 +2663,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-026600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-026600.woff2') format('woff2');
   unicode-range: U+26600-266FF;
 }
 
@@ -2672,8 +2672,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-026700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-026700.woff2') format('woff2');
   unicode-range: U+26700-267FF;
 }
 
@@ -2681,8 +2681,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-026800.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-026800.woff2') format('woff2');
   unicode-range: U+26800-268FF;
 }
 
@@ -2690,8 +2690,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-026900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-026900.woff2') format('woff2');
   unicode-range: U+26900-269FF;
 }
 
@@ -2699,8 +2699,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-026a00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-026a00.woff2') format('woff2');
   unicode-range: U+26A00-26AFF;
 }
 
@@ -2708,8 +2708,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-026b00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-026b00.woff2') format('woff2');
   unicode-range: U+26B00-26BFF;
 }
 
@@ -2717,8 +2717,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-026c00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-026c00.woff2') format('woff2');
   unicode-range: U+26C00-26CFF;
 }
 
@@ -2726,8 +2726,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-026d00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-026d00.woff2') format('woff2');
   unicode-range: U+26D00-26DFF;
 }
 
@@ -2735,8 +2735,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-026e00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-026e00.woff2') format('woff2');
   unicode-range: U+26E00-26EFF;
 }
 
@@ -2744,8 +2744,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-026f00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-026f00.woff2') format('woff2');
   unicode-range: U+26F00-26FFF;
 }
 
@@ -2753,8 +2753,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-027000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-027000.woff2') format('woff2');
   unicode-range: U+27000-270FF;
 }
 
@@ -2762,8 +2762,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-027100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-027100.woff2') format('woff2');
   unicode-range: U+27100-271FF;
 }
 
@@ -2771,8 +2771,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-027200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-027200.woff2') format('woff2');
   unicode-range: U+27200-272FF;
 }
 
@@ -2780,8 +2780,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-027300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-027300.woff2') format('woff2');
   unicode-range: U+27300-273FF;
 }
 
@@ -2789,8 +2789,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-027400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-027400.woff2') format('woff2');
   unicode-range: U+27400-274FF;
 }
 
@@ -2798,8 +2798,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-027500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-027500.woff2') format('woff2');
   unicode-range: U+27500-275FF;
 }
 
@@ -2807,8 +2807,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-027600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-027600.woff2') format('woff2');
   unicode-range: U+27600-276FF;
 }
 
@@ -2816,8 +2816,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-027700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-027700.woff2') format('woff2');
   unicode-range: U+27700-277FF;
 }
 
@@ -2825,8 +2825,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-027800.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-027800.woff2') format('woff2');
   unicode-range: U+27800-278FF;
 }
 
@@ -2834,8 +2834,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-027900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-027900.woff2') format('woff2');
   unicode-range: U+27900-279FF;
 }
 
@@ -2843,8 +2843,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-027a00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-027a00.woff2') format('woff2');
   unicode-range: U+27A00-27AFF;
 }
 
@@ -2852,8 +2852,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-027b00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-027b00.woff2') format('woff2');
   unicode-range: U+27B00-27BFF;
 }
 
@@ -2861,8 +2861,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-027c00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-027c00.woff2') format('woff2');
   unicode-range: U+27C00-27CFF;
 }
 
@@ -2870,8 +2870,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-027d00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-027d00.woff2') format('woff2');
   unicode-range: U+27D00-27DFF;
 }
 
@@ -2879,8 +2879,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-027e00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-027e00.woff2') format('woff2');
   unicode-range: U+27E00-27EFF;
 }
 
@@ -2888,8 +2888,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-027f00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-027f00.woff2') format('woff2');
   unicode-range: U+27F00-27FFF;
 }
 
@@ -2897,8 +2897,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-028000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-028000.woff2') format('woff2');
   unicode-range: U+28000-280FF;
 }
 
@@ -2906,8 +2906,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-028100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-028100.woff2') format('woff2');
   unicode-range: U+28100-281FF;
 }
 
@@ -2915,8 +2915,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-028200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-028200.woff2') format('woff2');
   unicode-range: U+28200-282FF;
 }
 
@@ -2924,8 +2924,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-028300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-028300.woff2') format('woff2');
   unicode-range: U+28300-283FF;
 }
 
@@ -2933,8 +2933,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-028400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-028400.woff2') format('woff2');
   unicode-range: U+28400-284FF;
 }
 
@@ -2942,8 +2942,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-028500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-028500.woff2') format('woff2');
   unicode-range: U+28500-285FF;
 }
 
@@ -2951,8 +2951,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-028600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-028600.woff2') format('woff2');
   unicode-range: U+28600-286FF;
 }
 
@@ -2960,8 +2960,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-028700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-028700.woff2') format('woff2');
   unicode-range: U+28700-287FF;
 }
 
@@ -2969,8 +2969,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-028800.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-028800.woff2') format('woff2');
   unicode-range: U+28800-288FF;
 }
 
@@ -2978,8 +2978,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-028900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-028900.woff2') format('woff2');
   unicode-range: U+28900-289FF;
 }
 
@@ -2987,8 +2987,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-028a00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-028a00.woff2') format('woff2');
   unicode-range: U+28A00-28AFF;
 }
 
@@ -2996,8 +2996,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-028b00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-028b00.woff2') format('woff2');
   unicode-range: U+28B00-28BFF;
 }
 
@@ -3005,8 +3005,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-028c00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-028c00.woff2') format('woff2');
   unicode-range: U+28C00-28CFF;
 }
 
@@ -3014,8 +3014,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-028d00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-028d00.woff2') format('woff2');
   unicode-range: U+28D00-28DFF;
 }
 
@@ -3023,8 +3023,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-028e00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-028e00.woff2') format('woff2');
   unicode-range: U+28E00-28EFF;
 }
 
@@ -3032,8 +3032,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-028f00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-028f00.woff2') format('woff2');
   unicode-range: U+28F00-28FFF;
 }
 
@@ -3041,8 +3041,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-029000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-029000.woff2') format('woff2');
   unicode-range: U+29000-290FF;
 }
 
@@ -3050,8 +3050,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-029100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-029100.woff2') format('woff2');
   unicode-range: U+29100-291FF;
 }
 
@@ -3059,8 +3059,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-029200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-029200.woff2') format('woff2');
   unicode-range: U+29200-292FF;
 }
 
@@ -3068,8 +3068,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-029400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-029400.woff2') format('woff2');
   unicode-range: U+29400-294FF;
 }
 
@@ -3077,8 +3077,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-029500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-029500.woff2') format('woff2');
   unicode-range: U+29500-295FF;
 }
 
@@ -3086,8 +3086,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-029600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-029600.woff2') format('woff2');
   unicode-range: U+29600-296FF;
 }
 
@@ -3095,8 +3095,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-029700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-029700.woff2') format('woff2');
   unicode-range: U+29700-297FF;
 }
 
@@ -3104,8 +3104,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-029800.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-029800.woff2') format('woff2');
   unicode-range: U+29800-298FF;
 }
 
@@ -3113,8 +3113,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-029900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-029900.woff2') format('woff2');
   unicode-range: U+29900-299FF;
 }
 
@@ -3122,8 +3122,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-029a00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-029a00.woff2') format('woff2');
   unicode-range: U+29A00-29AFF;
 }
 
@@ -3131,8 +3131,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-029b00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-029b00.woff2') format('woff2');
   unicode-range: U+29B00-29BFF;
 }
 
@@ -3140,8 +3140,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-029c00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-029c00.woff2') format('woff2');
   unicode-range: U+29C00-29CFF;
 }
 
@@ -3149,8 +3149,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-029d00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-029d00.woff2') format('woff2');
   unicode-range: U+29D00-29DFF;
 }
 
@@ -3158,8 +3158,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-029e00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-029e00.woff2') format('woff2');
   unicode-range: U+29E00-29EFF;
 }
 
@@ -3167,8 +3167,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-029f00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-029f00.woff2') format('woff2');
   unicode-range: U+29F00-29FFF;
 }
 
@@ -3176,8 +3176,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02a000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02a000.woff2') format('woff2');
   unicode-range: U+2A000-2A0FF;
 }
 
@@ -3185,8 +3185,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02a100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02a100.woff2') format('woff2');
   unicode-range: U+2A100-2A1FF;
 }
 
@@ -3194,8 +3194,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02a200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02a200.woff2') format('woff2');
   unicode-range: U+2A200-2A2FF;
 }
 
@@ -3203,8 +3203,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02a300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02a300.woff2') format('woff2');
   unicode-range: U+2A300-2A3FF;
 }
 
@@ -3212,8 +3212,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02a400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02a400.woff2') format('woff2');
   unicode-range: U+2A400-2A4FF;
 }
 
@@ -3221,8 +3221,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02a500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02a500.woff2') format('woff2');
   unicode-range: U+2A500-2A5FF;
 }
 
@@ -3230,8 +3230,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02a600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02a600.woff2') format('woff2');
   unicode-range: U+2A600-2A6FF;
 }
 
@@ -3239,8 +3239,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02a700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02a700.woff2') format('woff2');
   unicode-range: U+2A700-2A7FF;
 }
 
@@ -3248,8 +3248,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02a800.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02a800.woff2') format('woff2');
   unicode-range: U+2A800-2A8FF;
 }
 
@@ -3257,8 +3257,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02a900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02a900.woff2') format('woff2');
   unicode-range: U+2A900-2A9FF;
 }
 
@@ -3266,8 +3266,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02aa00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02aa00.woff2') format('woff2');
   unicode-range: U+2AA00-2AAFF;
 }
 
@@ -3275,8 +3275,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02ad00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02ad00.woff2') format('woff2');
   unicode-range: U+2AD00-2ADFF;
 }
 
@@ -3284,8 +3284,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02af00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02af00.woff2') format('woff2');
   unicode-range: U+2AF00-2AFFF;
 }
 
@@ -3293,8 +3293,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02b100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02b100.woff2') format('woff2');
   unicode-range: U+2B100-2B1FF;
 }
 
@@ -3302,8 +3302,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02b300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02b300.woff2') format('woff2');
   unicode-range: U+2B300-2B3FF;
 }
 
@@ -3311,8 +3311,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02b400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02b400.woff2') format('woff2');
   unicode-range: U+2B400-2B4FF;
 }
 
@@ -3320,8 +3320,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02b500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02b500.woff2') format('woff2');
   unicode-range: U+2B500-2B5FF;
 }
 
@@ -3329,8 +3329,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02b600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02b600.woff2') format('woff2');
   unicode-range: U+2B600-2B6FF;
 }
 
@@ -3338,8 +3338,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02b700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02b700.woff2') format('woff2');
   unicode-range: U+2B700-2B7FF;
 }
 
@@ -3347,8 +3347,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02b800.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02b800.woff2') format('woff2');
   unicode-range: U+2B800-2B8FF;
 }
 
@@ -3356,8 +3356,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02ba00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02ba00.woff2') format('woff2');
   unicode-range: U+2BA00-2BAFF;
 }
 
@@ -3365,8 +3365,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02bb00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02bb00.woff2') format('woff2');
   unicode-range: U+2BB00-2BBFF;
 }
 
@@ -3374,8 +3374,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02bc00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02bc00.woff2') format('woff2');
   unicode-range: U+2BC00-2BCFF;
 }
 
@@ -3383,8 +3383,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02bd00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02bd00.woff2') format('woff2');
   unicode-range: U+2BD00-2BDFF;
 }
 
@@ -3392,8 +3392,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02be00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02be00.woff2') format('woff2');
   unicode-range: U+2BE00-2BEFF;
 }
 
@@ -3401,8 +3401,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02c000.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02c000.woff2') format('woff2');
   unicode-range: U+2C000-2C0FF;
 }
 
@@ -3410,8 +3410,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02c100.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02c100.woff2') format('woff2');
   unicode-range: U+2C100-2C1FF;
 }
 
@@ -3419,8 +3419,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02c200.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02c200.woff2') format('woff2');
   unicode-range: U+2C200-2C2FF;
 }
 
@@ -3428,8 +3428,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02c300.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02c300.woff2') format('woff2');
   unicode-range: U+2C300-2C3FF;
 }
 
@@ -3437,8 +3437,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02c400.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02c400.woff2') format('woff2');
   unicode-range: U+2C400-2C4FF;
 }
 
@@ -3446,8 +3446,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02c500.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02c500.woff2') format('woff2');
   unicode-range: U+2C500-2C5FF;
 }
 
@@ -3455,8 +3455,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02c600.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02c600.woff2') format('woff2');
   unicode-range: U+2C600-2C6FF;
 }
 
@@ -3464,8 +3464,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02c700.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02c700.woff2') format('woff2');
   unicode-range: U+2C700-2C7FF;
 }
 
@@ -3473,8 +3473,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02c800.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02c800.woff2') format('woff2');
   unicode-range: U+2C800-2C8FF;
 }
 
@@ -3482,8 +3482,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02c900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02c900.woff2') format('woff2');
   unicode-range: U+2C900-2C9FF;
 }
 
@@ -3491,8 +3491,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02ca00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02ca00.woff2') format('woff2');
   unicode-range: U+2CA00-2CAFF;
 }
 
@@ -3500,8 +3500,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02cb00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02cb00.woff2') format('woff2');
   unicode-range: U+2CB00-2CBFF;
 }
 
@@ -3509,8 +3509,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02cc00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02cc00.woff2') format('woff2');
   unicode-range: U+2CC00-2CCFF;
 }
 
@@ -3518,8 +3518,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02cd00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02cd00.woff2') format('woff2');
   unicode-range: U+2CD00-2CDFF;
 }
 
@@ -3527,8 +3527,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02ce00.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02ce00.woff2') format('woff2');
   unicode-range: U+2CE00-2CEFF;
 }
 
@@ -3536,8 +3536,8 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02f800.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02f800.woff2') format('woff2');
   unicode-range: U+2F800-2F8FF;
 }
 
@@ -3545,7 +3545,7 @@
   font-family: 'Black Sugar Plum Candy';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local('Black Sugar Plum Candy Bold'), url('fonts/BlackSugarPlumCandy-Bold-02f900.woff2') format('woff2');
+  font-display: swap;
+  src: url('fonts/BlackSugarPlumCandy-Bold-02f900.woff2') format('woff2');
   unicode-range: U+2F900-2F9FF;
 }

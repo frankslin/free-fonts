@@ -1,6 +1,6 @@
 {
   "name": "@free-fonts/genki-mincho",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Chunked woff2 webfonts for Genki Serif TC.",
   "license": "MIT AND OFL-1.1",
   "main": "genki-mincho.css",

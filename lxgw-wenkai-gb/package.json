@@ -1,6 +1,6 @@
 {
   "name": "@free-fonts/lxgw-wenkai-gb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Chunked woff2 webfonts for LXGW WenKai GB.",
   "license": "MIT AND OFL-1.1",
   "main": "lxgw-wenkai-gb.css",
