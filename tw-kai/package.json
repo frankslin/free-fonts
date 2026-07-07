@@ -1,0 +1,30 @@
+{
+  "name": "@free-fonts/tw-kai",
+  "version": "1.0.0",
+  "description": "Chunked woff2 webfonts for TW-Kai / 全字庫正楷體.",
+  "license": "MIT AND OFL-1.1",
+  "main": "tw-kai.css",
+  "style": "tw-kai.css",
+  "files": [
+    "tw-kai.css",
+    "fonts",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frankslin/free-fonts.git",
+    "directory": "tw-kai"
+  },
+  "keywords": [
+    "font",
+    "webfont",
+    "woff2",
+    "cjk",
+    "kaiti",
+    "kai",
+    "serif",
+    "taiwan",
+    "cns11643"
+  ]
+}

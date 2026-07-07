@@ -1,0 +1,30 @@
+{
+  "name": "@free-fonts/tw-sung",
+  "version": "1.0.0",
+  "description": "Chunked woff2 webfonts for TW-Sung / 全字庫正宋體.",
+  "license": "MIT AND OFL-1.1",
+  "main": "tw-sung.css",
+  "style": "tw-sung.css",
+  "files": [
+    "tw-sung.css",
+    "fonts",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frankslin/free-fonts.git",
+    "directory": "tw-sung"
+  },
+  "keywords": [
+    "font",
+    "webfont",
+    "woff2",
+    "cjk",
+    "mingti",
+    "songti",
+    "serif",
+    "taiwan",
+    "cns11643"
+  ]
+}

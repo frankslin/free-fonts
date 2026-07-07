@@ -10,7 +10,7 @@ CSS `unicode-range` 宣告，讓瀏覽器只下載頁面實際需要的字元區
 
 ## 目前包含
 
-目前包含：文津明體、源起明體 TC、源樣明體 TC、黑糖话梅、霞鹜文楷、霞鹜文楷 GB、霞鶩文楷 TC。
+目前包含：文津明體、源起明體 TC、源樣明體 TC、全字庫正宋體、全字庫正楷體、黑糖话梅、霞鹜文楷、霞鹜文楷 GB、霞鶩文楷 TC。
 
 根目錄的 `index.html` 是互動式展示頁，可比較各字型、系統 fallback、繁簡轉換
 與單字形差異。
@@ -75,6 +75,46 @@ jsDelivr 等效：
 ```css
 .genyo {
   font-family: "GenYoMin2TC", serif;
+}
+```
+
+### 全字庫正宋體
+
+來源：[CNS11643中文標準交換碼全字庫](https://data.gov.tw/dataset/5961)，上游版本：`2026-05-05`。全字庫由數位發展部提供，正宋體對應 CNS11643/Unicode 字面，這裡將 BMP、Ext-B、Plus 三份 TTF 合成單一 `TW-Sung` webfont family。
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@free-fonts/tw-sung@1.0.1/tw-sung.css">
+```
+
+jsDelivr 等效：
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@free-fonts/tw-sung@1.0.1/tw-sung.css">
+```
+
+```css
+.tw-sung {
+  font-family: "TW-Sung", serif;
+}
+```
+
+### 全字庫正楷體
+
+來源：[CNS11643中文標準交換碼全字庫](https://data.gov.tw/dataset/5961)，上游版本：`2026-05-05`。全字庫正楷體是臺灣 CNS11643 全字庫公開字型之一，這裡將 BMP、Ext-B、Plus 三份 TTF 合成單一 `TW-Kai` webfont family。
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@free-fonts/tw-kai@1.0.1/tw-kai.css">
+```
+
+jsDelivr 等效：
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@free-fonts/tw-kai@1.0.1/tw-kai.css">
+```
+
+```css
+.tw-kai {
+  font-family: "TW-Kai", cursive, serif;
 }
 ```
 
@@ -175,4 +215,4 @@ jsDelivr 等效：
 ## 授權
 
 本 repo 的包裝檔、展示頁與建置腳本以 MIT 授權釋出。各字型本身依原作者授權
-釋出；目前 packages 使用 `MIT+SIL-1.1` 標示，以反映包裝程式碼與字型授權的組合。
+釋出；多數 packages 使用 `MIT AND OFL-1.1` 標示，以反映包裝程式碼與字型授權的組合。全字庫 package 依資料集提供的選項採用 OFL-1.1 散布字型。
