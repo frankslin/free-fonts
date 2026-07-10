@@ -26,6 +26,7 @@
       --btn-active-text: #fffaf1;
       --primary-bg: #2f5147;
       --primary-border: #2f5147;
+      --danger: #a8443d;
     }
     :root[data-theme="dark"] {
       color-scheme: dark;
@@ -45,6 +46,7 @@
       --btn-active-text: #171512;
       --primary-bg: #c99c79;
       --primary-border: #c99c79;
+      --danger: #df8f86;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -131,6 +133,15 @@
     .font-meta a { color: var(--accent-2); }
     .font-meta a:hover { text-decoration: underline; }
     .meta-dot { color: var(--faint); }
+    .license-warn {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 3px 8px;
+      border: 1px solid color-mix(in srgb, var(--danger, #a8443d) 40%, transparent);
+      border-radius: 4px;
+      background: color-mix(in srgb, var(--danger, #a8443d) 8%, transparent);
+      color: var(--danger, #a8443d);
+      font-size: 12px;
+    }
 
     /* ── Type tester ── */
     .tester-section { margin-top: 28px; }
@@ -472,6 +483,21 @@
       ]
     },
     {
+      id: "wfg-fsung",
+      nameEn: "WFG FSung",
+      nameZh: "WFG 仿宋",
+      displayText: "仿宋體",
+      css: ["https://unpkg.com/wfg-fsung-webfonts@1.0.1/wfg-fsung.css"],
+      upstream: "https://www.npmjs.com/package/wfg-fsung-webfonts",
+      license: "WFG NonCommercial",
+      licenseNote: "非商業用途限定（學術研究、教育、個人閱讀），禁止用於商業盈利",
+      noCdns: ["jsdelivr"],
+      variants: [
+        { key: "default", label: "Regular", family: "'WFG FSung', serif", weights: [400],
+          pkgs: [{ name: "wfg-fsung-webfonts", version: "1.0.1", css: "wfg-fsung.css" }] }
+      ]
+    },
+    {
       id: "babelstone-han",
       nameEn: "BabelStone Han",
       nameZh: "巴貝斯通漢",
@@ -689,7 +715,11 @@
     const parts = [];
     if (f.upstream) parts.push(`<a href="${esc(f.upstream)}" target="_blank" rel="noopener">↗ Source</a>`);
     if (f.license)  parts.push(`<span>${esc(f.license)}</span>`);
-    document.getElementById("fontMeta").innerHTML = parts.join('<span class="meta-dot"> · </span>');
+    const metaHtml = parts.join('<span class="meta-dot"> · </span>');
+    const warnHtml = f.licenseNote
+      ? `<span class="license-warn">⚠ ${esc(f.licenseNote)}</span>`
+      : "";
+    document.getElementById("fontMeta").innerHTML = metaHtml + (warnHtml ? '<br style="display:block;margin-top:6px">' + warnHtml : "");
 
     document.title = f.nameEn + " – free-fonts";
   }
@@ -824,13 +854,21 @@
       return;
     }
 
+    const noCdns = font().noCdns || [];
+    const effectiveCdn = noCdns.includes(cdn) ? "unpkg" : cdn;
+
     const lines = [];
-    if (cdn === 'npm') {
+    if (noCdns.includes(cdn)) {
+      lines.push(`/* ⚠ jsDelivr 不提供此套件（體積過大被拒），已自動切換為 unpkg */`);
+      lines.push('');
+    }
+
+    if (effectiveCdn === 'npm') {
       pkgs.forEach(p => lines.push(`npm install ${p.name}`));
       lines.push('');
       pkgs.forEach(p => lines.push(`import "${p.name}/${p.css}";`));
     } else {
-      const base = cdn === 'jsdelivr'
+      const base = effectiveCdn === 'jsdelivr'
         ? 'https://cdn.jsdelivr.net/npm/'
         : 'https://unpkg.com/';
       pkgs.forEach(p =>
