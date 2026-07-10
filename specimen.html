@@ -542,6 +542,7 @@
     { label: "CJK Extension A (3400–4DBF)",    start: 0x3400 },
     { label: "CJK URO (4E00–9FFF)",            start: 0x4E00 },
     { label: "Hangul Syllables",               start: 0xAC00 },
+    { label: "PUA – BMP (E000–F8FF)",           start: 0xE000 },
     { label: "CJK Compatibility Ideographs",   start: 0xF900 },
     { label: "CJK Extension B (20000–)",       start: 0x20000 },
     { label: "CJK Extension C (2A700–)",       start: 0x2A700 },
@@ -550,11 +551,13 @@
     { label: "CJK Extension F (2CEB0–)",       start: 0x2CEB0 },
     { label: "CJK Extension I (2EBF0–)",       start: 0x2EBF0 },
     { label: "CJK Extension G (30000–)",       start: 0x30000 },
-    { label: "CJK Extension H (31350–)",       start: 0x31350 }
+    { label: "CJK Extension H (31350–)",       start: 0x31350 },
+    { label: "PUA – Sup-A (F0000–FFFFF)",      start: 0xF0000 },
+    { label: "PUA – Sup-B (100000–10FFFF)",    start: 0x100000 }
   ];
 
   const PRESETS = {
-    normalText: "春江花月夜，江流宛轉遶芳甸，月照花林皆似霰。\n\nThe quick brown fox jumps over the lazy dog.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    normalText: "春江花月夜，江流宛轉遶芳甸，月照花林皆似霰。\nThe quick brown fox jumps over the lazy dog.\nLorem ipsum dolor sit amet, consectetur adipiscing elit.",
     cjkCore:    "𰻞 𠀀 𠀋 𪚥\n𫝀 𫞂 𫠝\n里 裏 裡  发 發 髮\n后 後  台 臺 檯  面 麵\n群 羣  青 靑  丑 醜",
     punctuation:"「」『』（）【】《》〈〉\n，。、！？；：\n· … — –\n“中文, English。”",
     mixScript:  "中文 English 日本語 한글 𠀋\nOpenType · Unicode · 漢字\n上海 Tokyo 서울 New York"
