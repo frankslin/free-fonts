@@ -1,0 +1,898 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>字型樣張 – free-fonts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500&family=Noto+Sans+TC:wght@400;500&family=Noto+Serif+SC:wght@400;500;600&family=Noto+Serif+TC:wght@400;500;600&display=swap">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f2e8;
+      --paper: #fffaf1;
+      --paper-soft: #f1e7d8;
+      --panel: rgba(255,250,241,0.88);
+      --panel-solid: #fffaf1;
+      --line: rgba(72,56,40,0.18);
+      --line-strong: rgba(72,56,40,0.32);
+      --text: #211b16;
+      --muted: #766c60;
+      --faint: #a2978a;
+      --accent: #8f3f2b;
+      --accent-2: #4d6d62;
+      --field: rgba(255,252,246,0.92);
+      --btn-active-text: #fffaf1;
+      --primary-bg: #2f5147;
+      --primary-border: #2f5147;
+    }
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --bg: #171512;
+      --paper: #211d18;
+      --paper-soft: #2b251e;
+      --panel: rgba(33,29,24,0.88);
+      --panel-solid: #211d18;
+      --line: rgba(232,218,197,0.16);
+      --line-strong: rgba(232,218,197,0.28);
+      --text: #f4eadc;
+      --muted: #b8aa98;
+      --faint: #897b6c;
+      --accent: #d08468;
+      --accent-2: #9fc1b2;
+      --field: rgba(18,16,13,0.82);
+      --btn-active-text: #171512;
+      --primary-bg: #c99c79;
+      --primary-border: #c99c79;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    button, select, input { font: inherit; }
+    button { cursor: pointer; }
+
+    /* ── Topbar ── */
+    .topbar {
+      position: sticky; top: 0; z-index: 10;
+      display: flex; align-items: center; gap: 10px;
+      padding: 9px 24px;
+      border-bottom: 1px solid var(--line);
+      background: var(--panel);
+      backdrop-filter: blur(14px);
+    }
+
+    .back-link {
+      display: inline-flex; align-items: center; gap: 4px;
+      color: var(--muted); font-size: 13px; white-space: nowrap; flex-shrink: 0;
+    }
+    .back-link:hover { color: var(--text); }
+
+    .topbar-sep { width: 1px; height: 18px; background: var(--line-strong); flex-shrink: 0; }
+
+    #fontSelect {
+      flex: 1; min-width: 0; max-width: 280px; height: 32px;
+      border: 1px solid var(--line); border-radius: 6px;
+      padding: 0 8px; background: var(--field); color: var(--text);
+    }
+
+    .topbar-end { display: flex; gap: 6px; margin-left: auto; flex-shrink: 0; }
+
+    .btn {
+      height: 32px; padding: 0 12px;
+      border: 1px solid var(--line); border-radius: 6px;
+      background: var(--field); color: var(--text);
+      font-size: 13px; cursor: pointer; white-space: nowrap;
+    }
+    .btn:hover { border-color: var(--accent); }
+
+    /* ── Page ── */
+    .page { max-width: 1200px; margin: 0 auto; padding: 0 24px 80px; }
+
+    /* ── Font header ── */
+    .font-header { padding: 28px 0 20px; border-bottom: 1px solid var(--line); }
+
+    .font-display {
+      font-size: clamp(56px, 10vw, 104px);
+      line-height: 1.0;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+    }
+
+    .font-names { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+    .name-en { font-size: 20px; font-weight: 500; }
+    .name-zh { font-size: 16px; color: var(--muted); }
+
+    .variant-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+
+    .segmented {
+      display: inline-flex; gap: 3px; padding: 3px;
+      border: 1px solid var(--line); border-radius: 7px;
+      background: var(--field);
+    }
+    .segmented button {
+      min-width: 38px; height: 26px; padding: 0 10px;
+      border: 0; border-radius: 5px; background: transparent;
+      color: var(--muted); font-size: 13px;
+    }
+    .segmented button[aria-pressed="true"] {
+      background: var(--text); color: var(--paper);
+    }
+
+    .font-meta { margin-top: 12px; font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+    .font-meta a { color: var(--accent-2); }
+    .font-meta a:hover { text-decoration: underline; }
+    .meta-dot { color: var(--faint); }
+
+    /* ── Type tester ── */
+    .tester-section { margin-top: 28px; }
+
+    .tester-bar {
+      display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .bar-label {
+      font-size: 11px; font-weight: 600; letter-spacing: 0.09em;
+      text-transform: uppercase; color: var(--faint); white-space: nowrap;
+    }
+
+    .size-ctl { display: flex; align-items: center; gap: 6px; }
+    .size-ctl input[type="range"] { width: 110px; accent-color: var(--accent); cursor: pointer; }
+    .size-val { font-size: 12px; color: var(--muted); min-width: 34px; font-variant-numeric: tabular-nums; }
+
+    .preset-btns { display: flex; gap: 5px; flex-wrap: wrap; }
+    .preset-btns button {
+      height: 28px; padding: 0 10px; font-size: 12px;
+      border: 1px solid var(--line); border-radius: 5px;
+      background: var(--field); color: var(--muted);
+    }
+    .preset-btns button:hover { border-color: var(--accent); color: var(--text); }
+
+    .preview-area {
+      padding: 22px 20px; min-height: 130px;
+      border: 1px solid var(--line); border-radius: 8px;
+      background: var(--paper);
+      line-height: 1.72; white-space: pre-wrap; overflow-wrap: anywhere;
+      outline: none; cursor: text;
+      transition: border-color 0.15s;
+    }
+    .preview-area:empty::before {
+      content: "点击此处输入文字 / Click to type…";
+      color: var(--faint); pointer-events: none;
+    }
+    .preview-area:focus { border-color: var(--accent); }
+
+    /* ── Waterfall ── */
+    .section-head {
+      margin: 34px 0 11px;
+      font-size: 11px; font-weight: 600; letter-spacing: 0.09em;
+      text-transform: uppercase; color: var(--faint);
+    }
+
+    .waterfall { border: 1px solid var(--line); border-radius: 8px; background: var(--paper); overflow: hidden; }
+    .w-row {
+      display: grid; grid-template-columns: 42px minmax(0,1fr);
+      align-items: baseline; padding: 9px 18px;
+      border-bottom: 1px solid var(--line);
+    }
+    .w-row:last-child { border-bottom: none; }
+    .w-sz { font-size: 11px; color: var(--faint); font-variant-numeric: tabular-nums; }
+    .w-text { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 1.3; }
+
+    /* ── Glyph browser ── */
+    .glyph-section { margin-top: 0; }
+
+    .glyph-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 10px; }
+    .glyph-controls select {
+      height: 32px; border: 1px solid var(--line); border-radius: 6px;
+      padding: 0 8px; background: var(--field); color: var(--text);
+    }
+    .jump-row { display: flex; gap: 5px; }
+    .jump-row input {
+      width: 88px; height: 32px; padding: 0 8px;
+      border: 1px solid var(--line); border-radius: 6px;
+      background: var(--field); color: var(--text);
+      font: 12px/1 ui-monospace, Menlo, monospace; cursor: text;
+    }
+    .glyph-range { margin-left: auto; font: 12px/1 ui-monospace, Menlo, monospace; color: var(--faint); }
+
+    .glyph-wrap { border: 1px solid var(--line); border-radius: 8px; background: var(--paper); overflow: hidden; }
+
+    .glyph-grid {
+      display: grid;
+      grid-template-columns: repeat(16, minmax(0,1fr));
+      border-top: 1px solid var(--line);
+      border-left: 1px solid var(--line);
+    }
+
+    .g-cell {
+      display: grid; grid-template-rows: auto 1fr;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      border-top: 0; border-left: 0;
+      aspect-ratio: 1; min-width: 0;
+      cursor: pointer; background: transparent;
+      padding: 0; transition: background 0.1s;
+    }
+    .g-cell:hover { background: color-mix(in srgb, var(--accent) 10%, transparent); }
+    .g-cell.is-pinned {
+      box-shadow: inset 0 0 0 2px var(--accent);
+      background: color-mix(in srgb, var(--accent) 14%, transparent);
+    }
+    .g-code {
+      padding: 2px 3px;
+      font: 9px/1.3 ui-monospace, Menlo, monospace;
+      color: var(--faint); overflow: hidden; white-space: nowrap;
+      border-bottom: 1px solid rgba(120,100,80,0.10);
+    }
+    .g-char { display: grid; place-items: center; font-size: 20px; line-height: 1; }
+
+    .glyph-nav { display: flex; justify-content: center; gap: 8px; margin-top: 10px; }
+
+    /* ── Pinned glyph ── */
+    .pinned-section { margin-top: 18px; display: none; }
+    .pinned-section.show { display: block; }
+    .pinned-panel {
+      display: flex; align-items: center; gap: 28px;
+      padding: 18px 22px;
+      border: 1px solid var(--line); border-radius: 8px; background: var(--paper);
+    }
+    .pinned-big { font-size: 80px; line-height: 1; min-width: 90px; text-align: center; }
+    .pinned-meta { font: 13px/1.9 ui-monospace, Menlo, monospace; color: var(--muted); }
+
+    /* ── Responsive ── */
+    @media (max-width: 700px) {
+      .page { padding: 0 14px 56px; }
+      .topbar { padding: 9px 14px; }
+      .glyph-grid { grid-template-columns: repeat(8, minmax(0,1fr)); }
+      .w-row { grid-template-columns: 36px 1fr; padding: 8px 12px; }
+      .g-char { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="topbar">
+  <a class="back-link" href="./index.html">← 字型總覽</a>
+  <div class="topbar-sep"></div>
+  <select id="fontSelect"></select>
+  <div class="topbar-end">
+    <button class="btn" id="themeBtn">Dark</button>
+    <button class="btn" id="shareBtn">Share</button>
+  </div>
+</nav>
+
+<div class="page">
+  <header class="font-header">
+    <div class="font-display" id="fontDisplay"></div>
+    <div class="font-names">
+      <span class="name-en" id="nameEn"></span>
+      <span class="name-zh" id="nameZh"></span>
+    </div>
+    <div class="variant-row" id="variantRow"></div>
+    <div class="font-meta" id="fontMeta"></div>
+  </header>
+
+  <section class="tester-section">
+    <div class="tester-bar">
+      <span class="bar-label">Type Tester</span>
+      <div class="size-ctl">
+        <input type="range" id="sizeSlider" min="16" max="96" value="48">
+        <span class="size-val" id="sizeVal">48px</span>
+      </div>
+      <div class="preset-btns">
+        <button data-preset="normalText">阅读段落</button>
+        <button data-preset="cjkCore">异体字</button>
+        <button data-preset="punctuation">标点</button>
+        <button data-preset="mixScript">多语</button>
+      </div>
+    </div>
+    <div class="preview-area" id="previewArea" contenteditable="true" spellcheck="false"></div>
+  </section>
+
+  <div class="section-head">字号瀑布 / Size Waterfall</div>
+  <div class="waterfall" id="waterfall"></div>
+
+  <section class="glyph-section">
+    <div class="section-head">字符浏览 / Glyph Browser</div>
+    <div class="glyph-controls">
+      <select id="blockSel"></select>
+      <div class="jump-row">
+        <input id="jumpInput" placeholder="U+4E00" spellcheck="false" autocomplete="off">
+        <button class="btn" id="jumpBtn">跳转</button>
+      </div>
+      <span class="glyph-range" id="glyphRange"></span>
+    </div>
+    <div class="glyph-wrap">
+      <div class="glyph-grid" id="glyphGrid"></div>
+    </div>
+    <div class="glyph-nav">
+      <button class="btn" id="glyphPrev">← 上一页</button>
+      <button class="btn" id="glyphNext">下一页 →</button>
+    </div>
+  </section>
+
+  <div class="pinned-section" id="pinnedSec">
+    <div class="section-head">选中字符 / Selected Glyph</div>
+    <div class="pinned-panel">
+      <div class="pinned-big" id="pinnedBig"></div>
+      <div class="pinned-meta" id="pinnedMeta"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const FONTS = [
+    {
+      id: "wenjin",
+      nameEn: "WenJin Mincho",
+      nameZh: "文津明朝",
+      displayText: "文津明朝",
+      css: ["./wenjin-mincho/wenjin-mincho.css"],
+      upstream: "https://github.com/takushun-wu/WenJinMincho",
+      license: "SIL OFL 1.1",
+      variants: [
+        { key: "default", label: "Default", family: '"WenJin Mincho Plane 0","WenJin Mincho Plane 2","WenJin Mincho Plane 3",serif', weights: [400] }
+      ]
+    },
+    {
+      id: "genki",
+      nameEn: "Genki Mincho",
+      nameZh: "源起明體 TC",
+      displayText: "源起明體",
+      css: ["./genki-mincho/genki-mincho.css"],
+      upstream: "https://github.com/ButTaiwan/genyo-font",
+      license: "SIL OFL 1.1",
+      variants: [
+        { key: "default", label: "TC", family: '"GenKiMin2TC",serif', weights: [400] }
+      ]
+    },
+    {
+      id: "genyo",
+      nameEn: "GenYo Mincho",
+      nameZh: "源樣明體 TC",
+      displayText: "源樣明體",
+      css: ["./genyo-mincho/genyo-mincho.css"],
+      upstream: "https://github.com/ButTaiwan/genyo-font",
+      license: "SIL OFL 1.1",
+      variants: [
+        { key: "default", label: "TC", family: '"GenYoMin2TC",serif', weights: [400] }
+      ]
+    },
+    {
+      id: "black-sugar-plum-candy",
+      nameEn: "Black Sugar Plum Candy",
+      nameZh: "黑糖话梅",
+      displayText: "黑糖话梅",
+      css: ["./black-sugar-plum-candy/black-sugar-plum-candy.css"],
+      upstream: "https://github.com/lxgw/BlackSugarPlumCandy",
+      license: "SIL OFL 1.1",
+      variants: [
+        { key: "default", label: "Bold", family: '"Black Sugar Plum Candy",sans-serif', weights: [700] }
+      ]
+    },
+    {
+      id: "lxgw-wenkai",
+      nameEn: "LXGW WenKai",
+      nameZh: "霞鶩文楷",
+      displayText: "霞鶩文楷",
+      css: ["./lxgw-wenkai/lxgw-wenkai.css", "./lxgw-wenkai-gb/lxgw-wenkai-gb.css", "./lxgw-wenkai-tc/lxgw-wenkai-tc.css"],
+      upstream: "https://github.com/lxgw/LxgwWenKai",
+      license: "SIL OFL 1.1",
+      variants: [
+        { key: "original", label: "Original", family: '"LXGW WenKai",cursive,sans-serif', weights: [300, 400, 500] },
+        { key: "gb",       label: "GB",       family: '"LXGW WenKai GB",cursive,sans-serif', weights: [300, 400, 500] },
+        { key: "tc",       label: "TC",       family: '"LXGW WenKai TC",cursive,sans-serif', weights: [300, 400, 500] }
+      ]
+    },
+    {
+      id: "tw-sung",
+      nameEn: "TW-Sung",
+      nameZh: "全字庫正宋體",
+      displayText: "全字庫正宋體",
+      css: ["./tw-sung/tw-sung.css"],
+      upstream: "https://data.gov.tw/dataset/5961",
+      license: "全字庫 OFL",
+      variants: [
+        { key: "default", label: "Regular", family: '"TW-Sung",serif', weights: [400] }
+      ]
+    },
+    {
+      id: "tw-kai",
+      nameEn: "TW-Kai",
+      nameZh: "全字庫正楷體",
+      displayText: "全字庫正楷體",
+      css: ["./tw-kai/tw-kai.css"],
+      upstream: "https://data.gov.tw/dataset/5961",
+      license: "全字庫 OFL",
+      variants: [
+        { key: "default", label: "Regular", family: '"TW-Kai",cursive,serif', weights: [400] }
+      ]
+    },
+    {
+      id: "babelstone-han",
+      nameEn: "BabelStone Han",
+      nameZh: "巴貝斯通漢",
+      displayText: "漢字大全",
+      css: ["./BabelStoneHan-UFO-Fonts/babelstone-han.css"],
+      upstream: "https://github.com/babelstone/babelstonehan-ufo",
+      license: "Arphic 1999",
+      variants: [
+        { key: "basic", label: "Basic", family: "'BabelStone Han Basic',serif", weights: [400] },
+        { key: "extra", label: "Extra", family: "'BabelStone Han Extra',serif", weights: [400] },
+        { key: "pua",   label: "PUA",   family: "'BabelStone Han PUA',serif",   weights: [400] }
+      ]
+    },
+    {
+      id: "jigmo",
+      nameEn: "Jigmo",
+      nameZh: "字雲",
+      displayText: "字雲",
+      css: [
+        "https://unpkg.com/@free-fonts/jigmo@1.0.0/jigmo.css",
+        "https://unpkg.com/@free-fonts/jigmo-sc@1.0.0/jigmo-sc.css",
+        "https://unpkg.com/@free-fonts/jigmo-tc@1.0.0/jigmo-tc.css"
+      ],
+      upstream: "https://kamichikoichi.github.io/jigmo/",
+      license: "IPA Font License 1.0",
+      variants: [
+        { key: "base", label: "Original", family: '"Jigmo",serif',    weights: [400] },
+        { key: "sc",   label: "SC",       family: '"Jigmo SC",serif', weights: [400] },
+        { key: "tc",   label: "TC",       family: '"Jigmo TC",serif', weights: [400] }
+      ]
+    },
+    {
+      id: "noto-serif",
+      nameEn: "Noto Serif CJK",
+      nameZh: "思源宋體",
+      displayText: "思源宋體",
+      css: [],
+      upstream: "https://fonts.google.com/noto",
+      license: "SIL OFL 1.1",
+      variants: [
+        { key: "sc", label: "SC", family: '"Noto Serif SC",serif',    weights: [400, 500, 600] },
+        { key: "tc", label: "TC", family: '"Noto Serif TC",serif',    weights: [400, 500, 600] }
+      ]
+    },
+    {
+      id: "noto-sans",
+      nameEn: "Noto Sans CJK",
+      nameZh: "思源黑體",
+      displayText: "思源黑體",
+      css: [],
+      upstream: "https://fonts.google.com/noto",
+      license: "SIL OFL 1.1",
+      variants: [
+        { key: "sc", label: "SC", family: '"Noto Sans SC",sans-serif', weights: [400, 500] },
+        { key: "tc", label: "TC", family: '"Noto Sans TC",sans-serif', weights: [400, 500] }
+      ]
+    }
+  ];
+
+  const BLOCKS = [
+    { label: "Basic Latin",                    start: 0x0000 },
+    { label: "Latin Extended-A/B",             start: 0x0100 },
+    { label: "CJK Radicals Supplement",        start: 0x2E80 },
+    { label: "Kangxi Radicals",                start: 0x2F00 },
+    { label: "Bopomofo / Hiragana / Katakana", start: 0x3040 },
+    { label: "CJK Extension A (3400–4DBF)",    start: 0x3400 },
+    { label: "CJK URO (4E00–9FFF)",            start: 0x4E00 },
+    { label: "Hangul Syllables",               start: 0xAC00 },
+    { label: "CJK Compatibility Ideographs",   start: 0xF900 },
+    { label: "CJK Extension B (20000–)",       start: 0x20000 },
+    { label: "CJK Extension C (2A700–)",       start: 0x2A700 },
+    { label: "CJK Extension D (2B740–)",       start: 0x2B740 },
+    { label: "CJK Extension E (2B820–)",       start: 0x2B820 },
+    { label: "CJK Extension F (2CEB0–)",       start: 0x2CEB0 },
+    { label: "CJK Extension I (2EBF0–)",       start: 0x2EBF0 },
+    { label: "CJK Extension G (30000–)",       start: 0x30000 },
+    { label: "CJK Extension H (31350–)",       start: 0x31350 }
+  ];
+
+  const PRESETS = {
+    normalText: "春江花月夜，江流宛轉遶芳甸，月照花林皆似霰。\n\nThe quick brown fox jumps over the lazy dog.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    cjkCore:    "𰻞 𠀀 𠀋 𪚥\n𫝀 𫞂 𫠝\n里 裏 裡  发 發 髮\n后 後  台 臺 檯  面 麵\n群 羣  青 靑  丑 醜",
+    punctuation:"「」『』（）【】《》〈〉\n，。、！？；：\n· … — –\n"中文, English。"",
+    mixScript:  "中文 English 日本語 한글 𠀋\nOpenType · Unicode · 漢字\n上海 Tokyo 서울 New York"
+  };
+
+  const WATERFALL_SIZES = [96, 72, 48, 36, 24, 18, 14];
+  const COLS = 16;
+  const PAGE_SIZE = COLS * 8;
+
+  /* ── State ── */
+  const state = {
+    fontId: "wenjin",
+    variantKey: "default",
+    weight: 400,
+    size: 48,
+    text: PRESETS.normalText,
+    glyphStart: 0x4E00,
+    pinned: null,
+    theme: localStorage.getItem("pref-theme") || "light"
+  };
+
+  /* ── CSS loading ── */
+  const loadedCss = new Set();
+  function ensureCss(font) {
+    font.css.forEach(href => {
+      if (loadedCss.has(href)) return;
+      loadedCss.add(href);
+      const el = document.createElement("link");
+      el.rel = "stylesheet";
+      el.href = href;
+      document.head.appendChild(el);
+    });
+  }
+
+  /* ── Helpers ── */
+  function getFont(id) { return FONTS.find(f => f.id === id) || FONTS[0]; }
+
+  function getVariant(font, key) {
+    return font.variants.find(v => v.key === key) || font.variants[0];
+  }
+
+  function font()    { return getFont(state.fontId); }
+  function variant() { return getVariant(font(), state.variantKey); }
+  function weight()  {
+    const w = state.weight;
+    const ws = variant().weights;
+    return ws.includes(w) ? w : ws[Math.floor(ws.length / 2)];
+  }
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  }
+
+  function fmtCp(n) {
+    return "U+" + n.toString(16).toUpperCase().padStart(n > 0xFFFF ? 5 : 4, "0");
+  }
+
+  function parseCp(s) {
+    const m = s.trim().match(/^(?:U\+|0x)?([0-9a-fA-F]{1,6})$/);
+    if (m) { const n = parseInt(m[1], 16); return n <= 0x10FFFF ? n : null; }
+    return Array.from(s.trim())[0]?.codePointAt(0) ?? null;
+  }
+
+  function charFrom(cp) {
+    if (cp > 0x10FFFF || (cp >= 0xD800 && cp <= 0xDFFF)) return "";
+    return String.fromCodePoint(cp);
+  }
+
+  /* ── URL sync ── */
+  function encodeUrl() {
+    const p = new URLSearchParams();
+    p.set("font",    state.fontId);
+    p.set("variant", state.variantKey);
+    p.set("weight",  state.weight);
+    p.set("size",    state.size);
+    if (state.text !== PRESETS.normalText) p.set("text", state.text);
+    return "?" + p.toString();
+  }
+
+  let urlTimer = null;
+  function syncUrl() {
+    clearTimeout(urlTimer);
+    urlTimer = setTimeout(() => {
+      history.replaceState(null, "", encodeUrl());
+      document.title = font().nameEn + " – free-fonts";
+    }, 350);
+  }
+
+  /* ── Render: font selector ── */
+  function renderSelect() {
+    document.getElementById("fontSelect").innerHTML = FONTS.map(f =>
+      `<option value="${esc(f.id)}" ${f.id === state.fontId ? "selected" : ""}>${esc(f.nameEn)}${f.nameZh ? " / " + esc(f.nameZh) : ""}</option>`
+    ).join("");
+  }
+
+  /* ── Render: header ── */
+  function renderHeader() {
+    const f = font();
+    const v = variant();
+    const w = weight();
+
+    document.documentElement.style.setProperty("--preview-weight", w);
+
+    const disp = document.getElementById("fontDisplay");
+    disp.textContent = f.displayText || f.nameZh || f.nameEn;
+    disp.style.fontFamily = v.family;
+    disp.style.fontWeight = w;
+
+    document.getElementById("nameEn").textContent = f.nameEn;
+    document.getElementById("nameZh").textContent = f.nameZh || "";
+
+    // Variant + weight segmented controls
+    const row = document.getElementById("variantRow");
+    let html = "";
+    if (f.variants.length > 1) {
+      html += `<div class="segmented">${f.variants.map(vv =>
+        `<button type="button" data-variant="${esc(vv.key)}" aria-pressed="${vv.key === state.variantKey}">${esc(vv.label)}</button>`
+      ).join("")}</div>`;
+    }
+    if (v.weights.length > 1) {
+      html += `<div class="segmented">${v.weights.map(ww =>
+        `<button type="button" data-weight="${ww}" aria-pressed="${ww === w}">${ww}</button>`
+      ).join("")}</div>`;
+    }
+    row.innerHTML = html;
+
+    // Meta
+    const parts = [];
+    if (f.upstream) parts.push(`<a href="${esc(f.upstream)}" target="_blank" rel="noopener">↗ Source</a>`);
+    if (f.license)  parts.push(`<span>${esc(f.license)}</span>`);
+    document.getElementById("fontMeta").innerHTML = parts.join('<span class="meta-dot"> · </span>');
+
+    document.title = f.nameEn + " – free-fonts";
+  }
+
+  /* ── Render: preview ── */
+  let editingPreview = false;
+
+  function renderPreview() {
+    const v = variant();
+    const w = weight();
+    const sz = state.size;
+
+    document.documentElement.style.setProperty("--preview-weight", w);
+
+    const el = document.getElementById("previewArea");
+    el.style.fontFamily = v.family;
+    el.style.fontSize   = sz + "px";
+    el.style.fontWeight = w;
+
+    if (!editingPreview && el.textContent !== state.text) {
+      el.textContent = state.text;
+    }
+
+    document.getElementById("sizeSlider").value = sz;
+    document.getElementById("sizeVal").textContent = sz + "px";
+  }
+
+  /* ── Render: waterfall ── */
+  function renderWaterfall() {
+    const v = variant();
+    const w = weight();
+    const text = state.text.split("\n")[0] || "春江花月夜";
+
+    document.getElementById("waterfall").innerHTML = WATERFALL_SIZES.map(sz => `
+      <div class="w-row">
+        <span class="w-sz">${sz}</span>
+        <span class="w-text" style="font-family:${esc(v.family)};font-size:${sz}px;font-weight:${w};">${esc(text)}</span>
+      </div>
+    `).join("");
+  }
+
+  /* ── Render: glyph browser ── */
+  function renderGlyphs() {
+    const v = variant();
+    const w = weight();
+    const start = state.glyphStart;
+    const end   = Math.min(start + PAGE_SIZE - 1, 0x10FFFF);
+
+    document.getElementById("glyphRange").textContent = `${fmtCp(start)} – ${fmtCp(end)}`;
+
+    const grid = document.getElementById("glyphGrid");
+    grid.style.fontFamily = v.family;
+    grid.innerHTML = Array.from({ length: end - start + 1 }, (_, i) => {
+      const cp    = start + i;
+      const char  = charFrom(cp);
+      const pin   = cp === state.pinned ? " is-pinned" : "";
+      return `<button type="button" class="g-cell${pin}" data-cp="${cp}">
+        <span class="g-code">${fmtCp(cp)}</span>
+        <span class="g-char" style="font-weight:${w};">${esc(char)}</span>
+      </button>`;
+    }).join("");
+  }
+
+  /* ── Render: pinned glyph ── */
+  function renderPinned() {
+    const sec = document.getElementById("pinnedSec");
+    const cp  = state.pinned;
+    if (cp == null) { sec.classList.remove("show"); return; }
+    sec.classList.add("show");
+
+    const v    = variant();
+    const w    = weight();
+    const char = charFrom(cp);
+
+    const big = document.getElementById("pinnedBig");
+    big.textContent   = char;
+    big.style.fontFamily = v.family;
+    big.style.fontWeight = w;
+
+    document.getElementById("pinnedMeta").innerHTML =
+      `${fmtCp(cp)}<br>Decimal: ${cp}<br>Name block: ${blockName(cp)}`;
+  }
+
+  function blockName(cp) {
+    const b = [...BLOCKS].reverse().find(b => b.start <= cp);
+    return b ? esc(b.label) : "—";
+  }
+
+  /* ── Block selector ── */
+  function initBlockSel() {
+    const sel = document.getElementById("blockSel");
+    sel.innerHTML = BLOCKS.map(b =>
+      `<option value="${b.start}">${esc(b.label)}</option>`
+    ).join("");
+    syncBlockSel();
+  }
+
+  function syncBlockSel() {
+    const best = [...BLOCKS].reverse().find(b => b.start <= state.glyphStart);
+    if (best) document.getElementById("blockSel").value = best.start;
+  }
+
+  /* ── Full render ── */
+  function renderAll() {
+    renderSelect();
+    renderHeader();
+    renderPreview();
+    renderWaterfall();
+    initBlockSel();
+    renderGlyphs();
+    renderPinned();
+    syncUrl();
+  }
+
+  /* ── Event: font selector ── */
+  document.getElementById("fontSelect").addEventListener("change", e => {
+    const f = getFont(e.target.value);
+    ensureCss(f);
+    state.fontId    = f.id;
+    state.variantKey = f.variants[0].key;
+    state.weight    = f.variants[0].weights[Math.floor(f.variants[0].weights.length / 2)];
+    state.pinned    = null;
+    renderAll();
+  });
+
+  /* ── Event: variant + weight (delegated) ── */
+  document.getElementById("variantRow").addEventListener("click", e => {
+    const vBtn = e.target.closest("[data-variant]");
+    if (vBtn) {
+      state.variantKey = vBtn.dataset.variant;
+      const v = variant();
+      if (!v.weights.includes(state.weight)) state.weight = v.weights[0];
+      renderAll();
+      return;
+    }
+    const wBtn = e.target.closest("[data-weight]");
+    if (wBtn) {
+      state.weight = Number(wBtn.dataset.weight);
+      renderAll();
+    }
+  });
+
+  /* ── Event: size slider ── */
+  document.getElementById("sizeSlider").addEventListener("input", e => {
+    state.size = Number(e.target.value);
+    document.getElementById("sizeVal").textContent = state.size + "px";
+    const el = document.getElementById("previewArea");
+    el.style.fontSize = state.size + "px";
+    renderWaterfall();
+    syncUrl();
+  });
+
+  /* ── Event: preset buttons ── */
+  document.querySelectorAll("[data-preset]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      state.text = PRESETS[btn.dataset.preset] || state.text;
+      editingPreview = false;
+      renderPreview();
+      renderWaterfall();
+      renderCodepoints();
+      syncUrl();
+    });
+  });
+
+  /* ── Event: contenteditable preview ── */
+  const previewEl = document.getElementById("previewArea");
+
+  previewEl.addEventListener("focus", () => { editingPreview = true; });
+  previewEl.addEventListener("blur",  () => { editingPreview = false; });
+
+  previewEl.addEventListener("input", () => {
+    state.text = previewEl.textContent;
+    renderWaterfall();
+    syncUrl();
+  });
+
+  /* ── Event: glyph grid ── */
+  document.getElementById("glyphGrid").addEventListener("click", e => {
+    const cell = e.target.closest("[data-cp]");
+    if (!cell) return;
+    const cp = Number(cell.dataset.cp);
+    state.pinned = state.pinned === cp ? null : cp;
+    document.querySelectorAll(".g-cell.is-pinned").forEach(c => c.classList.remove("is-pinned"));
+    if (state.pinned != null) cell.classList.add("is-pinned");
+    renderPinned();
+  });
+
+  /* ── Event: block selector ── */
+  document.getElementById("blockSel").addEventListener("change", e => {
+    state.glyphStart = Number(e.target.value);
+    renderGlyphs();
+  });
+
+  /* ── Event: jump input ── */
+  function doJump() {
+    const cp = parseCp(document.getElementById("jumpInput").value);
+    if (cp == null) return;
+    state.glyphStart = Math.floor(cp / PAGE_SIZE) * PAGE_SIZE;
+    renderGlyphs();
+    syncBlockSel();
+  }
+  document.getElementById("jumpBtn").addEventListener("click", doJump);
+  document.getElementById("jumpInput").addEventListener("keydown", e => { if (e.key === "Enter") doJump(); });
+
+  /* ── Event: glyph prev / next ── */
+  document.getElementById("glyphPrev").addEventListener("click", () => {
+    state.glyphStart = Math.max(0, state.glyphStart - PAGE_SIZE);
+    renderGlyphs(); syncBlockSel();
+  });
+  document.getElementById("glyphNext").addEventListener("click", () => {
+    state.glyphStart = Math.min(0x10FF80, state.glyphStart + PAGE_SIZE);
+    renderGlyphs(); syncBlockSel();
+  });
+
+  /* ── Event: theme ── */
+  function applyTheme(t) {
+    state.theme = t;
+    localStorage.setItem("pref-theme", t);
+    document.documentElement.dataset.theme = t;
+    document.getElementById("themeBtn").textContent = t === "dark" ? "Light" : "Dark";
+  }
+  document.getElementById("themeBtn").addEventListener("click", () => {
+    applyTheme(state.theme === "dark" ? "light" : "dark");
+  });
+
+  /* ── Event: share ── */
+  document.getElementById("shareBtn").addEventListener("click", () => {
+    syncUrl();
+    navigator.clipboard.writeText(location.href).then(() => {
+      const btn = document.getElementById("shareBtn");
+      const prev = btn.textContent;
+      btn.textContent = "Copied!";
+      setTimeout(() => { btn.textContent = prev; }, 1500);
+    });
+  });
+
+  /* ── Init from URL ── */
+  (function init() {
+    const p = new URLSearchParams(location.search);
+
+    const fId = p.get("font");
+    if (fId && FONTS.find(f => f.id === fId)) state.fontId = fId;
+
+    const f = font();
+    const vKey = p.get("variant");
+    state.variantKey = (vKey && f.variants.find(v => v.key === vKey)) ? vKey : f.variants[0].key;
+
+    const pw = Number(p.get("weight"));
+    if (pw && variant().weights.includes(pw)) state.weight = pw;
+    else state.weight = variant().weights[Math.floor(variant().weights.length / 2)];
+
+    const psz = Number(p.get("size"));
+    if (psz >= 16 && psz <= 96) state.size = psz;
+
+    if (p.has("text")) state.text = p.get("text");
+
+    applyTheme(state.theme);
+    ensureCss(font());
+    renderAll();
+  })();
+
+  function renderCodepoints() { /* no-op: kept for preset handler parity */ }
+</script>
+</body>
+</html>
