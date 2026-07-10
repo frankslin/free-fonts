@@ -485,8 +485,8 @@
     {
       id: "wfg-fsung",
       nameEn: "WFG FSung",
-      nameZh: "WFG 仿宋",
-      displayText: "仿宋體",
+      nameZh: "WFG 全宋體",
+      displayText: "全宋體",
       css: ["https://unpkg.com/wfg-fsung-webfonts@1.0.1/wfg-fsung.css"],
       upstream: "https://www.npmjs.com/package/wfg-fsung-webfonts",
       license: "WFG NonCommercial",
@@ -982,7 +982,9 @@
     const cp = parseCp(document.getElementById("jumpInput").value);
     if (cp == null) return;
     state.glyphStart = Math.floor(cp / PAGE_SIZE) * PAGE_SIZE;
+    state.pinned = cp;
     renderGlyphs();
+    renderPinned();
     syncBlockSel();
   }
   document.getElementById("jumpBtn").addEventListener("click", doJump);
