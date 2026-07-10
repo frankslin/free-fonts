@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./lxgw-wenkai-tc/lxgw-wenkai-tc.css">
   <link rel="stylesheet" href="./tw-sung/tw-sung.css">
   <link rel="stylesheet" href="./tw-kai/tw-kai.css">
+  <link rel="stylesheet" href="./BabelStoneHan-UFO-Fonts/babelstone-han.css">
   <link rel="stylesheet" href="https://unpkg.com/@free-fonts/jigmo@1.0.0/jigmo.css">
   <link rel="stylesheet" href="https://unpkg.com/@free-fonts/jigmo-sc@1.0.0/jigmo-sc.css">
   <link rel="stylesheet" href="https://unpkg.com/@free-fonts/jigmo-tc@1.0.0/jigmo-tc.css">
@@ -808,7 +809,7 @@
           <span class="title-kicker" data-i18n="titleKicker">中文网页内嵌字体</span>
           <span class="title-main" data-i18n="titleMain">大比拼</span>
         </h1>
-        <p class="sub" data-i18n="subtitle">用同一段文字比较文津宋体、源起明体、源样明体、霞鹜文楷、Jigmo、Noto 与系统 fallback。</p>
+        <p class="sub" data-i18n="subtitle">用同一段文字比较文津宋体、源起明体、源样明体、霞鹜文楷、BabelStone Han、Jigmo、Noto 与系统 fallback。</p>
         <div class="hero-actions">
           <button type="button" data-preset="normalText" data-i18n="presetNormalText">阅读段落</button>
           <button type="button" data-preset="cjkCore" data-i18n="presetCjkCore">罕见异体字</button>
@@ -1053,6 +1054,28 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
         }
       },
       {
+        id: "babelstone-han",
+        labelEn: "BabelStone Han",
+        labelZhHant: "北京字石漢字",
+        variants: {
+          basic: {
+            label: "Basic",
+            family: "'BabelStone Han Basic', serif",
+            stack: "BabelStone Han Basic"
+          },
+          extra: {
+            label: "Extra",
+            family: "'BabelStone Han Extra', serif",
+            stack: "BabelStone Han Extra"
+          },
+          pua: {
+            label: "PUA",
+            family: "'BabelStone Han PUA', serif",
+            stack: "BabelStone Han PUA"
+          }
+        }
+      },
+      {
         id: "jigmo",
         labelEn: "Jigmo",
         labelZhHant: "字雲",
@@ -1162,7 +1185,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
       "zh-Hant": {
         titleKicker: "中文網頁內嵌字型",
         titleMain: "大比拼",
-        subtitle: "用同一段文字比較文津宋體、源起明體、源樣明體、霞鶩文楷、Jigmo、思源/Noto 與系統的 fallback 字型。",
+        subtitle: "用同一段文字比較文津宋體、源起明體、源樣明體、霞鶩文楷、BabelStone Han、Jigmo、思源/Noto 與系統的 fallback 字型。",
         input: "輸入",
         apply: "套用",
         clear: "清除",
@@ -1188,7 +1211,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
       "zh-Hans": {
         titleKicker: "中文网页内嵌字体",
         titleMain: "大比拼",
-        subtitle: "用同一段文字比较文津宋体、源起明体、源样明体、霞鹜文楷、Jigmo、Noto 与系统 fallback。",
+        subtitle: "用同一段文字比较文津宋体、源起明体、源样明体、霞鹜文楷、BabelStone Han、Jigmo、Noto 与系统 fallback。",
         input: "输入",
         apply: "应用",
         clear: "清除",
@@ -1214,7 +1237,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
       en: {
         titleKicker: "CJK Webfont",
         titleMain: "Showdown",
-        subtitle: "Compare WenJin Mincho, Genki Mincho, GenYo Mincho, Black Sugar Plum Candy, LXGW WenKai, Jigmo, Noto, and system fallback with the same text.",
+        subtitle: "Compare WenJin Mincho, Genki Mincho, GenYo Mincho, Black Sugar Plum Candy, LXGW WenKai, BabelStone Han, Jigmo, Noto, and system fallback with the same text.",
         input: "Input",
         apply: "Apply",
         clear: "Clear",
