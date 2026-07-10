@@ -1268,7 +1268,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
       visible: new Set(fontGroups.map((group) => group.id)),
       variants: Object.fromEntries(fontGroups.map((group) => [
         group.id,
-        group.variants.auto ? "auto" : "default"
+        group.variants.auto ? "auto" : (group.variants.default ? "default" : Object.keys(group.variants)[0])
       ])),
       converters: {},
       lang: "zh-Hans",
