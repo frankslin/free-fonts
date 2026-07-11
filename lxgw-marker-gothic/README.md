@@ -14,6 +14,7 @@ body {
 
 The CSS uses 256-codepoint `unicode-range` chunks, so browsers only download the blocks needed by the page. The package includes the upstream Regular TTF as a single-weight webfont family.
 
+- 線上樣張 / Live specimen: <https://free-fonts.digitalhumanities.dev/specimen?font=lxgw-marker-gothic>
 - Upstream: https://github.com/lxgw/LxgwMarkerGothic
 - Upstream version: `v1.003`
 - Upstream font license: SIL Open Font License 1.1

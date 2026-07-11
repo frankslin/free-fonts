@@ -15,6 +15,7 @@ body {
 
 The CSS uses 256-codepoint `unicode-range` chunks, so browsers only download the blocks needed by the page. The package includes the upstream bold TTF as a bold-weight webfont family.
 
+- 線上樣張 / Live specimen: <https://free-fonts.digitalhumanities.dev/specimen?font=black-sugar-plum-candy>
 - Upstream: https://github.com/lxgw/BlackSugarPlumCandy
 - Upstream font license: SIL Open Font License 1.1
 - Package scripts and metadata license: MIT

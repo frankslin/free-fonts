@@ -14,6 +14,7 @@ body {
 
 The CSS uses 256-codepoint `unicode-range` chunks, so browsers only download the blocks needed by the page. P1 (65,440 codepoints, 388 chunks) and P2 (42,152 codepoints, 352 chunks) share the same `font-family` name — the browser selects the right file automatically.
 
+- 線上樣張 / Live specimen: <https://free-fonts.digitalhumanities.dev/specimen?font=plangothic>
 - Upstream: https://github.com/Fitzgerald-Porthmouth-Koenigsegg/Plangothic_Project
 - Upstream version: `V2.9.5795`
 - Upstream font license: SIL Open Font License 1.1

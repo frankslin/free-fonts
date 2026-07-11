@@ -14,6 +14,7 @@ body {
 
 The CSS uses 256-codepoint `unicode-range` chunks, so browsers only download the blocks needed by the page. The package includes weights 400 (Regular), 500 (Medium), and 700 (Bold).
 
+- 線上樣張 / Live specimen: <https://free-fonts.digitalhumanities.dev/specimen?font=lxgw-975-yuan>
 - Upstream: https://github.com/lxgw/975Yuan
 - Upstream version: `26.06.20`
 - Upstream font license: SIL Open Font License 1.1

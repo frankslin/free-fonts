@@ -14,6 +14,7 @@ body {
 
 The CSS uses 256-codepoint `unicode-range` chunks, so browsers only download the blocks needed by the page. This package includes 7 weights: 200, 300, 400, 500, 600, 700, and 900.
 
+- 線上樣張 / Live specimen: <https://free-fonts.digitalhumanities.dev/specimen?font=genki>
 - Upstream: https://github.com/ButTaiwan/genyo-font
 - Upstream font license: SIL Open Font License 1.1
 - Package scripts and metadata license: MIT
