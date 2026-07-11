@@ -1,0 +1,28 @@
+{
+  "name": "@free-fonts/plangothic",
+  "version": "1.0.0",
+  "description": "Chunked woff2 webfonts for Plangothic / 遍黑體.",
+  "license": "MIT AND OFL-1.1",
+  "main": "plangothic.css",
+  "style": "plangothic.css",
+  "files": [
+    "plangothic.css",
+    "fonts",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frankslin/free-fonts.git",
+    "directory": "plangothic"
+  },
+  "keywords": [
+    "font",
+    "webfont",
+    "woff2",
+    "cjk",
+    "gothic",
+    "plangothic",
+    "unicode"
+  ]
+}
