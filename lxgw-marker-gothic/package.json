@@ -1,0 +1,29 @@
+{
+  "name": "@free-fonts/lxgw-marker-gothic",
+  "version": "1.0.0",
+  "description": "Chunked woff2 webfonts for LXGW Marker Gothic / 霞鹜漫黑.",
+  "license": "MIT AND OFL-1.1",
+  "main": "lxgw-marker-gothic.css",
+  "style": "lxgw-marker-gothic.css",
+  "files": [
+    "lxgw-marker-gothic.css",
+    "fonts",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frankslin/free-fonts.git",
+    "directory": "lxgw-marker-gothic"
+  },
+  "keywords": [
+    "font",
+    "webfont",
+    "woff2",
+    "cjk",
+    "display",
+    "marker",
+    "gothic",
+    "lxgw"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "@free-fonts/lxgw-975-yuan",
+  "version": "1.0.0",
+  "description": "Chunked woff2 webfonts for LXGW 975 Yuan SC / 霞鹜975圆体SC.",
+  "license": "MIT AND OFL-1.1",
+  "main": "lxgw-975-yuan.css",
+  "style": "lxgw-975-yuan.css",
+  "files": [
+    "lxgw-975-yuan.css",
+    "fonts",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frankslin/free-fonts.git",
+    "directory": "lxgw-975-yuan"
+  },
+  "keywords": [
+    "font",
+    "webfont",
+    "woff2",
+    "cjk",
+    "rounded",
+    "gothic",
+    "lxgw"
+  ]
+}
