@@ -249,16 +249,32 @@
 
     .glyph-nav { display: flex; justify-content: center; gap: 8px; margin-top: 10px; }
 
-    /* ── Pinned glyph ── */
-    .pinned-section { margin-top: 18px; display: none; }
-    .pinned-section.show { display: block; }
-    .pinned-panel {
-      display: flex; align-items: center; gap: 28px;
-      padding: 18px 22px;
-      border: 1px solid var(--line); border-radius: 8px; background: var(--paper);
+    /* ── Pinned glyph dialog ── */
+    .glyph-dialog {
+      border: 1px solid var(--line); border-radius: 12px;
+      background: var(--paper); color: var(--text);
+      padding: 28px 32px;
+      max-width: min(90vw, 520px);
+      box-shadow: 0 18px 48px rgba(0,0,0,0.28);
     }
-    .pinned-big { font-size: 80px; line-height: 1; min-width: 90px; text-align: center; }
-    .pinned-meta { font: 13px/1.9 ui-monospace, Menlo, monospace; color: var(--muted); }
+    .glyph-dialog::backdrop { background: rgba(20,15,10,0.45); backdrop-filter: blur(2px); }
+    .dialog-body { display: flex; align-items: center; gap: 32px; }
+    .pinned-big {
+      font-size: clamp(96px, 22vw, 160px); line-height: 1;
+      min-width: 1.2em; text-align: center;
+    }
+    .pinned-meta { font: 13px/2 ui-monospace, Menlo, monospace; color: var(--muted); }
+    .dialog-close {
+      position: absolute; top: 10px; right: 10px;
+      width: 28px; height: 28px; font-size: 16px; line-height: 1;
+      border: 1px solid var(--line); border-radius: 6px;
+      background: var(--field); color: var(--muted); cursor: pointer;
+    }
+    .dialog-close:hover { border-color: var(--accent); color: var(--text); }
+    .dialog-actions { margin-top: 10px; }
+    @media (max-width: 520px) {
+      .dialog-body { flex-direction: column; gap: 14px; }
+    }
 
     /* ── Usage section ── */
     .usage-section { margin-top: 0; }
@@ -377,228 +393,24 @@
     </div>
   </section>
 
-  <div class="pinned-section" id="pinnedSec">
-    <div class="section-head">选中字符 / Selected Glyph</div>
-    <div class="pinned-panel">
-      <div class="pinned-big" id="pinnedBig"></div>
-      <div class="pinned-meta" id="pinnedMeta"></div>
-    </div>
-  </div>
 </div>
 
-<script>
-  const FONTS = [
-    {
-      id: "wenjin",
-      nameEn: "WenJin Mincho",
-      nameZh: "文津明朝",
-      displayText: "文津明朝",
-      css: ["./wenjin-mincho/wenjin-mincho.css"],
-      upstream: "https://github.com/takushun-wu/WenJinMincho",
-      license: "SIL OFL 1.1",
-      variants: [
-        { key: "default", label: "Default", family: '"WenJin Mincho Plane 0","WenJin Mincho Plane 2","WenJin Mincho Plane 3",serif', weights: [400],
-          pkgs: [{ name: "@free-fonts/wenjin-mincho", version: "1.0.1", css: "wenjin-mincho.css" }] }
-      ]
-    },
-    {
-      id: "genki",
-      nameEn: "Genki Mincho",
-      nameZh: "源起明體 TC",
-      displayText: "源起明體",
-      css: ["./genki-mincho/genki-mincho.css"],
-      upstream: "https://github.com/ButTaiwan/genyo-font",
-      license: "SIL OFL 1.1",
-      variants: [
-        { key: "default", label: "TC", family: '"GenKiMin2TC",serif', weights: [400],
-          pkgs: [{ name: "@free-fonts/genki-mincho", version: "1.0.1", css: "genki-mincho.css" }] }
-      ]
-    },
-    {
-      id: "genyo",
-      nameEn: "GenYo Mincho",
-      nameZh: "源樣明體 TC",
-      displayText: "源樣明體",
-      css: ["./genyo-mincho/genyo-mincho.css"],
-      upstream: "https://github.com/ButTaiwan/genyo-font",
-      license: "SIL OFL 1.1",
-      variants: [
-        { key: "default", label: "TC", family: '"GenYoMin2TC",serif', weights: [400],
-          pkgs: [{ name: "@free-fonts/genyo-mincho", version: "1.0.1", css: "genyo-mincho.css" }] }
-      ]
-    },
-    {
-      id: "black-sugar-plum-candy",
-      nameEn: "Black Sugar Plum Candy",
-      nameZh: "黑糖话梅",
-      displayText: "黑糖话梅",
-      css: ["./black-sugar-plum-candy/black-sugar-plum-candy.css"],
-      upstream: "https://github.com/lxgw/BlackSugarPlumCandy",
-      license: "SIL OFL 1.1",
-      variants: [
-        { key: "default", label: "Bold", family: '"Black Sugar Plum Candy",sans-serif', weights: [700],
-          pkgs: [{ name: "@free-fonts/black-sugar-plum-candy", version: "1.0.1", css: "black-sugar-plum-candy.css" }] }
-      ]
-    },
-    {
-      id: "lxgw-wenkai",
-      nameEn: "LXGW WenKai",
-      nameZh: "霞鶩文楷",
-      displayText: "霞鶩文楷",
-      css: ["./lxgw-wenkai/lxgw-wenkai.css", "./lxgw-wenkai-gb/lxgw-wenkai-gb.css", "./lxgw-wenkai-tc/lxgw-wenkai-tc.css"],
-      upstream: "https://github.com/lxgw/LxgwWenKai",
-      license: "SIL OFL 1.1",
-      variants: [
-        { key: "original", label: "Original", family: '"LXGW WenKai",cursive,sans-serif', weights: [300, 400, 500],
-          pkgs: [{ name: "@free-fonts/lxgw-wenkai", version: "1.0.1", css: "lxgw-wenkai.css" }] },
-        { key: "gb",       label: "GB",       family: '"LXGW WenKai GB",cursive,sans-serif', weights: [300, 400, 500],
-          pkgs: [{ name: "@free-fonts/lxgw-wenkai-gb", version: "1.0.1", css: "lxgw-wenkai-gb.css" }] },
-        { key: "tc",       label: "TC",       family: '"LXGW WenKai TC",cursive,sans-serif', weights: [300, 400, 500],
-          pkgs: [{ name: "@free-fonts/lxgw-wenkai-tc", version: "1.0.1", css: "lxgw-wenkai-tc.css" }] }
-      ]
-    },
-    {
-      id: "tw-sung",
-      nameEn: "TW-Sung",
-      nameZh: "全字庫正宋體",
-      displayText: "全字庫正宋體",
-      css: ["./tw-sung/tw-sung.css"],
-      upstream: "https://data.gov.tw/dataset/5961",
-      license: "全字庫 OFL",
-      variants: [
-        { key: "default", label: "Regular", family: '"TW-Sung",serif', weights: [400],
-          pkgs: [{ name: "@free-fonts/tw-sung", version: "1.0.0", css: "tw-sung.css" }] }
-      ]
-    },
-    {
-      id: "tw-kai",
-      nameEn: "TW-Kai",
-      nameZh: "全字庫正楷體",
-      displayText: "全字庫正楷體",
-      css: ["./tw-kai/tw-kai.css"],
-      upstream: "https://data.gov.tw/dataset/5961",
-      license: "全字庫 OFL",
-      variants: [
-        { key: "default", label: "Regular", family: '"TW-Kai",cursive,serif', weights: [400],
-          pkgs: [{ name: "@free-fonts/tw-kai", version: "1.0.0", css: "tw-kai.css" }] }
-      ]
-    },
-    {
-      id: "wfg-fsung",
-      nameEn: "WFG FSung",
-      nameZh: "WFG 全宋體",
-      displayText: "全宋體",
-      css: ["https://unpkg.com/wfg-fsung-webfonts@1.0.1/wfg-fsung.css"],
-      upstream: "https://www.npmjs.com/package/wfg-fsung-webfonts",
-      license: "WFG NonCommercial",
-      licenseNote: "非商業用途限定（學術研究、教育、個人閱讀），禁止用於商業盈利",
-      noCdns: ["jsdelivr"],
-      variants: [
-        { key: "default", label: "Regular", family: "'WFG FSung', serif", weights: [400],
-          pkgs: [{ name: "wfg-fsung-webfonts", version: "1.0.1", css: "wfg-fsung.css" }] }
-      ]
-    },
-    {
-      id: "babelstone-han",
-      nameEn: "BabelStone Han",
-      nameZh: "巴貝斯通漢",
-      displayText: "漢字大全",
-      css: ["./BabelStoneHan-UFO-Fonts/babelstone-han.css"],
-      upstream: "https://github.com/babelstone/babelstonehan-ufo",
-      license: "Arphic 1999",
-      variants: [
-        { key: "default", label: "Default", family: "'BabelStone Han Basic','BabelStone Han Extra','BabelStone Han PUA',serif", weights: [400],
-          pkgs: [{ name: "@free-fonts/babelstone-han", version: "1.0.0", css: "babelstone-han.css" }] }
-      ]
-    },
-    {
-      id: "lxgw-975-yuan",
-      nameEn: "LXGW 975 Yuan SC",
-      nameZh: "霞鶩975圓體SC",
-      displayText: "霞鶩975圓體",
-      css: ["./lxgw-975-yuan/lxgw-975-yuan.css"],
-      upstream: "https://github.com/lxgw/975Yuan",
-      license: "SIL OFL 1.1",
-      variants: [
-        { key: "default", label: "Regular", family: "'LXGW 975 Yuan SC',sans-serif", weights: [400, 500, 700],
-          pkgs: [{ name: "@free-fonts/lxgw-975-yuan", version: "1.0.0", css: "lxgw-975-yuan.css" }] }
-      ]
-    },
-    {
-      id: "lxgw-marker-gothic",
-      nameEn: "LXGW Marker Gothic",
-      nameZh: "霞鶩漫黑",
-      displayText: "霞鶩漫黑",
-      css: ["./lxgw-marker-gothic/lxgw-marker-gothic.css"],
-      upstream: "https://github.com/lxgw/LxgwMarkerGothic",
-      license: "SIL OFL 1.1",
-      variants: [
-        { key: "default", label: "Regular", family: "'LXGW Marker Gothic',sans-serif", weights: [400],
-          pkgs: [{ name: "@free-fonts/lxgw-marker-gothic", version: "1.0.0", css: "lxgw-marker-gothic.css" }] }
-      ]
-    },
-    {
-      id: "plangothic",
-      nameEn: "Plangothic",
-      nameZh: "遍黑體",
-      displayText: "遍黑體",
-      css: ["./plangothic/plangothic.css"],
-      upstream: "https://github.com/Fitzgerald-Porthmouth-Koenigsegg/Plangothic_Project",
-      license: "SIL OFL 1.1",
-      variants: [
-        { key: "default", label: "Regular", family: "'Plangothic',sans-serif", weights: [400],
-          pkgs: [{ name: "@free-fonts/plangothic", version: "1.0.0", css: "plangothic.css" }] }
-      ]
-    },
-    {
-      id: "jigmo",
-      nameEn: "Jigmo",
-      nameZh: "字雲",
-      displayText: "字雲",
-      css: [
-        "https://unpkg.com/@free-fonts/jigmo@1.0.0/jigmo.css",
-        "https://unpkg.com/@free-fonts/jigmo-sc@1.0.0/jigmo-sc.css",
-        "https://unpkg.com/@free-fonts/jigmo-tc@1.0.0/jigmo-tc.css"
-      ],
-      upstream: "https://kamichikoichi.github.io/jigmo/",
-      license: "IPA Font License 1.0",
-      variants: [
-        { key: "base", label: "Original", family: '"Jigmo",serif',    weights: [400],
-          pkgs: [{ name: "@free-fonts/jigmo", version: "1.0.0", css: "jigmo.css" }] },
-        { key: "sc",   label: "SC",       family: '"Jigmo SC",serif', weights: [400],
-          pkgs: [{ name: "@free-fonts/jigmo-sc", version: "1.0.0", css: "jigmo-sc.css" }] },
-        { key: "tc",   label: "TC",       family: '"Jigmo TC",serif', weights: [400],
-          pkgs: [{ name: "@free-fonts/jigmo-tc", version: "1.0.0", css: "jigmo-tc.css" }] }
-      ]
-    },
-    {
-      id: "noto-serif",
-      nameEn: "Noto Serif CJK",
-      nameZh: "思源宋體",
-      displayText: "思源宋體",
-      css: [],
-      upstream: "https://fonts.google.com/noto",
-      license: "SIL OFL 1.1",
-      variants: [
-        { key: "sc", label: "SC", family: '"Noto Serif SC",serif',    weights: [400, 500, 600] },
-        { key: "tc", label: "TC", family: '"Noto Serif TC",serif',    weights: [400, 500, 600] }
-      ]
-    },
-    {
-      id: "noto-sans",
-      nameEn: "Noto Sans CJK",
-      nameZh: "思源黑體",
-      displayText: "思源黑體",
-      css: [],
-      upstream: "https://fonts.google.com/noto",
-      license: "SIL OFL 1.1",
-      variants: [
-        { key: "sc", label: "SC", family: '"Noto Sans SC",sans-serif', weights: [400, 500] },
-        { key: "tc", label: "TC", family: '"Noto Sans TC",sans-serif', weights: [400, 500] }
-      ]
-    }
-  ];
+<dialog class="glyph-dialog" id="glyphDialog">
+  <button class="dialog-close" id="dialogClose" aria-label="关闭">×</button>
+  <div class="dialog-body">
+    <div class="pinned-big" id="pinnedBig"></div>
+    <div>
+      <div class="pinned-meta" id="pinnedMeta"></div>
+      <div class="dialog-actions">
+        <button class="btn" id="copyGlyph">复制字符</button>
+      </div>
+    </div>
+  </div>
+</dialog>
 
+<script src="./assets/fonts-data.js"></script>
+<script>
+  const FONTS = window.FREE_FONTS_DATA;
   const BLOCKS = [
     { label: "Basic Latin",                    start: 0x0000 },
     { label: "Latin Extended-A/B",             start: 0x0100 },
@@ -824,12 +636,11 @@
     }).join("");
   }
 
-  /* ── Render: pinned glyph ── */
+  /* ── Render: pinned glyph dialog ── */
   function renderPinned() {
-    const sec = document.getElementById("pinnedSec");
+    const dlg = document.getElementById("glyphDialog");
     const cp  = state.pinned;
-    if (cp == null) { sec.classList.remove("show"); return; }
-    sec.classList.add("show");
+    if (cp == null) { if (dlg.open) dlg.close(); return; }
 
     const v    = variant();
     const w    = weight();
@@ -842,6 +653,8 @@
 
     document.getElementById("pinnedMeta").innerHTML =
       `${fmtCp(cp)}<br>Decimal: ${cp}<br>Name block: ${blockName(cp)}`;
+
+    if (!dlg.open) dlg.showModal();
   }
 
   function blockName(cp) {
@@ -1010,6 +823,28 @@
     document.querySelectorAll(".g-cell.is-pinned").forEach(c => c.classList.remove("is-pinned"));
     if (state.pinned != null) cell.classList.add("is-pinned");
     renderPinned();
+  });
+
+  /* ── Event: glyph dialog ── */
+  const glyphDialog = document.getElementById("glyphDialog");
+
+  glyphDialog.addEventListener("close", () => {
+    state.pinned = null;
+    document.querySelectorAll(".g-cell.is-pinned").forEach(c => c.classList.remove("is-pinned"));
+  });
+
+  glyphDialog.addEventListener("click", e => {
+    if (e.target === glyphDialog) glyphDialog.close();
+  });
+
+  document.getElementById("dialogClose").addEventListener("click", () => glyphDialog.close());
+
+  document.getElementById("copyGlyph").addEventListener("click", e => {
+    if (state.pinned == null) return;
+    navigator.clipboard.writeText(charFrom(state.pinned)).then(() => {
+      e.target.textContent = "已复制 ✓";
+      setTimeout(() => { e.target.textContent = "复制字符"; }, 1200);
+    });
   });
 
   /* ── Event: block selector ── */

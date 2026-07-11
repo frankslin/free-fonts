@@ -454,6 +454,18 @@
       white-space: nowrap;
     }
 
+    .specimen-link {
+      flex: none;
+      font-size: 12px;
+      color: var(--muted);
+      text-decoration: none;
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      padding: 3px 8px;
+      white-space: nowrap;
+    }
+    .specimen-link:hover { color: var(--text); border-color: currentColor; }
+
     .sample {
       min-height: 190px;
       padding: 18px;
@@ -605,7 +617,7 @@
 
     .inspector-head {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
+      grid-template-columns: minmax(0, 1fr) auto auto;
       gap: 16px;
       align-items: start;
       padding: 16px 18px;
@@ -896,6 +908,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
             <h2 class="inspector-title" id="inspectorTitle">Font inspector</h2>
             <div class="inspector-meta" id="inspectorMeta"></div>
           </div>
+          <a class="specimen-link" id="inspectorSpecimenLink" href="./specimen.html" hidden>單字型樣張 ↗</a>
           <button class="inspector-close" id="inspectorClose" type="button" aria-label="Close">×</button>
         </div>
         <div class="inspector-controls">
@@ -916,305 +929,58 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
   </main>
 
   <script src="https://unpkg.com/opencc-js@1.4.0/dist/umd/full.js"></script>
+  <script src="./assets/fonts-data.js"></script>
   <script>
-    const fontGroups = [
-      {
-        id: "wenjin",
-        labelEn: "WenJin Mincho",
-        labelZhHant: "文津明朝",
-        variants: {
-          default: {
-            label: "Default",
-            family: "\"WenJin Mincho Plane 0\", \"WenJin Mincho Plane 2\", \"WenJin Mincho Plane 3\", serif",
-            stack: "WenJin Mincho Plane 0, 2, 3"
-          }
+    /* fontGroups is derived from the shared metadata in assets/fonts-data.js.
+       flattenWeightsInIndex fonts get one variant per weight (key "<key>-<weightname>");
+       other multi-weight fonts collapse to their 400 (or first) weight. */
+    const WEIGHT_NAMES = { 300: "Light", 400: "Regular", 500: "Medium", 600: "SemiBold", 700: "Bold" };
+
+    const fontGroups = window.FREE_FONTS_DATA.map((font) => {
+      const variants = {};
+      if (font.autoByLang) variants.auto = { label: "Auto" };
+      font.variants.forEach((v) => {
+        if (font.flattenWeightsInIndex && v.weights.length > 1) {
+          v.weights.forEach((w) => {
+            variants[`${v.key}-${(WEIGHT_NAMES[w] || w).toLowerCase()}`] = {
+              label: `${v.label} ${WEIGHT_NAMES[w] || w}`,
+              family: v.family,
+              stack: `${v.stack} ${w}`,
+              weight: w
+            };
+          });
+        } else {
+          variants[v.key] = {
+            label: v.label,
+            family: v.family,
+            stack: v.stack,
+            weight: v.weights.includes(400) ? 400 : v.weights[0]
+          };
         }
-      },
-      {
-        id: "genki",
-        labelEn: "Genki Mincho",
-        labelZhHant: "源起明體",
-        variants: {
-          default: {
-            label: "Default",
-            family: "\"GenKiMin2TC\", serif",
-            stack: "GenKiMin2TC"
-          }
-        }
-      },
-      {
-        id: "genyo",
-        labelEn: "GenYo Mincho",
-        labelZhHant: "源樣明體",
-        variants: {
-          default: {
-            label: "Default",
-            family: "\"GenYoMin2TC\", serif",
-            stack: "GenYoMin2TC"
-          }
-        }
-      },
-      {
-        id: "black-sugar-plum-candy",
-        labelEn: "Black Sugar Plum Candy",
-        labelZhHant: "黑糖话梅",
-        variants: {
-          default: {
-            label: "Default",
-            family: "\"Black Sugar Plum Candy\", sans-serif",
-            stack: "Black Sugar Plum Candy",
-            weight: 700
-          }
-        }
-      },
-      {
-        id: "lxgw-wenkai",
-        labelEn: "LXGW WenKai",
-        labelZhHant: "霞鶩文楷",
-        autoByLang: {
-          "zh-Hans": "gb-regular",
-          "zh-Hant": "tc-regular",
-          en: "original-regular"
-        },
-        variants: {
-          auto: { label: "Auto" },
-          "gb-light": {
-            label: "GB Light",
-            family: "\"LXGW WenKai GB\", cursive, sans-serif",
-            stack: "LXGW WenKai GB 300",
-            weight: 300
-          },
-          "gb-regular": {
-            label: "GB Regular",
-            family: "\"LXGW WenKai GB\", cursive, sans-serif",
-            stack: "LXGW WenKai GB 400",
-            weight: 400
-          },
-          "gb-medium": {
-            label: "GB Medium",
-            family: "\"LXGW WenKai GB\", cursive, sans-serif",
-            stack: "LXGW WenKai GB 500",
-            weight: 500
-          },
-          "original-light": {
-            label: "Original Light",
-            family: "\"LXGW WenKai\", cursive, sans-serif",
-            stack: "LXGW WenKai 300",
-            weight: 300
-          },
-          "original-regular": {
-            label: "Original Regular",
-            family: "\"LXGW WenKai\", cursive, sans-serif",
-            stack: "LXGW WenKai 400",
-            weight: 400
-          },
-          "original-medium": {
-            label: "Original Medium",
-            family: "\"LXGW WenKai\", cursive, sans-serif",
-            stack: "LXGW WenKai 500",
-            weight: 500
-          },
-          "tc-light": {
-            label: "TC Light",
-            family: "\"LXGW WenKai TC\", cursive, sans-serif",
-            stack: "LXGW WenKai TC 300",
-            weight: 300
-          },
-          "tc-regular": {
-            label: "TC Regular",
-            family: "\"LXGW WenKai TC\", cursive, sans-serif",
-            stack: "LXGW WenKai TC 400",
-            weight: 400
-          },
-          "tc-medium": {
-            label: "TC Medium",
-            family: "\"LXGW WenKai TC\", cursive, sans-serif",
-            stack: "LXGW WenKai TC 500",
-            weight: 500
-          }
-        }
-      },
-      {
-        id: "tw-sung",
-        labelEn: "TW-Sung",
-        labelZhHant: "全字庫正宋體",
-        variants: {
-          default: {
-            label: "Default",
-            family: "\"TW-Sung\", serif",
-            stack: "TW-Sung"
-          }
-        }
-      },
-      {
-        id: "tw-kai",
-        labelEn: "TW-Kai",
-        labelZhHant: "全字庫正楷體",
-        variants: {
-          default: {
-            label: "Default",
-            family: "\"TW-Kai\", cursive, serif",
-            stack: "TW-Kai"
-          }
-        }
-      },
-      {
-        id: "wfg-fsung",
-        labelEn: "WFG FSung",
-        labelZhHant: "WFG 全宋體",
-        variants: {
-          default: {
-            label: "Default",
-            family: "'WFG FSung', serif",
-            stack: "WFG FSung"
-          }
-        }
-      },
-      {
-        id: "babelstone-han",
-        labelEn: "BabelStone Han",
-        labelZhHant: "巴貝斯通漢",
-        variants: {
-          default: {
-            label: "Default",
-            family: "'BabelStone Han Basic', 'BabelStone Han Extra', 'BabelStone Han PUA', serif",
-            stack: "BabelStone Han Basic/Extra/PUA"
-          }
-        }
-      },
-      {
-        id: "lxgw-975-yuan",
-        labelEn: "LXGW 975 Yuan SC",
-        labelZhHant: "霞鶩975圓體SC",
-        variants: {
-          default: {
-            label: "Default",
-            family: "'LXGW 975 Yuan SC', sans-serif",
-            stack: "LXGW 975 Yuan SC"
-          }
-        }
-      },
-      {
-        id: "lxgw-marker-gothic",
-        labelEn: "LXGW Marker Gothic",
-        labelZhHant: "霞鶩漫黑",
-        variants: {
-          default: {
-            label: "Default",
-            family: "'LXGW Marker Gothic', sans-serif",
-            stack: "LXGW Marker Gothic"
-          }
-        }
-      },
-      {
-        id: "plangothic",
-        labelEn: "Plangothic",
-        labelZhHant: "遍黑體",
-        variants: {
-          default: {
-            label: "Default",
-            family: "'Plangothic', sans-serif",
-            stack: "Plangothic"
-          }
-        }
-      },
-      {
-        id: "jigmo",
-        labelEn: "Jigmo",
-        labelZhHant: "字雲",
-        autoByLang: {
-          "zh-Hans": "sc",
-          "zh-Hant": "tc",
-          en: "base"
-        },
-        variants: {
-          auto: { label: "Auto" },
-          tc: {
-            label: "TC",
-            family: "\"Jigmo TC\", serif",
-            stack: "Jigmo TC"
-          },
-          sc: {
-            label: "SC",
-            family: "\"Jigmo SC\", serif",
-            stack: "Jigmo SC"
-          },
-          base: {
-            label: "Original",
-            family: "\"Jigmo\", serif",
-            stack: "Jigmo"
-          }
-        }
-      },
-      {
-        id: "noto-serif",
-        labelEn: "Noto Serif",
-        labelZhHant: "思源宋體",
-        autoByLang: {
-          "zh-Hans": "sc",
-          "zh-Hant": "tc",
-          en: "sc"
-        },
-        variants: {
-          auto: { label: "Auto" },
-          sc: {
-            label: "SC",
-            family: "\"Noto Serif SC\", serif",
-            stack: "Noto Serif SC"
-          },
-          tc: {
-            label: "TC",
-            family: "\"Noto Serif TC\", serif",
-            stack: "Noto Serif TC"
-          }
-        }
-      },
-      {
-        id: "noto-sans",
-        labelEn: "Noto Sans",
-        labelZhHant: "思源黑體",
-        autoByLang: {
-          "zh-Hans": "sc",
-          "zh-Hant": "tc",
-          en: "sc"
-        },
-        variants: {
-          auto: { label: "Auto" },
-          sc: {
-            label: "SC",
-            family: "\"Noto Sans SC\", sans-serif",
-            stack: "Noto Sans SC"
-          },
-          tc: {
-            label: "TC",
-            family: "\"Noto Sans TC\", sans-serif",
-            stack: "Noto Sans TC"
-          }
-        }
-      },
+      });
+      return {
+        id: font.id,
+        labelEn: font.shortEn || font.nameEn,
+        labelZhHant: font.shortZh || font.nameZh,
+        autoByLang: font.autoByLang,
+        variants
+      };
+    }).concat([
       {
         id: "system-serif",
         labelEn: "System serif",
         variants: {
-          default: {
-            label: "Default",
-            family: "serif",
-            stack: "serif"
-          }
+          default: { label: "Default", family: "serif", stack: "serif" }
         }
       },
       {
         id: "system-sans",
         labelEn: "System sans",
         variants: {
-          default: {
-            label: "Default",
-            family: "sans-serif",
-            stack: "sans-serif"
-          }
+          default: { label: "Default", family: "sans-serif", stack: "sans-serif" }
         }
       }
-    ];
+    ]);
 
     const presets = {
       cjkCore: "𰻞 𠀀 𠀋 𪚥\n𫝀 𫞂 𫠝\n𬺰 𭀧 𰻞𰻞麵\n里 裏 裡 发 發 髮 后 後 台 臺 檯 面 麵\n群 羣 青 靑 雪 雪 丑 醜",
@@ -1421,6 +1187,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
         });
     }
 
+    const SPECIMEN_FONT_IDS = new Set(window.FREE_FONTS_DATA.map((font) => font.id));
+
+    function specimenLink(fontId) {
+      if (!SPECIMEN_FONT_IDS.has(fontId)) return "";
+      return `<a class="specimen-link" href="./specimen.html?font=${escapeAttr(fontId)}" aria-label="Open specimen for ${escapeAttr(fontId)}">樣張 ↗</a>`;
+    }
+
     function renderCompare() {
       compare.innerHTML = activeFonts()
         .map((font) => `
@@ -1428,6 +1201,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
             <div class="card-head">
               <div class="font-name">${font.label}</div>
               <div class="font-stack">${font.stack}</div>
+              ${specimenLink(font.id)}
             </div>
             <div class="sample" style="font-family: ${escapeAttr(font.family)}; font-weight: ${font.weight};">${escapeHtml(state.text).replace(/\n/g, "<br>")}</div>
           </article>
@@ -1493,6 +1267,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
       const end = Math.min(start + layout.pageSize - 1, 0x10FFFF);
       inspectorTitle.textContent = font.label;
       inspectorMeta.textContent = `${font.stack} · ${formatCodepoint(start)}-${formatCodepoint(end)}`;
+      const specLink = document.getElementById("inspectorSpecimenLink");
+      specLink.hidden = !SPECIMEN_FONT_IDS.has(font.id);
+      specLink.href = `./specimen.html?font=${encodeURIComponent(font.id)}`;
       inspectorQuery.value = formatCodepoint(selected);
       inspectorStatus.textContent = `${formatCodepoint(selected)} · ${layout.cols}×${layout.rows}`;
       inspectorGrid.style.fontFamily = font.family;
@@ -1698,6 +1475,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
     });
 
     compare.addEventListener("click", (event) => {
+      if (event.target.closest(".specimen-link")) return;
       const card = event.target.closest(".font-card");
       if (!card) return;
       openInspector(card.dataset.fontId);
