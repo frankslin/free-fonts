@@ -1,3 +1,6 @@
 [submodule "BabelStoneHan-UFO-Fonts"]
 	path = BabelStoneHan-UFO-Fonts
 	url = https://github.com/free-fonts-npm/BabelStoneHan-UFO-Fonts
+[submodule "zhuque-fangsong"]
+	path = zhuque-fangsong
+	url = https://github.com/free-fonts-npm/zhuque-fangsong
