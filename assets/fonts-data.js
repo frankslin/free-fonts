@@ -193,6 +193,21 @@ window.FREE_FONTS_DATA = [
     ]
   },
   {
+    id: "zhuque-fangsong",
+    nameEn: "Zhuque Fangsong",
+    nameZh: "朱雀仿宋",
+    displayText: "朱雀仿宋",
+    css: ["./zhuque-fangsong/zhuque-fangsong.css"],
+    upstream: "https://github.com/TrionesType/zhuque",
+    license: "SIL OFL 1.1",
+    licenseNote: "上游 v0.212 為 prerelease 版（technical preview），字符覆蓋與字形可能變動",
+    variants: [
+      { key: "default", label: "Regular", family: "'Zhuque Fangsong',serif",
+        stack: "Zhuque Fangsong", weights: [400],
+        pkgs: [{ name: "@free-fonts/zhuque-fangsong", version: "1.0.0", css: "zhuque-fangsong.css" }] }
+    ]
+  },
+  {
     id: "jigmo",
     nameEn: "Jigmo",
     nameZh: "字雲",

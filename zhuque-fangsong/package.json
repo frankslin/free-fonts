@@ -1,0 +1,28 @@
+{
+  "name": "@free-fonts/zhuque-fangsong",
+  "version": "1.0.0",
+  "description": "Chunked woff2 webfonts for Zhuque Fangsong / 朱雀仿宋 (upstream v0.212, prerelease / technical preview).",
+  "license": "MIT AND OFL-1.1",
+  "main": "zhuque-fangsong.css",
+  "style": "zhuque-fangsong.css",
+  "files": [
+    "zhuque-fangsong.css",
+    "fonts",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frankslin/free-fonts.git",
+    "directory": "zhuque-fangsong"
+  },
+  "keywords": [
+    "font",
+    "webfont",
+    "woff2",
+    "cjk",
+    "fangsong",
+    "zhuque",
+    "songti"
+  ]
+}
