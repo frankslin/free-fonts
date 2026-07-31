@@ -10,7 +10,7 @@ CSS `unicode-range` 宣告，讓瀏覽器只下載頁面實際需要的字元區
 
 ## 目前包含
 
-目前包含：文津明體、源起明體 TC、源樣明體 TC、全字庫正宋體、全字庫正楷體、黑糖话梅、霞鹜文楷、霞鹜文楷 GB、霞鶩文楷 TC。
+目前包含：文津明體、源起明體 TC、源樣明體 TC、全字庫正宋體、全字庫正楷體、黑糖话梅、霞鹜文楷、霞鹜文楷 GB、霞鶩文楷 TC、霞鶩975圓體 SC、霞鶩漫黑、遍黑體、BabelStone Han（巴貝斯通漢，submodule）、朱雀仿宋（prerelease）。
 
 根目錄的 `index.html` 是互動式展示頁，可比較各字型、系統 fallback、繁簡轉換
 與單字形差異。
@@ -202,6 +202,26 @@ jsDelivr 等效：
 .black-sugar-plum-candy {
   font-family: "Black Sugar Plum Candy", sans-serif;
   font-weight: 700;
+}
+```
+
+### 朱雀仿宋
+
+來源：[TrionesType/zhuque](https://github.com/TrionesType/zhuque)。朱雀仿宋是開源仿宋體計畫，本 package 使用其 v0.212 發布版。**注意：上游 v0.212 為 prerelease 版（字體內部標註 technical preview），字符覆蓋與字形在後續版本可能變動。**
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@free-fonts/zhuque-fangsong@1.0.0/zhuque-fangsong.css">
+```
+
+jsDelivr 等效：
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@free-fonts/zhuque-fangsong@1.0.0/zhuque-fangsong.css">
+```
+
+```css
+.zhuque {
+  font-family: "Zhuque Fangsong", serif;
 }
 ```
 
