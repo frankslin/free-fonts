@@ -65,15 +65,41 @@ BLOCKS = [
     ("ext-h",        "统一表意文字扩展 H",     "CJK Ext-H",                0x31350, 0x323AF, True, "unicode"),
     ("ext-j",        "统一表意文字扩展 J",     "CJK Ext-J",                0x323B0, 0x3347F, True, "unicode"),
     ("compat-sup",   "兼容表意文字补充",       "CJK Compat. Ideographs Sup.", 0x2F800, 0x2FA1D, True, "unicode"),
-    ("latin",        "基本拉丁字母",           "Basic Latin",              0x0000, 0x007F, False, "other"),
-    ("latin1",       "拉丁字母补充-1",         "Latin-1 Supplement",       0x0080, 0x00FF, False, "other"),
-    ("cjk-punct",    "中日韩符号和标点",       "CJK Symbols and Punctuation", 0x3000, 0x303F, False, "other"),
-    ("halfwidth",    "半角及全角形式",         "Halfwidth and Fullwidth Forms", 0xFF00, 0xFFEF, False, "other"),
-    ("bopomofo",     "注音符号",               "Bopomofo",                 0x3100, 0x312F, False, "other"),
-    ("bopomofo-ext", "注音符号扩展",           "Bopomofo Extended",        0x31A0, 0x31BF, False, "other"),
-    ("hiragana",     "平假名",                 "Hiragana",                 0x3040, 0x309F, False, "other"),
-    ("katakana",     "片假名",                 "Katakana",                 0x30A0, 0x30FF, False, "other"),
-    ("hangul",       "谚文音节",               "Hangul Syllables",         0xAC00, 0xD7A3, True,  "other"),
+    # 東亞：假名・諺文・兼容與符號
+    ("cjk-punct",    "中日韩符号和标点",       "CJK Symbols and Punctuation", 0x3000, 0x303F, False, "eastasia"),
+    ("halfwidth",    "半角及全角形式",         "Halfwidth and Fullwidth Forms", 0xFF00, 0xFFEF, False, "eastasia"),
+    ("compat-forms", "中日韩兼容形式",         "CJK Compatibility Forms",  0xFE30, 0xFE4F, False, "eastasia"),
+    ("enclosed-cjk", "带圈中日韩字母及月份",   "Enclosed CJK Letters and Months", 0x3200, 0x32FF, False, "eastasia"),
+    ("cjk-compat",   "中日韩兼容字符",         "CJK Compatibility",        0x3300, 0x33FF, False, "eastasia"),
+    ("bopomofo",     "注音符号",               "Bopomofo",                 0x3100, 0x312F, False, "eastasia"),
+    ("bopomofo-ext", "注音符号扩展",           "Bopomofo Extended",        0x31A0, 0x31BF, False, "eastasia"),
+    ("hiragana",     "平假名",                 "Hiragana",                 0x3040, 0x309F, False, "eastasia"),
+    ("katakana",     "片假名",                 "Katakana",                 0x30A0, 0x30FF, False, "eastasia"),
+    ("kana-sup",     "假名补充",               "Kana Supplement",          0x1B000, 0x1B0FF, False, "eastasia"),
+    ("hangul-jamo",  "谚文字母",               "Hangul Jamo",              0x1100, 0x11FF, False, "eastasia"),
+    ("hangul-compat","谚文兼容字母",           "Hangul Compatibility Jamo", 0x3130, 0x318F, False, "eastasia"),
+    ("hangul",       "谚文音节",               "Hangul Syllables",         0xAC00, 0xD7A3, True,  "eastasia"),
+    # 西文與通用符號
+    ("latin",        "基本拉丁字母",           "Basic Latin",              0x0000, 0x007F, False, "latin"),
+    ("latin1",       "拉丁字母补充-1",         "Latin-1 Supplement",       0x0080, 0x00FF, False, "latin"),
+    ("latin-a",      "拉丁字母扩展-A",         "Latin Extended-A",         0x0100, 0x017F, False, "latin"),
+    ("latin-b",      "拉丁字母扩展-B",         "Latin Extended-B",         0x0180, 0x024F, False, "latin"),
+    ("latin-add",    "拉丁字母扩展附加",       "Latin Extended Additional", 0x1E00, 0x1EFF, False, "latin"),
+    ("greek",        "希腊字母",               "Greek and Coptic",         0x0370, 0x03FF, False, "latin"),
+    ("cyrillic",     "西里尔字母",             "Cyrillic",                 0x0400, 0x04FF, False, "latin"),
+    ("punct",        "常用标点",               "General Punctuation",      0x2000, 0x206F, False, "latin"),
+    ("math",         "数学运算符",             "Mathematical Operators",   0x2200, 0x22FF, False, "latin"),
+    # 少數民族／歷史文字與私用區
+    ("tangut",       "西夏文",                 "Tangut",                   0x17000, 0x187F7, False, "minority"),
+    ("tangut-comp",  "西夏文部件",             "Tangut Components",        0x18800, 0x18AFF, False, "minority"),
+    ("khitan",       "契丹小字",               "Khitan Small Script",      0x18B00, 0x18CD5, False, "minority"),
+    ("nushu",        "女书",                   "Nushu",                    0x1B170, 0x1B2FB, False, "minority"),
+    ("yi",           "彝文音节",               "Yi Syllables",             0xA000, 0xA48C, False, "minority"),
+    ("mongolian",    "蒙古文",                 "Mongolian",                0x1800, 0x18AF, False, "minority"),
+    ("tibetan",      "藏文",                   "Tibetan",                  0x0F00, 0x0FFF, False, "minority"),
+    ("pua",          "私用区",                 "Private Use Area",         0xE000, 0xF8FF, True,  "minority"),
+    ("pua-a",        "私用区补充-A",           "Supplementary PUA-A",      0xF0000, 0xFFFFD, True, "minority"),
+    ("pua-b",        "私用区补充-B",           "Supplementary PUA-B",      0x100000, 0x10FFFD, True, "minority"),
 ]
 
 # Blocks that make up the "汉字总数" tally.
@@ -169,7 +195,7 @@ def unihan_sets():
 def build_charsets():
     """-> (groups[], sets{id: set[int]})"""
     sets = {}
-    blocks = {"unicode": [], "other": []}
+    blocks = {"unicode": [], "eastasia": [], "latin": [], "minority": []}
     for bid, zh, en, start, end, full, grp in BLOCKS:
         s = block_set(start, end, full)
         sets[bid] = s
@@ -198,7 +224,9 @@ def build_charsets():
         {"id": "unicode",   "zh": "汉字区段",     "en": "Unicode CJK blocks", "items": blocks["unicode"]},
         {"id": "standards", "zh": "字符集标准",   "en": "Legacy charsets",    "items": encs},
         {"id": "lists",     "zh": "常用字表",     "en": "Standard lists",     "items": lists},
-        {"id": "other",     "zh": "其他区段",     "en": "Other blocks",       "items": blocks["other"]},
+        {"id": "eastasia",  "zh": "假名・谚文・兼容", "en": "Kana / Hangul / compatibility", "items": blocks["eastasia"]},
+        {"id": "latin",     "zh": "西文与符号",   "en": "Latin and symbols",  "items": blocks["latin"]},
+        {"id": "minority",  "zh": "其他文字与私用区", "en": "Other scripts and PUA", "items": blocks["minority"]},
     ]
     return groups, sets
 

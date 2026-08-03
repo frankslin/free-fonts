@@ -388,6 +388,7 @@
 
 <nav class="topbar">
   <a class="back-link" href="./index.html">← 字型總覽</a>
+  <a class="back-link" href="./coverage.html">覆蓋率一覽</a>
   <div class="topbar-sep"></div>
   <select id="fontSelect"></select>
   <div class="topbar-end">
@@ -760,12 +761,14 @@
 
     const byId = Object.fromEntries(COVERAGE.groups.map(g => [g.id, g]));
     document.getElementById("covCols").innerHTML =
-      `<div>${covGroup(byId.unicode, cov)}</div>` +
-      `<div>${covGroup(byId.standards, cov)}${covGroup(byId.lists, cov)}${covGroup(byId.other, cov)}</div>`;
+      `<div>${covGroup(byId.unicode, cov)}${covGroup(byId.minority, cov)}</div>` +
+      `<div>${covGroup(byId.standards, cov)}${covGroup(byId.lists, cov)}` +
+      `${covGroup(byId.eastasia, cov)}${covGroup(byId.latin, cov)}</div>`;
 
-    document.getElementById("covNote").textContent =
+    document.getElementById("covNote").innerHTML =
       "数据由 tools/build-coverage.py 直接读取本 package 所发布的 woff2 切片 cmap 统计（非 CSS unicode-range 推算）；"
-      + "字表来自 Unihan 数据库，编码字符集由 Python codec 推导。点击统一码区段可跳到字符浏览。";
+      + "字表来自 Unihan 数据库，编码字符集由 Python codec 推导。点击区段行可跳到字符浏览，"
+      + '<a href="./coverage.html" style="text-decoration:underline">覆盖率一览 ↗</a> 可与其他字型横向对比。';
   }
 
   /* ── Render: pinned glyph dialog ── */

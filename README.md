@@ -13,7 +13,8 @@ CSS `unicode-range` 宣告，讓瀏覽器只下載頁面實際需要的字元區
 目前包含：文津明體、源起明體 TC、源樣明體 TC、全字庫正宋體、全字庫正楷體、黑糖话梅、霞鹜文楷、霞鹜文楷 GB、霞鶩文楷 TC、霞鶩975圓體 SC、霞鶩漫黑、遍黑體、BabelStone Han（巴貝斯通漢，submodule）、朱雀仿宋（prerelease）。
 
 根目錄的 `index.html` 是互動式展示頁，可比較各字型、系統 fallback、繁簡轉換
-與單字形差異。
+與單字形差異；`specimen.html?font=<id>` 是單字型樣張（含字符覆蓋表與 glyph
+browser）；`coverage.html` 是各字型的覆蓋率橫向對照表。
 
 ## 使用方式
 

@@ -22,9 +22,11 @@ npm webfont packages（`@free-fonts/*` scope）。每套字型被切成 **256 co
   字符覆蓋表（「營養成分表」）與 glyph browser。
 - `assets/fonts-data.js` — **兩個頁面共用的字型 metadata**（classic script，
   暴露 `window.FREE_FONTS_DATA`，schema 見檔案開頭註解）。
+- `coverage.html` — 覆蓋率橫向一覽（矩陣：列＝字型／變體，欄＝各字集，可切
+  百分比／字數、按欄排序、依 group 開關欄位），資料同樣來自 coverage-data.js。
 - `assets/coverage-data.js` — **生成物**，各字型的 Unicode／字符集覆蓋數字
   （`window.FREE_FONTS_COVERAGE`），由 `tools/build-coverage.py` 產生，不要手改。
-- 兩個 HTML 頁面都是無 build step 的單檔頁面，直接以 `file://` 打開即可測試
+- 三個 HTML 頁面都是無 build step 的單檔頁面，直接以 `file://` 打開即可測試
   （所以資料一律走 classic script，不用 `fetch()` JSON）。
 
 ## 字符覆蓋表 / coverage

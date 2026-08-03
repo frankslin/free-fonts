@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>覆蓋率一覽 – free-fonts</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f2e8;
+      --paper: #fffaf1;
+      --paper-soft: #f1e7d8;
+      --panel: rgba(255,250,241,0.92);
+      --line: rgba(72,56,40,0.18);
+      --line-strong: rgba(72,56,40,0.32);
+      --text: #211b16;
+      --muted: #766c60;
+      --faint: #a2978a;
+      --accent: #8f3f2b;
+      --accent-2: #4d6d62;
+      --field: rgba(255,252,246,0.92);
+      --heat: 77, 109, 98;
+      --heat-ink: #fffaf1;
+    }
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --bg: #171512;
+      --paper: #211d18;
+      --paper-soft: #2b251e;
+      --panel: rgba(33,29,24,0.92);
+      --line: rgba(232,218,197,0.16);
+      --line-strong: rgba(232,218,197,0.28);
+      --text: #f4eadc;
+      --muted: #b8aa98;
+      --faint: #897b6c;
+      --accent: #d08468;
+      --accent-2: #9fc1b2;
+      --field: rgba(18,16,13,0.82);
+      --heat: 159, 193, 178;
+      --heat-ink: #171512;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    button, select { font: inherit; }
+    button { cursor: pointer; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 30;
+      display: flex; align-items: center; gap: 10px;
+      padding: 9px 24px; border-bottom: 1px solid var(--line);
+      background: var(--panel); backdrop-filter: blur(14px);
+    }
+    .brand { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; }
+    .brand-mark {
+      display: inline-grid; place-items: center; width: 22px; height: 22px;
+      border-radius: 5px; background: var(--accent); color: var(--paper); font-size: 13px;
+    }
+    .nav-link { font-size: 13px; color: var(--muted); }
+    .nav-link:hover { color: var(--text); }
+    .topbar-end { display: flex; gap: 6px; margin-left: auto; }
+
+    .btn {
+      height: 30px; padding: 0 11px;
+      border: 1px solid var(--line); border-radius: 6px;
+      background: var(--field); color: var(--muted); font-size: 12.5px;
+    }
+    .btn:hover { border-color: var(--accent); color: var(--text); }
+    .btn[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--paper); }
+
+    .page { padding: 22px 24px 60px; }
+    .page-head { margin-bottom: 4px; font-size: 22px; font-weight: 600; }
+    .page-sub { font-size: 13px; color: var(--muted); margin-bottom: 18px; max-width: 78ch; }
+
+    .controls {
+      display: flex; flex-wrap: wrap; gap: 14px 22px; align-items: center;
+      margin-bottom: 14px;
+    }
+    .ctl { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+    .ctl-label {
+      font-size: 11px; font-weight: 600; letter-spacing: 0.09em;
+      text-transform: uppercase; color: var(--faint); margin-right: 2px;
+    }
+
+    /* ── Matrix ── */
+    .table-wrap {
+      border: 1px solid var(--line); border-radius: 8px;
+      background: var(--paper); overflow: auto; max-height: calc(100vh - 220px);
+    }
+    table { border-collapse: separate; border-spacing: 0; font-size: 12.5px; }
+    th, td { white-space: nowrap; }
+
+    thead th {
+      position: sticky; z-index: 12; background: var(--paper-soft);
+      border-bottom: 1px solid var(--line-strong);
+      font-weight: 600; text-align: right;
+      padding: 7px 10px;
+    }
+    thead tr.groups th { top: 0; z-index: 14; font-size: 11px; letter-spacing: 0.05em; color: var(--muted); text-align: center; }
+    thead tr.cols th { top: 30px; }
+    thead tr.groups th + th { border-left: 1px solid var(--line-strong); }
+    thead th.sortable:hover { color: var(--accent); cursor: pointer; }
+    thead th .arrow { color: var(--accent); }
+
+    th.rowhead, td.rowhead {
+      position: sticky; left: 0; z-index: 13;
+      text-align: left; background: var(--paper);
+      border-right: 1px solid var(--line-strong);
+      padding: 6px 12px; min-width: 210px;
+    }
+    thead th.rowhead { background: var(--paper-soft); z-index: 16; }
+    tbody tr:nth-child(even) td.rowhead { background: var(--paper-soft); }
+    tbody tr:nth-child(even) td { background: rgba(0,0,0,0.015); }
+    :root[data-theme="dark"] tbody tr:nth-child(even) td { background: rgba(255,255,255,0.025); }
+    tbody tr:hover td, tbody tr:hover td.rowhead { background: var(--paper-soft); }
+
+    .rh-name { font-weight: 500; }
+    .rh-variant { color: var(--faint); font-size: 11px; margin-left: 5px; }
+    .rh-link { color: var(--faint); font-size: 11px; margin-left: 6px; }
+    .rh-link:hover { color: var(--accent); }
+
+    tbody td {
+      padding: 6px 10px; text-align: right;
+      font-variant-numeric: tabular-nums;
+      border-bottom: 1px solid var(--line);
+    }
+    td.cell { position: relative; }
+    td.cell .v { position: relative; z-index: 1; }
+    td.cell .bg {
+      position: absolute; inset: 2px 3px; border-radius: 3px;
+      background: rgb(var(--heat)); z-index: 0;
+    }
+    td.is-zero .v { color: var(--faint); }
+    td.is-strong .v { color: var(--heat-ink); }   /* readable on a saturated fill */
+    td.is-full .v { font-weight: 600; }
+    td.total { border-left: 1px solid var(--line-strong); }
+
+    .legend { margin-top: 10px; font-size: 12px; color: var(--faint); display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .legend-scale { display: inline-flex; align-items: center; gap: 4px; }
+    .legend-swatch { width: 22px; height: 10px; border-radius: 2px; background: rgb(var(--heat)); }
+
+    @media (max-width: 700px) {
+      .page { padding: 16px 12px 50px; }
+      th.rowhead, td.rowhead { min-width: 150px; }
+    }
+  </style>
+</head>
+<body>
+<nav class="topbar">
+  <div class="brand"><span class="brand-mark">字</span><span>free-fonts</span></div>
+  <a class="nav-link" href="./index.html">← 字型總覽</a>
+  <a class="nav-link" href="./specimen.html">單字型樣張</a>
+  <div class="topbar-end">
+    <button class="btn" id="themeBtn">Dark</button>
+  </div>
+</nav>
+
+<div class="page">
+  <h1 class="page-head">覆蓋率一覽 / Coverage Matrix</h1>
+  <p class="page-sub">
+    各字型對照表。數字取自每個 package 實際發布的 woff2 切片 cmap，與樣張頁的「字符覆蓋」同源。
+    點欄位標題可排序，點字型名可開樣張頁。
+  </p>
+
+  <div class="controls">
+    <div class="ctl">
+      <span class="ctl-label">欄位</span>
+      <span id="groupBtns"></span>
+    </div>
+    <div class="ctl">
+      <span class="ctl-label">顯示</span>
+      <button class="btn" data-mode="pct" aria-pressed="true">百分比</button>
+      <button class="btn" data-mode="abs" aria-pressed="false">字數</button>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+    <table id="matrix"></table>
+  </div>
+
+  <div class="legend">
+    <span class="legend-scale"><span class="legend-swatch" style="opacity:0.12"></span>低</span>
+    <span class="legend-scale"><span class="legend-swatch" style="opacity:0.5"></span>中</span>
+    <span class="legend-scale"><span class="legend-swatch" style="opacity:0.95"></span>滿格</span>
+    <span id="legendNote"></span>
+  </div>
+</div>
+
+<script src="./assets/fonts-data.js"></script>
+<script src="./assets/coverage-data.js"></script>
+<script>
+  const FONTS = window.FREE_FONTS_DATA;
+  const COV   = window.FREE_FONTS_COVERAGE;
+
+  const state = {
+    groups: new Set(["unicode", "lists"]),
+    mode: "pct",
+    sort: { key: "hanzi", dir: -1 },
+    theme: localStorage.getItem("pref-theme") || "light"
+  };
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  }
+
+  /* Rows: every font variant that has coverage data. */
+  const ROWS = [];
+  for (const f of FONTS) {
+    for (const v of f.variants) {
+      const cov = COV.fonts?.[f.id]?.[v.key];
+      if (cov) ROWS.push({ font: f, variant: v, cov });
+    }
+  }
+
+  function activeGroups() {
+    return COV.groups.filter(g => state.groups.has(g.id));
+  }
+
+  function cellValue(row, item) {
+    return row.cov.counts[item.id] || 0;
+  }
+
+  function sortRows() {
+    const { key, dir } = state.sort;
+    const item = COV.groups.flatMap(g => g.items).find(i => i.id === key);
+    ROWS.sort((a, b) => {
+      let av, bv;
+      if (key === "name") {
+        return dir * a.font.nameEn.localeCompare(b.font.nameEn);
+      } else if (key === "hanzi" || key === "glyphs") {
+        av = a.cov[key]; bv = b.cov[key];
+      } else {
+        // sort by ratio so small charsets are not always last
+        av = cellValue(a, item) / item.total;
+        bv = cellValue(b, item) / item.total;
+      }
+      return dir * (av - bv) || a.font.nameEn.localeCompare(b.font.nameEn);
+    });
+  }
+
+  function fmtCell(have, total) {
+    if (state.mode === "abs") return have.toLocaleString("en-US");
+    if (!have) return "0";
+    if (!total) return "—";
+    const pct = have / total * 100;
+    if (pct < 0.1) return "<0.1%";
+    return (pct >= 99.95 ? "100" : pct.toFixed(pct < 10 ? 1 : 0)) + "%";
+  }
+
+  function arrow(key) {
+    return state.sort.key === key ? `<span class="arrow">${state.sort.dir < 0 ? "▾" : "▴"}</span>` : "";
+  }
+
+  function render() {
+    sortRows();
+    const groups = activeGroups();
+    const cols = groups.flatMap(g => g.items);
+
+    const head = `
+      <thead>
+        <tr class="groups">
+          <th class="rowhead" rowspan="2">
+            <span class="sortable" data-key="name">字型 ${arrow("name")}</span>
+          </th>
+          <th colspan="2">總計</th>
+          ${groups.map(g => `<th colspan="${g.items.length}">${esc(g.zh)}</th>`).join("")}
+        </tr>
+        <tr class="cols">
+          <th class="sortable total" data-key="hanzi" title="統一 + 兼容表意文字">漢字 ${arrow("hanzi")}</th>
+          <th class="sortable" data-key="glyphs" title="cmap 中可映射的碼位總數">碼位 ${arrow("glyphs")}</th>
+          ${cols.map(c => `<th class="sortable" data-key="${esc(c.id)}" title="${esc(c.en)}${c.range ? " · " + esc(c.range) : ""} · 共 ${c.total}">${esc(c.zh)} ${arrow(c.id)}</th>`).join("")}
+        </tr>
+      </thead>`;
+
+    const body = ROWS.map(r => {
+      const label = r.font.variants.length > 1 ? `<span class="rh-variant">${esc(r.variant.label)}</span>` : "";
+      const href = `./specimen.html?font=${encodeURIComponent(r.font.id)}&variant=${encodeURIComponent(r.variant.key)}`;
+      const hanziPct = r.cov.hanzi / r.cov.hanziTotal;
+      return `<tr>
+        <td class="rowhead">
+          <a href="${href}"><span class="rh-name">${esc(r.font.nameZh || r.font.nameEn)}</span>${label}<span class="rh-link">↗</span></a>
+        </td>
+        <td class="cell total${hanziPct >= 0.9995 ? " is-full" : ""}${hanziPct >= 0.55 ? " is-strong" : ""}">
+          <span class="bg" style="opacity:${(0.08 + 0.87 * hanziPct).toFixed(3)}"></span>
+          <span class="v">${fmtCell(r.cov.hanzi, r.cov.hanziTotal)}</span>
+        </td>
+        <td>${r.cov.glyphs.toLocaleString("en-US")}</td>
+        ${cols.map(c => {
+          const have = cellValue(r, c);
+          const ratio = c.total ? have / c.total : 0;
+          const cls = (!have ? " is-zero" : (ratio >= 0.9995 ? " is-full" : ""))
+                    + (ratio >= 0.55 ? " is-strong" : "");
+          const bg = have ? `<span class="bg" style="opacity:${(0.08 + 0.87 * ratio).toFixed(3)}"></span>` : "";
+          return `<td class="cell${cls}" title="${esc(c.zh)}: ${have} / ${c.total}">${bg}<span class="v">${fmtCell(have, c.total)}</span></td>`;
+        }).join("")}
+      </tr>`;
+    }).join("");
+
+    document.getElementById("matrix").innerHTML = head + `<tbody>${body}</tbody>`;
+    document.getElementById("legendNote").textContent =
+      `${ROWS.length} 個字型／變體 · ${cols.length + 2} 欄 · 汉字总数分母 ${COV.fonts[ROWS[0].font.id][ROWS[0].variant.key].hanziTotal}`;
+  }
+
+  /* ── Controls ── */
+  document.getElementById("groupBtns").innerHTML = COV.groups.map(g =>
+    `<button class="btn" data-group="${esc(g.id)}" aria-pressed="${state.groups.has(g.id)}">${esc(g.zh)}</button>`
+  ).join(" ");
+
+  document.getElementById("groupBtns").addEventListener("click", e => {
+    const btn = e.target.closest("[data-group]");
+    if (!btn) return;
+    const id = btn.dataset.group;
+    if (state.groups.has(id)) state.groups.delete(id); else state.groups.add(id);
+    if (!state.groups.size) state.groups.add(id); // never show an empty matrix
+    btn.setAttribute("aria-pressed", String(state.groups.has(id)));
+    render();
+  });
+
+  document.querySelectorAll("[data-mode]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      state.mode = btn.dataset.mode;
+      document.querySelectorAll("[data-mode]").forEach(b =>
+        b.setAttribute("aria-pressed", String(b.dataset.mode === state.mode)));
+      render();
+    });
+  });
+
+  document.getElementById("matrix").addEventListener("click", e => {
+    const th = e.target.closest("[data-key]");
+    if (!th) return;
+    const key = th.dataset.key;
+    if (state.sort.key === key) state.sort.dir *= -1;
+    else state.sort = { key, dir: key === "name" ? 1 : -1 };
+    render();
+  });
+
+  /* ── Theme ── */
+  function applyTheme(t) {
+    state.theme = t;
+    localStorage.setItem("pref-theme", t);
+    document.documentElement.dataset.theme = t;
+    document.getElementById("themeBtn").textContent = t === "dark" ? "Light" : "Dark";
+  }
+  document.getElementById("themeBtn").addEventListener("click", () => {
+    applyTheme(state.theme === "dark" ? "light" : "dark");
+  });
+
+  applyTheme(state.theme);
+  render();
+</script>
+</body>
+</html>
