@@ -127,14 +127,14 @@ window.FREE_FONTS_DATA = [
     nameEn: "WFG FSung",
     nameZh: "WFG 全宋體",
     displayText: "全宋體",
-    css: ["https://unpkg.com/wfg-fsung-webfonts@1.0.1/wfg-fsung.css"],
+    css: ["https://unpkg.com/wfg-fsung-webfonts@1.1.0/wfg-fsung.css"],
     upstream: "https://www.npmjs.com/package/wfg-fsung-webfonts",
     license: "WFG NonCommercial",
     licenseNote: "非商業用途限定（學術研究、教育、個人閱讀），禁止用於商業盈利",
     noCdns: ["jsdelivr"],
     variants: [
       { key: "default", label: "Regular", family: "'WFG FSung', serif", stack: "WFG FSung", weights: [400],
-        pkgs: [{ name: "wfg-fsung-webfonts", version: "1.0.1", css: "wfg-fsung.css" }] }
+        pkgs: [{ name: "wfg-fsung-webfonts", version: "1.1.0", css: "wfg-fsung.css" }] }
     ]
   },
   {
@@ -213,20 +213,20 @@ window.FREE_FONTS_DATA = [
     nameZh: "字雲",
     displayText: "字雲",
     css: [
-      "https://unpkg.com/@free-fonts/jigmo@1.0.0/jigmo.css",
-      "https://unpkg.com/@free-fonts/jigmo-sc@1.0.0/jigmo-sc.css",
-      "https://unpkg.com/@free-fonts/jigmo-tc@1.0.0/jigmo-tc.css"
+      "https://unpkg.com/@free-fonts/jigmo@1.0.1/jigmo.css",
+      "https://unpkg.com/@free-fonts/jigmo-sc@1.0.1/jigmo-sc.css",
+      "https://unpkg.com/@free-fonts/jigmo-tc@1.0.1/jigmo-tc.css"
     ],
     upstream: "https://kamichikoichi.github.io/jigmo/",
     license: "IPA Font License 1.0",
     autoByLang: { "zh-Hans": "sc", "zh-Hant": "tc", en: "base" },
     variants: [
       { key: "base", label: "Original", family: '"Jigmo",serif', stack: "Jigmo", weights: [400],
-        pkgs: [{ name: "@free-fonts/jigmo", version: "1.0.0", css: "jigmo.css" }] },
+        pkgs: [{ name: "@free-fonts/jigmo", version: "1.0.1", css: "jigmo.css" }] },
       { key: "sc", label: "SC", family: '"Jigmo SC",serif', stack: "Jigmo SC", weights: [400],
-        pkgs: [{ name: "@free-fonts/jigmo-sc", version: "1.0.0", css: "jigmo-sc.css" }] },
+        pkgs: [{ name: "@free-fonts/jigmo-sc", version: "1.0.1", css: "jigmo-sc.css" }] },
       { key: "tc", label: "TC", family: '"Jigmo TC",serif', stack: "Jigmo TC", weights: [400],
-        pkgs: [{ name: "@free-fonts/jigmo-tc", version: "1.0.0", css: "jigmo-tc.css" }] }
+        pkgs: [{ name: "@free-fonts/jigmo-tc", version: "1.0.1", css: "jigmo-tc.css" }] }
     ]
   },
   {
