@@ -199,6 +199,73 @@
     .w-sz { font-size: 11px; color: var(--faint); font-variant-numeric: tabular-nums; }
     .w-text { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 1.3; }
 
+    /* ── Coverage ("nutrition facts") ── */
+    .cov-summary {
+      display: flex; flex-wrap: wrap; gap: 10px;
+      border: 1px solid var(--line); border-radius: 8px;
+      background: var(--paper); padding: 16px 18px; margin-bottom: 12px;
+    }
+    .cov-stat { flex: 1 1 190px; }
+    .cov-stat-label {
+      font-size: 11px; letter-spacing: 0.06em; color: var(--faint);
+      text-transform: uppercase;
+    }
+    .cov-stat-val {
+      font-size: 26px; line-height: 1.25; font-variant-numeric: tabular-nums;
+      color: var(--accent);
+    }
+    .cov-stat-val small { font-size: 15px; color: var(--muted); font-weight: 400; }
+    .cov-stat-sub { font-size: 12px; color: var(--muted); }
+
+    .cov-cols { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
+    .cov-group {
+      border: 1px solid var(--line); border-radius: 8px;
+      background: var(--paper); overflow: hidden;
+    }
+    .cov-group + .cov-group { margin-top: 12px; }
+    .cov-group-head {
+      padding: 9px 14px; background: var(--paper-soft);
+      border-bottom: 1px solid var(--line);
+      font-size: 12px; font-weight: 600; letter-spacing: 0.04em;
+    }
+    .cov-group-head span { color: var(--faint); font-weight: 400; }
+
+    .cov-row {
+      display: grid; grid-template-columns: minmax(0,1fr) 90px 118px;
+      align-items: center; gap: 10px;
+      padding: 7px 14px; border-bottom: 1px solid var(--line);
+      font-size: 13px; width: 100%; text-align: left;
+      background: none; border-left: 0; border-right: 0; border-top: 0;
+      color: inherit;
+    }
+    .cov-row:last-child { border-bottom: none; }
+    button.cov-row { cursor: pointer; }
+    button.cov-row:hover { background: var(--paper-soft); }
+    .cov-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .cov-name em { font-style: normal; color: var(--faint); font-size: 11px; margin-left: 5px; }
+
+    .cov-track {
+      height: 7px; border-radius: 4px; background: var(--paper-soft);
+      box-shadow: inset 0 0 0 1px var(--line); overflow: hidden;
+    }
+    .cov-fill { display: block; height: 100%; border-radius: 4px; background: var(--faint); }
+    .cov-row.is-full .cov-fill { background: var(--accent-2); }
+    .cov-row.is-none .cov-num { color: var(--faint); }
+
+    .cov-num {
+      text-align: right; font-variant-numeric: tabular-nums;
+      font-size: 12px; color: var(--muted); white-space: nowrap;
+    }
+    .cov-num b { font-size: 13px; color: var(--text); font-weight: 600; }
+    .cov-row.is-none .cov-num b { color: var(--faint); font-weight: 400; }
+
+    .cov-note { margin-top: 10px; font-size: 12px; color: var(--faint); line-height: 1.65; }
+
+    @media (max-width: 860px) {
+      .cov-cols { grid-template-columns: minmax(0,1fr); }
+      .cov-row { grid-template-columns: minmax(0,1fr) 60px 104px; }
+    }
+
     /* ── Glyph browser ── */
     .glyph-section { margin-top: 0; }
 
@@ -374,6 +441,13 @@
     </div>
   </section>
 
+  <section class="coverage-section" id="coverageSection" hidden>
+    <div class="section-head">字符覆盖 / Coverage</div>
+    <div class="cov-summary" id="covSummary"></div>
+    <div class="cov-cols" id="covCols"></div>
+    <p class="cov-note" id="covNote"></p>
+  </section>
+
   <section class="glyph-section">
     <div class="section-head">字符浏览 / Glyph Browser</div>
     <div class="glyph-controls">
@@ -409,8 +483,10 @@
 </dialog>
 
 <script src="./assets/fonts-data.js"></script>
+<script src="./assets/coverage-data.js"></script>
 <script>
   const FONTS = window.FREE_FONTS_DATA;
+  const COVERAGE = window.FREE_FONTS_COVERAGE || null;
   const BLOCKS = [
     { label: "Basic Latin",                    start: 0x0000 },
     { label: "Latin Extended-A/B",             start: 0x0100 },
@@ -636,6 +712,62 @@
     }).join("");
   }
 
+  /* ── Render: coverage ── */
+  function coverageOf() {
+    return COVERAGE?.fonts?.[state.fontId]?.[variant().key] || null;
+  }
+
+  function covRow(item, have) {
+    const total = item.total;
+    const pct   = total ? have / total : 0;
+    const cls   = have >= total ? " is-full" : (have ? "" : " is-none");
+    const tag   = item.start != null ? "button" : "div";
+    const attrs = item.start != null
+      ? ` type="button" data-cp="${item.start}"` : "";
+    const range = item.range ? `<em>${esc(item.range)}</em>` : "";
+    return `<${tag} class="cov-row${cls}"${attrs} title="${esc(item.en)} — ${(pct * 100).toFixed(1)}%">
+      <span class="cov-name">${esc(item.zh)}${range}</span>
+      <span class="cov-track"><span class="cov-fill" style="width:${have ? `max(3px, ${(pct * 100).toFixed(2)}%)` : "0"}"></span></span>
+      <span class="cov-num"><b>${have}</b> / ${total}</span>
+    </${tag}>`;
+  }
+
+  function covGroup(group, cov) {
+    return `<div class="cov-group">
+      <div class="cov-group-head">${esc(group.zh)} <span>/ ${esc(group.en)}</span></div>
+      ${group.items.map(it => covRow(it, cov.counts[it.id] || 0)).join("")}
+    </div>`;
+  }
+
+  function renderCoverage() {
+    const sec = document.getElementById("coverageSection");
+    const cov = coverageOf();
+    if (!cov) { sec.hidden = true; return; }
+    sec.hidden = false;
+
+    const pct = (cov.hanzi / cov.hanziTotal * 100).toFixed(1);
+    document.getElementById("covSummary").innerHTML = `
+      <div class="cov-stat">
+        <div class="cov-stat-label">汉字总数 / Ideographs</div>
+        <div class="cov-stat-val">${cov.hanzi} <small>/ ${cov.hanziTotal}</small></div>
+        <div class="cov-stat-sub">统一 + 兼容表意文字的 ${pct}%</div>
+      </div>
+      <div class="cov-stat">
+        <div class="cov-stat-label">字符总数 / Codepoints</div>
+        <div class="cov-stat-val">${cov.glyphs}</div>
+        <div class="cov-stat-sub">cmap 中可映射的码位数</div>
+      </div>`;
+
+    const byId = Object.fromEntries(COVERAGE.groups.map(g => [g.id, g]));
+    document.getElementById("covCols").innerHTML =
+      `<div>${covGroup(byId.unicode, cov)}</div>` +
+      `<div>${covGroup(byId.standards, cov)}${covGroup(byId.lists, cov)}${covGroup(byId.other, cov)}</div>`;
+
+    document.getElementById("covNote").textContent =
+      "数据由 tools/build-coverage.py 直接读取本 package 所发布的 woff2 切片 cmap 统计（非 CSS unicode-range 推算）；"
+      + "字表来自 Unihan 数据库，编码字符集由 Python codec 推导。点击统一码区段可跳到字符浏览。";
+  }
+
   /* ── Render: pinned glyph dialog ── */
   function renderPinned() {
     const dlg = document.getElementById("glyphDialog");
@@ -746,6 +878,7 @@
     renderPreview();
     renderWaterfall();
     renderUsage();
+    renderCoverage();
     initBlockSel();
     renderGlyphs();
     renderPinned();
@@ -812,6 +945,17 @@
     state.text = previewEl.textContent;
     renderWaterfall();
     syncUrl();
+  });
+
+  /* ── Event: coverage row → glyph browser ── */
+  document.getElementById("covCols").addEventListener("click", e => {
+    const row = e.target.closest("[data-cp]");
+    if (!row) return;
+    const cp = Number(row.dataset.cp);
+    state.glyphStart = Math.floor(cp / PAGE_SIZE) * PAGE_SIZE;
+    renderGlyphs();
+    syncBlockSel();
+    document.querySelector(".glyph-section").scrollIntoView({ behavior: "smooth", block: "start" });
   });
 
   /* ── Event: glyph grid ── */
