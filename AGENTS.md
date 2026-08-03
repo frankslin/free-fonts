@@ -42,12 +42,16 @@ npm webfont packages（`@free-fonts/*` scope）。每套字型被切成 **256 co
 
 ```
 pip install fonttools brotli
-python3 tools/build-coverage.py            # 全部本地 package
+python3 tools/build-coverage.py            # 全部本地 package（不連網）
 python3 tools/build-coverage.py plangothic # 只重算一套，其餘沿用舊值
+python3 tools/build-coverage.py --remote   # 連 CDN-only 的包一起算（約 370 MB）
 ```
 
-只有 `css` 是本地相對路徑（`./…`）的字型會被統計；純 CDN／系統字型（noto-*、
-jigmo、wfg-fsung）沒有資料，頁面會自動隱藏該區塊。
+**這次沒量到的字型會沿用檔案裡既有的數字**，所以平常改一套字型直接跑預設的
+（完全不連網）即可。`css` 走 CDN 的包（jigmo、wfg-fsung）只有 `--remote` 會用
+`npm pack` 依 `pkgs[].name@version` 拉回 `tools/.cache/pkgs/`（已 gitignore）再
+統計；快取按版本命名，只有 fonts-data.js 的版本號變了才會重新下載。真正沒資料
+的只剩 noto-*（走 Google Fonts，沒有 npm 包），頁面會自動隱藏該區塊。
 
 ## 單一 package 的組成
 

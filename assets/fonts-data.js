@@ -127,14 +127,14 @@ window.FREE_FONTS_DATA = [
     nameEn: "WFG FSung",
     nameZh: "WFG 全宋體",
     displayText: "全宋體",
-    css: ["https://unpkg.com/wfg-fsung-webfonts@1.0.1/wfg-fsung.css"],
+    css: ["https://unpkg.com/wfg-fsung-webfonts@1.1.0/wfg-fsung.css"],
     upstream: "https://www.npmjs.com/package/wfg-fsung-webfonts",
     license: "WFG NonCommercial",
     licenseNote: "非商業用途限定（學術研究、教育、個人閱讀），禁止用於商業盈利",
     noCdns: ["jsdelivr"],
     variants: [
       { key: "default", label: "Regular", family: "'WFG FSung', serif", stack: "WFG FSung", weights: [400],
-        pkgs: [{ name: "wfg-fsung-webfonts", version: "1.0.1", css: "wfg-fsung.css" }] }
+        pkgs: [{ name: "wfg-fsung-webfonts", version: "1.1.0", css: "wfg-fsung.css" }] }
     ]
   },
   {
