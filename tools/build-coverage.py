@@ -63,6 +63,7 @@ BLOCKS = [
     ("ext-i",        "统一表意文字扩展 I",     "CJK Ext-I",                0x2EBF0, 0x2EE5D, True, "unicode"),
     ("ext-g",        "统一表意文字扩展 G",     "CJK Ext-G",                0x30000, 0x3134A, True, "unicode"),
     ("ext-h",        "统一表意文字扩展 H",     "CJK Ext-H",                0x31350, 0x323AF, True, "unicode"),
+    ("ext-j",        "统一表意文字扩展 J",     "CJK Ext-J",                0x323B0, 0x3347F, True, "unicode"),
     ("compat-sup",   "兼容表意文字补充",       "CJK Compat. Ideographs Sup.", 0x2F800, 0x2FA1D, True, "unicode"),
     ("latin",        "基本拉丁字母",           "Basic Latin",              0x0000, 0x007F, False, "other"),
     ("latin1",       "拉丁字母补充-1",         "Latin-1 Supplement",       0x0080, 0x00FF, False, "other"),
@@ -77,7 +78,7 @@ BLOCKS = [
 
 # Blocks that make up the "汉字总数" tally.
 IDEO_BLOCKS = ["uro", "ext-a", "compat", "ext-b", "ext-c", "ext-d", "ext-e",
-               "ext-f", "ext-i", "ext-g", "ext-h", "compat-sup"]
+               "ext-f", "ext-i", "ext-g", "ext-h", "ext-j", "compat-sup"]
 
 # Unihan field -> row. (id, zh, en, file, field)
 UNIHAN_LISTS = [
