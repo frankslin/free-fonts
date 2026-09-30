@@ -148,7 +148,7 @@ window.FREE_FONTS_DATA = [
     variants: [
       { key: "default", label: "Default", family: "'BabelStone Han Basic','BabelStone Han Extra','BabelStone Han PUA',serif",
         stack: "BabelStone Han Basic/Extra/PUA", weights: [400],
-        pkgs: [{ name: "@free-fonts/babelstone-han", version: "1.0.0", css: "babelstone-han.css" }] }
+        pkgs: [{ name: "@free-fonts/babelstone-han", version: "1.1.0", css: "babelstone-han.css" }] }
     ]
   },
   {
