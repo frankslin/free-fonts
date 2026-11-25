@@ -167,6 +167,21 @@ window.FREE_FONTS_DATA = [
     ]
   },
   {
+    id: "kaiyuan-kai-sc",
+    nameEn: "Kaiyuan Kai SC",
+    nameZh: "開元楷體 SC",
+    shortZh: "開元楷體",
+    displayText: "开元楷体",
+    css: ["./kaiyuan-kai-sc/kaiyuan-kai-sc.css"],
+    upstream: "https://github.com/daizhige-org/kaiyuan-kai",
+    license: "Arphic Public License",
+    variants: [
+      { key: "default", label: "SC", family: '"Kaiyuan Kai SC",cursive,serif',
+        stack: "Kaiyuan Kai SC", weights: [400],
+        pkgs: [{ name: "@free-fonts/kaiyuan-kai-sc", version: "0.0.1", css: "kaiyuan-kai-sc.css" }] }
+    ]
+  },
+  {
     id: "wfg-fsung",
     nameEn: "WFG FSung",
     nameZh: "WFG 全宋體",

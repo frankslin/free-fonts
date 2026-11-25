@@ -11,8 +11,9 @@ npm webfont packages（`@free-fonts/*` scope）。每套字型被切成 **256 co
 
 - 根目錄下每個字型一個資料夾（`plangothic/`、`lxgw-wenkai/`、`tw-kai/` …），
   每個資料夾就是一個獨立的 npm package。
-- `BabelStoneHan-UFO-Fonts/` 與 `zhuque-fangsong/` 是 **git submodules**（指向
-  free-fonts-npm org 下的同名 repo），結構與其他 package 相同，但改動要在
+- `BabelStoneHan-UFO-Fonts/`、`zhuque-fangsong/` 與 `kaiyuan-kai-sc/` 是 **git
+  submodules**（前兩個指向 free-fonts-npm org 下的同名 repo，`kaiyuan-kai-sc`
+  指向 `daizhige-org/kaiyuan-kai`），結構與其他 package 相同，但改動要在
   submodule 自己的 repo 裡 commit，再回主 repo bump 指針。新 package 傾向走這條
   路線（字體不常發版，獨立 repo 可獨立更新，主 repo 不用累積所有字體的全部版本
   歷史）；submodule package 的 `package.json` repository 欄位指向自己的 repo，

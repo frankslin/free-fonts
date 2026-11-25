@@ -4,3 +4,6 @@
 [submodule "zhuque-fangsong"]
 	path = zhuque-fangsong
 	url = https://github.com/free-fonts-npm/zhuque-fangsong
+[submodule "kaiyuan-kai-sc"]
+	path = kaiyuan-kai-sc
+	url = https://github.com/daizhige-org/kaiyuan-kai

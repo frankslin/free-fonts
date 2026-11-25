@@ -10,7 +10,7 @@ CSS `unicode-range` 宣告，讓瀏覽器只下載頁面實際需要的字元區
 
 ## 目前包含
 
-目前包含：文津明體、源起明體 TC、源樣明體 TC、全字庫正宋體、全字庫正楷體、黑糖话梅、霞鹜文楷、霞鹜文楷 GB、霞鶩文楷 TC、霞鶩975圓體 SC、霞鶩漫黑、遍黑體、BabelStone Han（巴貝斯通漢，submodule）、朱雀仿宋（prerelease）、文鼎PL中楷（Big5）、文鼎PL簡中楷（GB）、文鼎PL中楷Uni（AR PL UKai，CN／HK／TW／TW MBE）。
+目前包含：文津明體、源起明體 TC、源樣明體 TC、全字庫正宋體、全字庫正楷體、黑糖话梅、霞鹜文楷、霞鹜文楷 GB、霞鶩文楷 TC、霞鶩975圓體 SC、霞鶩漫黑、遍黑體、BabelStone Han（巴貝斯通漢，submodule）、朱雀仿宋（prerelease）、文鼎PL中楷（Big5）、文鼎PL簡中楷（GB）、文鼎PL中楷Uni（AR PL UKai，CN／HK／TW／TW MBE）、開元楷體 SC（Kaiyuan Kai SC，submodule）。
 
 根目錄的 `index.html` 是互動式展示頁，可比較各字型、系統 fallback、繁簡轉換
 與單字形差異；`specimen.html?font=<id>` 是單字型樣張（含字符覆蓋表與 glyph
@@ -274,6 +274,26 @@ jsDelivr 等效：
 }
 ```
 
+### 開元楷體 SC（Kaiyuan Kai SC）
+
+來源：[daizhige-org/kaiyuan-kai](https://github.com/daizhige-org/kaiyuan-kai)（submodule）。面向簡體中文的合併楷體：文鼎PL簡中楷（`gkai00mp.ttf`）有的碼位一律取簡中楷的大陸字形，其餘碼位以 AR PL UKai 的 CN face 補齊，共 23,875 碼位；另修正了破折號／省略號接續、標點縱向位置與垂直度量，並新增 `halt` 半寬標點特性。修改說明見該 package 的 `README.md`。
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@free-fonts/kaiyuan-kai-sc@0.0.1/kaiyuan-kai-sc.css">
+```
+
+jsDelivr 等效：
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@free-fonts/kaiyuan-kai-sc@0.0.1/kaiyuan-kai-sc.css">
+```
+
+```css
+.kaiyuan-kai {
+  font-family: "Kaiyuan Kai SC", cursive, serif;
+}
+```
+
 ## 切片原則
 
 - 每片涵蓋 `0x100` 個 codepoints，對齊 Google Noto CJK 常見做法。
@@ -285,7 +305,8 @@ jsDelivr 等效：
 
 本 repo 的包裝檔、展示頁與建置腳本以 MIT 授權釋出。各字型本身依原作者授權
 釋出；多數 packages 使用 `MIT AND OFL-1.1` 標示，以反映包裝程式碼與字型授權的組合。全字庫 package 依資料集提供的選項採用 OFL-1.1 散布字型。文鼎的三個 package
-（`arphic-kaitim-big5`、`arphic-kaitim-gb`、`arphic-ukai`）字型部分為 Arphic
+（`arphic-kaitim-big5`、`arphic-kaitim-gb`、`arphic-ukai`）與由其合併衍生的
+`kaiyuan-kai-sc` 字型部分為 Arphic
 Public License，標示為 `MIT AND Arphic-1999`；依該授權第 2(a) 條，切片轉檔的
 修改說明列於各 package 的 `LICENSE` 與 `README.md`，授權原文另以 `ARPHICPL.TXT`
 原樣附上。
