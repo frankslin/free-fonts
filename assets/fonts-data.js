@@ -123,6 +123,65 @@ window.FREE_FONTS_DATA = [
     ]
   },
   {
+    id: "arphic-kaitim",
+    nameEn: "AR PL KaitiM",
+    nameZh: "文鼎PL中楷",
+    shortZh: "文鼎PL楷",
+    displayText: "文鼎PL中楷",
+    css: ["./arphic-kaitim-big5/arphic-kaitim-big5.css", "./arphic-kaitim-gb/arphic-kaitim-gb.css"],
+    upstream: "https://www.freedesktop.org/wiki/Software/CJKUnifonts",
+    license: "Arphic Public License",
+    autoByLang: { "zh-Hans": "gb", "zh-Hant": "big5", en: "big5" },
+    variants: [
+      { key: "big5", label: "Big5", family: '"AR PL KaitiM Big5",cursive,serif',
+        stack: "AR PL KaitiM Big5", weights: [400],
+        pkgs: [{ name: "@free-fonts/arphic-kaitim-big5", version: "1.0.0", css: "arphic-kaitim-big5.css" }] },
+      { key: "gb", label: "GB", family: '"AR PL KaitiM GB",cursive,serif',
+        stack: "AR PL KaitiM GB", weights: [400],
+        pkgs: [{ name: "@free-fonts/arphic-kaitim-gb", version: "1.0.0", css: "arphic-kaitim-gb.css" }] }
+    ]
+  },
+  {
+    id: "arphic-ukai",
+    nameEn: "AR PL UKai",
+    nameZh: "文鼎PL中楷Uni",
+    shortZh: "文鼎PL楷Uni",
+    displayText: "文鼎PL中楷Uni",
+    css: ["./arphic-ukai/arphic-ukai.css"],
+    upstream: "https://www.freedesktop.org/wiki/Software/CJKUnifonts",
+    license: "Arphic Public License",
+    autoByLang: { "zh-Hans": "cn", "zh-Hant": "tw", en: "tw" },
+    variants: [
+      { key: "cn", label: "CN", family: '"AR PL UKai CN",cursive,serif',
+        stack: "AR PL UKai CN", weights: [400],
+        pkgs: [{ name: "@free-fonts/arphic-ukai", version: "1.0.0", css: "arphic-ukai.css" }] },
+      { key: "tw", label: "TW", family: '"AR PL UKai TW",cursive,serif',
+        stack: "AR PL UKai TW", weights: [400],
+        pkgs: [{ name: "@free-fonts/arphic-ukai", version: "1.0.0", css: "arphic-ukai.css" }] },
+      { key: "hk", label: "HK", family: '"AR PL UKai HK",cursive,serif',
+        stack: "AR PL UKai HK", weights: [400],
+        pkgs: [{ name: "@free-fonts/arphic-ukai", version: "1.0.0", css: "arphic-ukai.css" }] },
+      { key: "tw-mbe", label: "TW MBE", family: '"AR PL UKai TW MBE",cursive,serif',
+        stack: "AR PL UKai TW MBE", weights: [400],
+        pkgs: [{ name: "@free-fonts/arphic-ukai", version: "1.0.0", css: "arphic-ukai.css" }] }
+    ]
+  },
+  {
+    id: "kaiyuan-kai-sc",
+    nameEn: "Kaiyuan Kai SC",
+    nameZh: "開元楷體 SC",
+    shortZh: "開元楷體",
+    displayText: "开元楷体",
+    css: ["./kaiyuan-kai-sc/kaiyuan-kai-sc.css"],
+    upstream: "https://github.com/daizhige-org/kaiyuan-kai",
+    license: "Arphic Public License",
+    variants: [
+      { key: "default", label: "SC", family: '"Kaiyuan Kai SC",cursive,serif',
+        stack: "Kaiyuan Kai SC", weights: [400],
+        pkgs: [{ name: "@free-fonts/kaiyuan-kai-sc", version: "0.0.1", css: "kaiyuan-kai-sc.css" }] }
+    ]
+  },
+  {
     id: "wfg-fsung",
     nameEn: "WFG FSung",
     nameZh: "WFG 全宋體",

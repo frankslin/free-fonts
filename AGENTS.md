@@ -11,8 +11,9 @@ npm webfont packages（`@free-fonts/*` scope）。每套字型被切成 **256 co
 
 - 根目錄下每個字型一個資料夾（`plangothic/`、`lxgw-wenkai/`、`tw-kai/` …），
   每個資料夾就是一個獨立的 npm package。
-- `BabelStoneHan-UFO-Fonts/` 與 `zhuque-fangsong/` 是 **git submodules**（指向
-  free-fonts-npm org 下的同名 repo），結構與其他 package 相同，但改動要在
+- `BabelStoneHan-UFO-Fonts/`、`zhuque-fangsong/` 與 `kaiyuan-kai-sc/` 是 **git
+  submodules**（前兩個指向 free-fonts-npm org 下的同名 repo，`kaiyuan-kai-sc`
+  指向 `daizhige-org/kaiyuan-kai`），結構與其他 package 相同，但改動要在
   submodule 自己的 repo 裡 commit，再回主 repo bump 指針。新 package 傾向走這條
   路線（字體不常發版，獨立 repo 可獨立更新，主 repo 不用累積所有字體的全部版本
   歷史）；submodule package 的 `package.json` repository 欄位指向自己的 repo，
@@ -26,7 +27,16 @@ npm webfont packages（`@free-fonts/*` scope）。每套字型被切成 **256 co
   百分比／字數、按欄排序、依 group 開關欄位），資料同樣來自 coverage-data.js。
 - `assets/coverage-data.js` — **生成物**，各字型的 Unicode／字符集覆蓋數字
   （`window.FREE_FONTS_COVERAGE`），由 `tools/build-coverage.py` 產生，不要手改。
-- 三個 HTML 頁面都是無 build step 的單檔頁面，直接以 `file://` 打開即可測試
+- `arphic-compare.html` — 文鼎三個 package 六個 face（簡中楷 GB／中楷 Big5／UKai
+  CN・HK・TW・TW MBE）的逐碼位字形對照，資料來自 `assets/arphic-compare-data.js`
+  （**生成物**，`window.ARPHIC_COMPARE`，由 `tools/build-arphic-compare.py` 產生）。
+  每個碼位存一組「輪廓指紋」字母，字母相同＝該幾個 face 的輪廓逐點一致；`-` 表示
+  該 face 沒有這個碼位，頁面據此留白，避免系統 fallback 冒充成真有這個字。另外存
+  **像素差異**（`diff`／`cnGb`／`cnBig5`）：兩套經典字型是各自描摹的，輪廓點數到處
+  都不一樣，用點數排序只會把筆畫多的字排到前面；所以改成把字渲染成點陣、正規化
+  大小與位置後比不重疊的墨水比例，排序與「UKai 近 X 形」判定都用這個。這一步需要
+  `pillow` 與 `numpy`，跑一次約數分鐘。
+- 這些 HTML 頁面都是無 build step 的單檔頁面，直接以 `file://` 打開即可測試
   （所以資料一律走 classic script，不用 `fetch()` JSON）。
 
 ## 字符覆蓋表 / coverage
