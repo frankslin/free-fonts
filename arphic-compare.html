@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>文鼎楷體六面字形對照 – free-fonts</title>
+
+  <link rel="stylesheet" href="./arphic-kaitim-gb/arphic-kaitim-gb.css">
+  <link rel="stylesheet" href="./arphic-kaitim-big5/arphic-kaitim-big5.css">
+  <link rel="stylesheet" href="./arphic-ukai/arphic-ukai.css">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f2e8;
+      --paper: #fffaf1;
+      --paper-soft: #f1e7d8;
+      --panel: rgba(255,250,241,0.88);
+      --line: rgba(72,56,40,0.18);
+      --line-strong: rgba(72,56,40,0.32);
+      --text: #211b16;
+      --muted: #766c60;
+      --faint: #a2978a;
+      --accent: #8f3f2b;
+      --accent-2: #4d6d62;
+      --field: rgba(255,252,246,0.92);
+      --btn-active-text: #fffaf1;
+      --primary-bg: #2f5147;
+      --hit: rgba(143,63,43,0.07);
+    }
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --bg: #171512;
+      --paper: #211d18;
+      --paper-soft: #2b251e;
+      --panel: rgba(33,29,24,0.88);
+      --line: rgba(232,218,197,0.16);
+      --line-strong: rgba(232,218,197,0.28);
+      --text: #f4eadc;
+      --muted: #b8aa98;
+      --faint: #897b6c;
+      --accent: #d08468;
+      --accent-2: #9fc1b2;
+      --field: rgba(18,16,13,0.82);
+      --btn-active-text: #171512;
+      --primary-bg: #c99c79;
+      --hit: rgba(208,132,104,0.10);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    button, select, input { font: inherit; }
+    button { cursor: pointer; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 30;
+      display: flex; align-items: center; gap: 10px;
+      padding: 9px 24px; border-bottom: 1px solid var(--line);
+      background: var(--panel); backdrop-filter: blur(14px);
+    }
+    .back-link { color: var(--muted); font-size: 13px; text-decoration: none; white-space: nowrap; }
+    .back-link:hover { color: var(--text); }
+    .topbar-title { font-size: 13px; color: var(--muted); }
+    .topbar-end { display: flex; gap: 6px; margin-left: auto; }
+    .btn {
+      height: 32px; padding: 0 12px; border: 1px solid var(--line); border-radius: 6px;
+      background: var(--field); color: var(--text); font-size: 13px; white-space: nowrap;
+    }
+    .btn:hover { border-color: var(--accent); }
+
+    .page { max-width: 1180px; margin: 0 auto; padding: 0 24px 90px; }
+
+    .head { padding: 26px 0 18px; border-bottom: 1px solid var(--line); }
+    h1 { font-size: 26px; font-weight: 600; letter-spacing: -0.01em; }
+    .lede { margin-top: 8px; font-size: 14px; color: var(--muted); max-width: 74ch; }
+    .lede code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; }
+
+    .controls {
+      position: sticky; top: 50px; z-index: 20;
+      display: flex; flex-wrap: wrap; gap: 14px 18px; align-items: center;
+      padding: 12px 0; margin-bottom: 4px;
+      background: var(--bg); border-bottom: 1px solid var(--line);
+    }
+    .ctl { display: flex; align-items: center; gap: 7px; font-size: 13px; color: var(--muted); }
+    .ctl label { white-space: nowrap; }
+    select, input[type="text"] {
+      height: 32px; border: 1px solid var(--line); border-radius: 6px;
+      padding: 0 8px; background: var(--field); color: var(--text); font-size: 13px;
+    }
+    select { max-width: 300px; }
+    input[type="text"] { width: 190px; }
+    input[type="range"] { width: 120px; accent-color: var(--primary-bg); }
+    .count { margin-left: auto; font-size: 13px; color: var(--faint); font-variant-numeric: tabular-nums; }
+
+    .legend {
+      display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center;
+      padding: 10px 0 14px; font-size: 12.5px; color: var(--muted);
+    }
+    .legend .chip { margin-right: 5px; }
+
+    .chip {
+      display: inline-block; min-width: 17px; padding: 0 4px;
+      border-radius: 4px; font-size: 11px; line-height: 17px; text-align: center;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      background: var(--paper-soft); color: var(--muted); border: 1px solid transparent;
+    }
+    .chip.g0 { background: rgba(143,63,43,0.16); color: var(--accent); }
+    .chip.g1 { background: rgba(77,109,98,0.20); color: var(--accent-2); }
+    .chip.g2 { background: rgba(120,96,40,0.18); color: #8a6d1f; }
+    .chip.g3 { background: rgba(70,90,140,0.18); color: #4a5f96; }
+    .chip.g4 { background: rgba(130,70,120,0.16); color: #85497c; }
+    .chip.g5 { background: rgba(60,110,120,0.18); color: #38707c; }
+    :root[data-theme="dark"] .chip.g2 { color: #d8bb6a; }
+    :root[data-theme="dark"] .chip.g3 { color: #9fb2e0; }
+    :root[data-theme="dark"] .chip.g4 { color: #d69cc9; }
+    :root[data-theme="dark"] .chip.g5 { color: #8ec6d2; }
+
+    /* ── grid ── */
+    .grid { --gsize: 64px; }
+    .row, .grid-head {
+      display: grid;
+      grid-template-columns: 150px repeat(6, minmax(0, 1fr));
+      align-items: center;
+    }
+    .grid-head {
+      position: sticky; top: 107px; z-index: 15;
+      background: var(--bg); border-bottom: 1px solid var(--line-strong);
+      padding: 8px 0; font-size: 12px; color: var(--muted);
+    }
+    .grid-head span { text-align: center; }
+    .grid-head span:first-child { text-align: left; padding-left: 2px; }
+    .grid-head b { display: block; font-size: 12.5px; color: var(--text); font-weight: 600; }
+
+    .row { border-bottom: 1px solid var(--line); padding: 6px 0; }
+    .row:hover { background: var(--hit); }
+
+    .meta { display: flex; flex-direction: column; gap: 2px; padding-left: 2px; min-width: 0; }
+    .meta .cp {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 11.5px; color: var(--faint);
+    }
+    .meta .verdict { font-size: 11.5px; color: var(--muted); }
+    .meta .dist { color: var(--accent); }
+    .meta .badges { display: flex; gap: 4px; flex-wrap: wrap; }
+    .badge {
+      font-size: 10px; line-height: 15px; padding: 0 5px; border-radius: 3px;
+      background: var(--paper-soft); color: var(--muted);
+    }
+
+    .cell { display: flex; flex-direction: column; align-items: center; gap: 3px; min-width: 0; }
+    .glyph {
+      font-size: var(--gsize); line-height: 1.15;
+      color: var(--text); font-feature-settings: normal;
+    }
+    .cell.miss .glyph { color: var(--faint); opacity: 0.35; font-size: 20px; line-height: calc(var(--gsize) * 1.15); }
+
+    .more { display: flex; justify-content: center; padding: 26px 0; }
+    .empty { padding: 40px 0; text-align: center; color: var(--muted); font-size: 14px; }
+
+    @media (max-width: 860px) {
+      .page { padding: 0 14px 70px; }
+      .row, .grid-head { grid-template-columns: 110px repeat(6, minmax(0, 1fr)); }
+      .grid { --gsize: 40px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <a class="back-link" href="./index.html">← 字型總覽</a>
+    <span class="topbar-title">文鼎楷體六面字形對照</span>
+    <div class="topbar-end">
+      <button class="btn" id="themeBtn">Dark</button>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="head">
+      <h1>文鼎楷體六面字形對照</h1>
+      <p class="lede">
+        文鼎PL簡中楷（GB）、文鼎PL中楷（Big5）與 AR PL UKai 的四個 face 在同一碼位上到底長什麼樣。
+        某個 face 沒有這個碼位時顯示 <code>—</code>，不會退回系統字型冒充。
+      </p>
+      <p class="lede">
+        每格下方的字母是<strong>輪廓指紋</strong>：字母相同＝輪廓逐點完全一致。但兩套經典字型是各自
+        描摹的，<strong>輪廓不同不代表看得出來不同</strong>——所以「差 x%」是把兩個字渲染成點陣、
+        正規化大小與位置後不重疊的墨水比例。GB 與 Big5 共有、而輪廓不同的 4,559 個碼位裡，
+        1,845 個正規化後<strong>像素完全重合</strong>、另有 1,660 個差在 1% 以內（肉眼無異），
+        真正看得出差別的只有 <strong>1,054 個</strong>，超過 10% 的僅 84 個——集中在
+        <code>匕</code> 部、<code>真／直</code> 的內部、<code>亡</code>、<code>与</code> 這類。
+        這 1,054 個裡，UKai CN 有 994 個看起來像 Big5、只有 2 個像 GB。
+      </p>
+    </div>
+
+    <div class="controls">
+      <div class="ctl">
+        <label for="viewSel">視角</label>
+        <select id="viewSel"></select>
+      </div>
+      <div class="ctl">
+        <label for="sortSel">排序</label>
+        <select id="sortSel">
+          <option value="diff">字形差異大 → 小</option>
+          <option value="cp">碼位順序</option>
+        </select>
+      </div>
+      <div class="ctl">
+        <label><input type="checkbox" id="hanOnly" checked> 只看漢字</label>
+      </div>
+      <div class="ctl">
+        <label for="txt">自訂字串</label>
+        <input type="text" id="txt" placeholder="貼上要看的字">
+      </div>
+      <div class="ctl">
+        <label for="size">字號</label>
+        <input type="range" id="size" min="28" max="140" value="64">
+      </div>
+      <div class="count" id="count"></div>
+    </div>
+
+    <div class="legend" id="legend"></div>
+
+    <div class="grid" id="grid">
+      <div class="grid-head" id="gridHead"></div>
+      <div id="rows"></div>
+    </div>
+    <div class="more" id="more"></div>
+  </div>
+
+  <script src="./assets/arphic-compare-data.js"></script>
+  <script>
+  (function () {
+    var D = window.ARPHIC_COMPARE;
+    var FACES = D.faces, N = FACES.length;
+    var CPS = Array.from(D.cps, function (ch) { return ch.codePointAt(0); });
+    var PAT = new Array(CPS.length);
+    for (var i = 0; i < CPS.length; i++) PAT[i] = D.patterns[D.pat.charCodeAt(i) - 33];
+    var FLAG = D.flags;
+    // Pixel-level shape distances, in thirds of a percent of mismatched ink
+    // after size/position normalisation. 0 = indistinguishable, -1 = n/a.
+    function unpack(s) {
+      var out = new Array(CPS.length);
+      for (var k = 0; k < CPS.length; k++) {
+        out[k] = s.charAt(k) === " " ? -1 : s.charCodeAt(k) - 33;
+      }
+      return out;
+    }
+    var DIFF = unpack(D.diff), CN_GB = unpack(D.cnGb), CN_B5 = unpack(D.cnBig5);
+    var pct = function (v) { return (v / 3).toFixed(1) + "%"; };
+    var SAME = 3;   // ≤1% of ink apart — the same shape, redrawn
+
+    function isHan(cp) {
+      return (cp >= 0x4E00 && cp <= 0x9FFF) || (cp >= 0x3400 && cp <= 0x4DBF) ||
+             (cp >= 0xF900 && cp <= 0xFAFF) || (cp >= 0x20000 && cp <= 0x2FA1F) ||
+             cp === 0x3007;
+    }
+
+    var IDX = {};            // codepoint -> row index
+    for (var j = 0; j < CPS.length; j++) IDX[CPS[j]] = j;
+
+    var GB = 0, BIG5 = 1, CN = 2, HK = 3, TW = 4, MBE = 5;
+    var has = function (i, f) { return PAT[i][f] !== "-"; };
+    var same = function (i, a, b) { return has(i, a) && PAT[i][a] === PAT[i][b]; };
+    var ukaiSplit = function (i) {          // do the four UKai faces disagree?
+      var seen = null;
+      for (var f = CN; f <= MBE; f++) {
+        if (!has(i, f)) return true;        // differing coverage counts as a difference
+        if (seen === null) seen = PAT[i][f];
+        else if (seen !== PAT[i][f]) return true;
+      }
+      return false;
+    };
+
+    var VIEWS = [
+      { id: "conflict", label: "GB 與 Big5 字形真的不同（像素差 > 1%）",
+        test: function (i) { return DIFF[i] > SAME; } },
+      { id: "conflict-common", label: "同上 · 只看 GB2312 常用字",
+        test: function (i) { return DIFF[i] > SAME && (FLAG[i] & 1); } },
+      { id: "redrawn-same", label: "輪廓不同但看起來一樣（重描而已）",
+        test: function (i) {
+          return has(i, GB) && has(i, BIG5) && PAT[i][GB] !== PAT[i][BIG5] && DIFF[i] <= SAME;
+        } },
+      { id: "ukai-split", label: "UKai 四面彼此有差異的字",
+        test: function (i) { return has(i, CN) && ukaiSplit(i); } },
+      { id: "ukai-redraw", label: "UKai 重繪字（與兩套經典版都不同）",
+        test: function (i) {
+          return has(i, CN) && (has(i, GB) || has(i, BIG5)) &&
+                 !same(i, CN, GB) && !same(i, CN, BIG5);
+        } },
+      { id: "gb-only", label: "簡中楷獨有（Big5 沒有的簡化字等）",
+        test: function (i) { return has(i, GB) && !has(i, BIG5); } },
+      { id: "big5-only", label: "中楷獨有（GB 沒有的字）",
+        test: function (i) { return has(i, BIG5) && !has(i, GB); } },
+      { id: "ukai-new", label: "UKai 新增（兩套經典版都沒有）",
+        test: function (i) { return !has(i, GB) && !has(i, BIG5); } },
+      { id: "hk-only", label: "只有 UKai HK 有（HKSCS PUA）",
+        test: function (i) { return has(i, HK) && !has(i, CN) && !has(i, TW); } },
+      { id: "gb2312", label: "GB2312 全部漢字",
+        test: function (i) { return FLAG[i] & 1; } },
+      { id: "all", label: "全部碼位", test: function () { return true; } }
+    ];
+
+    var grid = document.getElementById("grid");
+    var rowsEl = document.getElementById("rows");
+    var moreEl = document.getElementById("more");
+    var countEl = document.getElementById("count");
+    var viewSel = document.getElementById("viewSel");
+    var txtEl = document.getElementById("txt");
+
+    VIEWS.forEach(function (v) {
+      var o = document.createElement("option");
+      o.value = v.id; o.textContent = v.label;
+      viewSel.appendChild(o);
+    });
+
+    // Header
+    var head = document.getElementById("gridHead");
+    var h0 = document.createElement("span");
+    h0.textContent = "碼位";
+    head.appendChild(h0);
+    FACES.forEach(function (f) {
+      var s = document.createElement("span");
+      s.innerHTML = "<b>" + f.zh + "</b>" + f.family;
+      head.appendChild(s);
+    });
+
+    // Legend
+    var legend = document.getElementById("legend");
+    legend.innerHTML =
+      '<span><span class="chip g0">a</span>…<span class="chip g5">f</span> 相同字母＝輪廓逐點一致</span>' +
+      '<span>「差 x%」＝正規化大小位置後不重疊的墨水比例，≤1% 視為同形</span>' +
+      '<span><code>—</code> 該 face 沒有這個碼位</span>' +
+      '<span>GB2312 / Big5 標記＝該字屬於傳統編碼字集</span>';
+
+    var PAGE = 60;
+    var list = [], shown = 0;
+
+    function verdict(i) {
+      if (!has(i, CN)) return "";
+      if (has(i, GB) && has(i, BIG5) && PAT[i][GB] !== PAT[i][BIG5]) {
+        if (DIFF[i] >= 0 && DIFF[i] <= SAME) return "GB／Big5 同形";
+        if (CN_GB[i] < 0) return "";
+        if (CN_GB[i] <= SAME && CN_B5[i] > SAME) return "UKai 近 GB 形";
+        if (CN_B5[i] <= SAME && CN_GB[i] > SAME) return "UKai 近 Big5 形";
+        if (CN_GB[i] <= SAME && CN_B5[i] <= SAME) return "UKai 兩者皆近";
+        return CN_GB[i] < CN_B5[i] ? "UKai 自成一形（偏 GB）" : "UKai 自成一形（偏 Big5）";
+      }
+      if (has(i, GB) && !has(i, BIG5)) return same(i, CN, GB) ? "承自簡中楷" : "改自簡中楷";
+      if (has(i, BIG5) && !has(i, GB)) return same(i, CN, BIG5) ? "承自中楷" : "改自中楷";
+      if (!has(i, GB) && !has(i, BIG5)) return "UKai 新增";
+      return "";
+    }
+
+    function buildRow(i) {
+      var cp = CPS[i], ch = String.fromCodePoint(cp), pat = PAT[i];
+      var row = document.createElement("div");
+      row.className = "row";
+
+      var meta = document.createElement("div");
+      meta.className = "meta";
+      var v = verdict(i);
+      var badges = "";
+      if (FLAG[i] & 1) badges += '<span class="badge">GB2312</span>';
+      if (FLAG[i] & 2) badges += '<span class="badge">Big5</span>';
+      meta.innerHTML =
+        '<span class="cp">U+' + cp.toString(16).toUpperCase().padStart(4, "0") +
+        (DIFF[i] > 0 ? '<span class="dist" title="GB 與 Big5 的字形差異（像素比對）"> · 差 ' +
+          pct(DIFF[i]) + "</span>" : "") + "</span>" +
+        (v ? '<span class="verdict">' + v + "</span>" : "") +
+        (badges ? '<span class="badges">' + badges + "</span>" : "");
+      row.appendChild(meta);
+
+      for (var f = 0; f < N; f++) {
+        var cell = document.createElement("div");
+        cell.className = "cell";
+        var g = document.createElement("span");
+        g.className = "glyph";
+        if (pat[f] === "-") {
+          cell.className += " miss";
+          g.textContent = "—";
+          cell.appendChild(g);
+        } else {
+          g.style.fontFamily = '"' + FACES[f].family + '"';
+          g.textContent = ch;
+          cell.appendChild(g);
+          var chip = document.createElement("span");
+          chip.className = "chip g" + D.letters.indexOf(pat[f]);
+          chip.textContent = pat[f];
+          cell.appendChild(chip);
+        }
+        row.appendChild(cell);
+      }
+      return row;
+    }
+
+    function renderMore() {
+      var frag = document.createDocumentFragment();
+      var end = Math.min(shown + PAGE, list.length);
+      for (var k = shown; k < end; k++) frag.appendChild(buildRow(list[k]));
+      rowsEl.appendChild(frag);
+      shown = end;
+      moreEl.innerHTML = "";
+      if (shown < list.length) {
+        var b = document.createElement("button");
+        b.className = "btn";
+        b.textContent = "再載入 " + Math.min(PAGE, list.length - shown) + " 個（剩 " +
+          (list.length - shown).toLocaleString() + "）";
+        b.onclick = renderMore;
+        moreEl.appendChild(b);
+      }
+      countEl.textContent = "顯示 " + shown.toLocaleString() + " / " + list.length.toLocaleString() + " 個碼位";
+    }
+
+    function apply() {
+      var hanOnly = document.getElementById("hanOnly").checked;
+      var custom = txtEl.value.trim();
+      if (custom) {
+        var seen = {};
+        list = [];
+        Array.from(custom).forEach(function (c) {
+          var cp = c.codePointAt(0);
+          if (IDX[cp] === undefined || seen[cp]) return;
+          seen[cp] = 1;
+          list.push(IDX[cp]);
+        });
+      } else {
+        var view = VIEWS.filter(function (v) { return v.id === viewSel.value; })[0];
+        list = [];
+        for (var i = 0; i < CPS.length; i++) {
+          if (hanOnly && !isHan(CPS[i])) continue;
+          if (view.test(i)) list.push(i);
+        }
+        if (document.getElementById("sortSel").value === "diff") {
+          list.sort(function (x, y) { return DIFF[y] - DIFF[x] || CPS[x] - CPS[y]; });
+        }
+      }
+      rowsEl.innerHTML = "";
+      shown = 0;
+      if (!list.length) {
+        moreEl.innerHTML = '<div class="empty">沒有符合的碼位（自訂字串裡的字六個 face 都沒有？）</div>';
+        countEl.textContent = "0 個碼位";
+        return;
+      }
+      renderMore();
+    }
+
+    // ?view=<id>&text=<chars>&size=<px> — so a particular comparison is linkable.
+    var qs = new URLSearchParams(location.search);
+    if (qs.get("view") && VIEWS.some(function (v) { return v.id === qs.get("view"); })) {
+      viewSel.value = qs.get("view");
+    }
+    if (qs.get("text")) txtEl.value = qs.get("text");
+    if (qs.get("size")) {
+      document.getElementById("size").value = qs.get("size");
+      grid.style.setProperty("--gsize", qs.get("size") + "px");
+    }
+    if (qs.get("han") === "0") document.getElementById("hanOnly").checked = false;
+
+    function syncUrl() {
+      var p = new URLSearchParams();
+      if (txtEl.value.trim()) p.set("text", txtEl.value.trim());
+      else p.set("view", viewSel.value);
+      if (!document.getElementById("hanOnly").checked) p.set("han", "0");
+      history.replaceState(null, "", location.pathname + "?" + p.toString());
+    }
+
+    viewSel.onchange = function () { syncUrl(); apply(); };
+    document.getElementById("sortSel").onchange = apply;
+    document.getElementById("hanOnly").onchange = function () { syncUrl(); apply(); };
+    var t;
+    txtEl.oninput = function () {
+      clearTimeout(t);
+      t = setTimeout(function () { syncUrl(); apply(); }, 250);
+    };
+    document.getElementById("size").oninput = function () {
+      grid.style.setProperty("--gsize", this.value + "px");
+    };
+
+    // Theme, shared with the other pages.
+    var themeBtn = document.getElementById("themeBtn");
+    function setTheme(t) {
+      document.documentElement.setAttribute("data-theme", t);
+      themeBtn.textContent = t === "dark" ? "Light" : "Dark";
+      localStorage.setItem("pref-theme", t);
+    }
+    setTheme(localStorage.getItem("pref-theme") || "light");
+    themeBtn.onclick = function () {
+      setTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark");
+    };
+
+    apply();
+  })();
+  </script>
+</body>
+</html>

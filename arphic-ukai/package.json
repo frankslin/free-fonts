@@ -1,0 +1,33 @@
+{
+  "name": "@free-fonts/arphic-ukai",
+  "version": "1.0.0",
+  "description": "Chunked woff2 webfonts for AR PL UKai / 文鼎PL中楷Uni (CN, HK, TW, TW MBE).",
+  "license": "MIT AND Arphic-1999",
+  "main": "arphic-ukai.css",
+  "style": "arphic-ukai.css",
+  "files": [
+    "arphic-ukai.css",
+    "fonts",
+    "README.md",
+    "LICENSE",
+    "ARPHICPL.TXT"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frankslin/free-fonts.git",
+    "directory": "arphic-ukai"
+  },
+  "keywords": [
+    "font",
+    "webfont",
+    "woff2",
+    "cjk",
+    "kaiti",
+    "kai",
+    "big5",
+    "hkscs",
+    "gb2312",
+    "arphic",
+    "ukai"
+  ]
+}

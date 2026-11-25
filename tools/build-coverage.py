@@ -265,12 +265,37 @@ def css_faces(css_path):
     return faces
 
 
-def cmap_of_css(css_paths):
-    """Union of every slice's cmap, each file opened once."""
+FAMILY_NAME_RE = re.compile(r"""['"]([^'"]+)['"]|([^,'"]+)""")
+
+
+def family_names(spec):
+    """Font-family list -> lowercased names ('"AR PL UKai CN",serif' -> {...})."""
+    out = set()
+    for quoted, bare in FAMILY_NAME_RE.findall(spec or ""):
+        name = (quoted or bare).strip().lower()
+        if name:
+            out.add(name)
+    return out
+
+
+def cmap_of_css(css_paths, families=None):
+    """Union of every slice's cmap, each file opened once.
+
+    `families` (from the variant's font-family) keeps one variant of a
+    multi-family CSS — e.g. arphic-ukai ships CN/HK/TW/TW MBE in one file —
+    from being credited with the other families' coverage.
+    """
     from fontTools.ttLib import TTFont
     seen, cps, missing = set(), set(), 0
+    if families:
+        all_fams = {f.strip().strip("'\"").lower()
+                    for p in css_paths for f, _r, _u in css_faces(p)}
+        if len(all_fams) < 2 or not (all_fams & families):
+            families = None  # single-family CSS, or names we cannot match
     for p in css_paths:
-        for _fam, _rng, path in css_faces(p):
+        for fam, _rng, path in css_faces(p):
+            if families and fam.strip().strip("'\"").lower() not in families:
+                continue
             if path in seen:
                 continue
             seen.add(path)
@@ -345,7 +370,7 @@ def main():
             paths = variant_css(font, var, by_base, remote)
             if not paths:
                 continue
-            cps = cmap_of_css(paths)
+            cps = cmap_of_css(paths, family_names(var.get("family")))
             counts = {}
             for gid, s in sets.items():
                 n = len(cps & s)
